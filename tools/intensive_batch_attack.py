@@ -217,7 +217,7 @@ def main():
                 print(f"      {bracket}: {count}")
     
     # Export detailed results
-    output_file = Path(r"C:\Users\tyler\Repos\Cicada3301\tools\intensive_batch_results.txt")
+    output_file = Path(r"C:\Users\tyler\Repos\Cicada3301\tools\archive\outputs\intensive_batch_results.txt")
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("INTENSIVE BATCH RESULTS (All rotation+offset combinations)\n")
         f.write("=" * 70 + "\n\n")

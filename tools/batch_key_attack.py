@@ -337,7 +337,7 @@ def main():
     print("💾 EXPORTING DETAILED RESULTS")
     print("="*70)
     
-    output_file = Path(r"C:\Users\tyler\Repos\Cicada3301\tools\batch_results.txt")
+    output_file = Path(r"C:\Users\tyler\Repos\Cicada3301\tools\archive\outputs\batch_results.txt")
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("BATCH KEY ATTACK RESULTS\n")
         f.write("=" * 70 + "\n\n")

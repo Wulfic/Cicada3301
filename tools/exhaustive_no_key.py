@@ -326,12 +326,12 @@ def main():
         print(f"  {text}")
     
     # Save results
-    with open('tools/no_key_results.txt', 'w', encoding='utf-8') as f:
+    with open('tools/archive/outputs/no_key_results.txt', 'w', encoding='utf-8') as f:
         for pg, cipher, params, score, text in results:
             f.write(f"Page {pg} | {cipher} | params={params} | Score={score}\n")
             f.write(f"  {text}\n\n")
     
-    print(f"\nSaved {len(results)} results to tools/no_key_results.txt")
+    print(f"\nSaved {len(results)} results to tools/archive/outputs/no_key_results.txt")
 
 if __name__ == "__main__":
     main()

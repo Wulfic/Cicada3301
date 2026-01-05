@@ -130,6 +130,7 @@ def decrypt_page_56(rune_text):
 | Page 56 Decoder | `2014/additional docs/scripts/page 56 script decoder.txt` | Working decoder for Page 56 |
 | DetectJPG_v2.py | `2014/additional docs/scripts/` | Image steganography detection |
 | RSA Decrypt (Perl) | `2014/additional docs/scripts/Program to decrypt RSA message in perl.txt` | RSA decryption attempt |
+| Page 1 Playbook | `tools/PAGE1_PLAYBOOK.md` | Current evidence-driven workflow for attacking Page 1 in this repo |
 
 ### Reference Materials
 
