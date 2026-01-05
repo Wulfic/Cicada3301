@@ -1,0 +1,334 @@
+[
+  {
+    "page": 52,
+    "method": "sub_fine",
+    "params": {
+      "rot": 71,
+      "off": 1
+    },
+    "score": 136.0,
+    "text": "THELSXNGOEOFEOPJEPOEBOEWEOITHULCHBIIEAYOETHEREADEODEOEADEOIAWBEWNGLJIAAEAPXETIATHNNPINGPYJIADEBFOEOM"
+  },
+  {
+    "page": 48,
+    "method": "double_xor_sub",
+    "params": {
+      "rot1": 60,
+      "off1": 5,
+      "rot2": 80,
+      "off2": 5
+    },
+    "score": 134.0,
+    "text": "IAAUDIAJIAMBRGENAEWTHNGAECBIATHBTHTHACDTNGSMOGPMYTHEREOTIATHEAABTHIOEEOTAENGIECMOBELODIDEOCEOIPRLUTH"
+  },
+  {
+    "page": 31,
+    "method": "double_xor_sub",
+    "params": {
+      "rot1": 40,
+      "off1": 0,
+      "rot2": 20,
+      "off2": 20
+    },
+    "score": 132.5,
+    "text": "TBIAAETHCUYPGNGEOMIASUTHANGOMUNGGIAOTHERENBISLAEXINGYDNGAEOEDUJHGUTHYXTHMWJTHAEEYOMEOEOHEXETCARXEXDS"
+  },
+  {
+    "page": 28,
+    "method": "double_add_xor",
+    "params": {
+      "rot1": 10,
+      "off1": 25,
+      "rot2": 90,
+      "off2": 10
+    },
+    "score": 131.5,
+    "text": "OEJNGOEEXNLYXSJOEIBANEOGIASIACRAETHBTHIOEYGTHCNGXAEXYUIEAOOEANHYNGMIAHJFPRFIAGSIAGSPEODDMBFIAXNTHNEU"
+  },
+  {
+    "page": 28,
+    "method": "double_add_xor",
+    "params": {
+      "rot1": 10,
+      "off1": 20,
+      "rot2": 90,
+      "off2": 5
+    },
+    "score": 130.5,
+    "text": "OEJNGOEEEANLYXSJOEIBANEOGIASIACRMTHBTHIOEYGTHCNGXMXYUIEAOOEANHYIAMIAHJFPRFIAGSIAGSPEONGDMBFFXNTHNEUW"
+  },
+  {
+    "page": 28,
+    "method": "double_xor_xor",
+    "params": {
+      "rot1": 80,
+      "off1": 5,
+      "rot2": 10,
+      "off2": 25
+    },
+    "score": 127.0,
+    "text": "DTHEONGWTHEYTIAITHEATHXOERNYTEADJTHEANGTHIATMYSUODEAYYMEIADUNGBYYPFXEIAEAOEIYODXIAREADEAPESAYAEIAMTH"
+  },
+  {
+    "page": 27,
+    "method": "double_xor_sub",
+    "params": {
+      "rot1": 70,
+      "off1": 10,
+      "rot2": 80,
+      "off2": 10
+    },
+    "score": 125.5,
+    "text": "JLUTTHEREEOEOTANGXMAYNEAOEFJTHOTHEGRWEAWSOXROEPWSMAEEAOETOOELTHEARBNTOLYGPEOIAMOETHIAUMNAEAEJOEIAYHO"
+  },
+  {
+    "page": 30,
+    "method": "double_add_xor",
+    "params": {
+      "rot1": 20,
+      "off1": 0,
+      "rot2": 60,
+      "off2": 25
+    },
+    "score": 124.5,
+    "text": "PATIAONDJYGBNOEEOGEARXEAPPSSFIANGRAHIAWUEACIABUTHTHJAENTPTHWTHEIAEUNEATHAEYTHIAIAWDEALLARJIULEAPATHE"
+  },
+  {
+    "page": 40,
+    "method": "double_sub_xor",
+    "params": {
+      "rot1": 80,
+      "off1": 15,
+      "rot2": 90,
+      "off2": 0
+    },
+    "score": 123.5,
+    "text": "OEWTHBAEXRFITHENEAXUCPIANGETHETHENGFFIANPHULSNGCBJFHIMYJTFNMMRBTIMHTHPTBCSXLTHEAUMFTAFNGUNGTHEAIXFXE"
+  },
+  {
+    "page": 48,
+    "method": "double_xor_xor",
+    "params": {
+      "rot1": 0,
+      "off1": 20,
+      "rot2": 20,
+      "off2": 10
+    },
+    "score": 122.5,
+    "text": "TOEJATHDWMFJSGFJPFBUTHTHENGIAOAABGOEUTIAUNGOLAEIASYAETUOEWMLXWAESFNGNGTEOEADNGNDHIFOEEATHOEBDIFOETHE"
+  },
+  {
+    "page": 29,
+    "method": "columnar_exhaustive",
+    "params": {
+      "rot": 42,
+      "off": 28,
+      "width": 12
+    },
+    "score": 121.5,
+    "text": "TOGTFOUSIBAHXLIHWEEBAOAXEETOONAOETELOHOEGESDHTHEREIIUMUTNEATEAADMAHTAHHODYIEEMHITAMTETAONEATEBJDHJEG"
+  },
+  {
+    "page": 44,
+    "method": "xor_fine",
+    "params": {
+      "rot": 77,
+      "off": 1
+    },
+    "score": 109.5,
+    "text": "THEYTHEOLYTBUTHWYNGINEODBUTHEJEOETHEOIEBTHTHTEOFLEARFWAEUBIAIAPSYOEGIEAFJOEXCHCCEARSMAEFWIANGUAEOCNH"
+  },
+  {
+    "page": 45,
+    "method": "interleaved_fine",
+    "params": {
+      "rot1": 33,
+      "rot2": 24,
+      "off": 1
+    },
+    "score": 108.5,
+    "text": "THCHXEOFOEROLTHEATNGMAEOSTGYIAOJUASEEBUNEANOEICOEHXOEXHJCEAGBSIDOETHISAEPUTTHENGCGNMUIDTHHEAOYGTIAMH"
+  },
+  {
+    "page": 29,
+    "method": "triple_interleaved",
+    "params": {
+      "rot1": 30,
+      "rot2": 30,
+      "rot3": 75,
+      "off": 25
+    },
+    "score": 108.5,
+    "text": "MIAUYRAEEAEOYIADEADUTHEAOERFPNGJRBMNDPOOEFBMTHPWTHEORJGWWIAIAAEHTHNGAEGNGGRYOUHAECEACLOEGUTHEARSEOOU"
+  },
+  {
+    "page": 48,
+    "method": "interleaved_fine",
+    "params": {
+      "rot1": 50,
+      "rot2": 20,
+      "off": 6
+    },
+    "score": 105.0,
+    "text": "BITRDYELUHFROOEEITHBEOAEENGOGFTEABUESIARTHERCAEEAIECEASOLEABFTHEOAGEOOETHDPIMJAENEAUEAREOTHEAIAEATHH"
+  },
+  {
+    "page": 47,
+    "method": "triple_interleaved",
+    "params": {
+      "rot1": 45,
+      "rot2": 90,
+      "rot3": 45,
+      "off": 10
+    },
+    "score": 104.5,
+    "text": "IAEDIUNDBTHESOIAJIATHEWNGTHENMBRDSSFEAAXWCXOOESIAOLMNRBLSTHRDEOBLIOEEACIWHDTHTHATNHEASIMAEJEACLLDUBH"
+  },
+  {
+    "page": 29,
+    "method": "pos_offset_mod3",
+    "params": {
+      "rot": 10,
+      "base_off": 20,
+      "prime": 3
+    },
+    "score": 103.5,
+    "text": "FAEFUAERULEOSNRLTHEIJNGNWAEPEAFIAHOEALUHISFAEYHPFDBUTHWWGNCOEFXUCEEOXATHEREANAFRWGNGIATPUJNEORAHUSPI"
+  },
+  {
+    "page": 31,
+    "method": "pos_offset_linear",
+    "params": {
+      "rot": 65,
+      "base_off": 20
+    },
+    "score": 103.5,
+    "text": "DSSSNNGULAEIAFEOANFOADDEOEALCSIANAEEANXEADWIETHEANTHYBHCTHOEAASEIDTWNMWOAXAAETHREIEAFRPLYBAUIEADAXAC"
+  },
+  {
+    "page": 45,
+    "method": "interleaved_fine",
+    "params": {
+      "rot1": 40,
+      "rot2": 15,
+      "off": 21
+    },
+    "score": 102.0,
+    "text": "EAIAYCNPJFEAAAREAOEJWITSUFWUAETFMFENAIOEWTHISMPOEGOEXTACTEOHTHEOPBAIGHGXDDGTHPOENXHNGBAAERPTHEOHTHEM"
+  },
+  {
+    "page": 31,
+    "method": "triple_interleaved",
+    "params": {
+      "rot1": 75,
+      "rot2": 30,
+      "rot3": 90,
+      "off": 20
+    },
+    "score": 102.0,
+    "text": "SLGEOMANJIIIADEOXGEAIOEHXEAEOTHHLANDRPGBAEOEBNEATHUAATHOTHERMSCNGPYCAATHOEFETHGUCIAHLFNGPCFGFOEPANPN"
+  },
+  {
+    "page": 27,
+    "method": "triple_interleaved",
+    "params": {
+      "rot1": 30,
+      "rot2": 30,
+      "rot3": 15,
+      "off": 20
+    },
+    "score": 101.5,
+    "text": "ASXCPUGREOBOSRCHEAEWPIBXENFLHBEAIAHFPAXBUFHPRDCEANGOLEAECEATHEREIYTHEAWRENFOLWCAEAEACTHMAUJXSYMANOEX"
+  },
+  {
+    "page": 41,
+    "method": "triple_interleaved",
+    "params": {
+      "rot1": 45,
+      "rot2": 75,
+      "rot3": 60,
+      "off": 20
+    },
+    "score": 101.0,
+    "text": "LHNIAETOECFMPYLEEAMAEOJMGNGMSEDREAPEATHEREATHOEPITRBOAEOYAJYXHERWTHXUHEOIWHOEEAUJNOEFEANGCWTHTMDTHIA"
+  },
+  {
+    "page": 45,
+    "method": "interleaved_fine",
+    "params": {
+      "rot1": 33,
+      "rot2": 15,
+      "off": 1
+    },
+    "score": 100.5,
+    "text": "THEHAEEOROELOSTHATDMTHEOUTGYLONGUWSIENUSEAPOEOECGHROEYHCCSGWSEADOTHHSUPEATCEXCOENPUCDEOHSOAGOEIAEAHN"
+  },
+  {
+    "page": 48,
+    "method": "interleaved_fine",
+    "params": {
+      "rot1": 42,
+      "rot2": 27,
+      "off": 2
+    },
+    "score": 100.5,
+    "text": "PPTHTHEDJXWMSHXIDRNEOHEONELUWSOEMLIAITOWBAEACHRAEATHENFHTFUEAUXTHEFYRPOEAEOYWCHAEMIAEOFTHXLETCCTOEOD"
+  },
+  {
+    "page": 44,
+    "method": "triple_interleaved",
+    "params": {
+      "rot1": 0,
+      "rot2": 60,
+      "rot3": 30,
+      "off": 20
+    },
+    "score": 100.5,
+    "text": "THEATHEACBISSPOETAEOECYAETHENGIATHYGURNFGNGEEOATTHLIEAERLEOAETHOEPAECEATHOERHYOCWEATHPLGGIAPTEALWEON"
+  },
+  {
+    "page": 27,
+    "method": "pos_offset_mod7",
+    "params": {
+      "rot": 10,
+      "base_off": 1,
+      "prime": 7
+    },
+    "score": 100.5,
+    "text": "MIALLTYTIAEABUTHISIADLLOXIUIACMUWWTHWEACYTHGTLXYGAERXOECAOLCADDFEOPUTNCTHXOEONGSOOENGCJJAEONGTHJYCRP"
+  },
+  {
+    "page": 40,
+    "method": "xor_fine",
+    "params": {
+      "rot": 33,
+      "off": 15
+    },
+    "score": 100.0,
+    "text": "TLMAEEIAHRTHISBLOEITSXTHTHRTHOJJLINMTHEONDAPWACIJNPOEMYJTHESPIAIANUIBHNIEYWITHEYEASEAJECCNJGFBFLGIAJ"
+  },
+  {
+    "page": 28,
+    "method": "triple_interleaved",
+    "params": {
+      "rot1": 90,
+      "rot2": 60,
+      "rot3": 15,
+      "off": 0
+    },
+    "score": 100.0,
+    "text": "DTHARCHROEUDETJDTHLYEAYCLOBPTBWPAEOGEAERAEXDWAETHEAEOIATHANINHFOEMONGIAIATHROEBTEITHBMHLTHXNGOGNGMTU"
+  },
+  {
+    "page": 44,
+    "method": "triple_interleaved",
+    "params": {
+      "rot1": 0,
+      "rot2": 15,
+      "rot3": 75,
+      "off": 20
+    },
+    "score": 100.0,
+    "text": "THEATHEATOEITHIPSGAERCYTDELETHSWULEOFIPEPJTJOEITGRBEAAEFIAPRTHEAPYRAIOTTHEASRLREOIADCEACHEOIRETHPULM"
+  }
+]

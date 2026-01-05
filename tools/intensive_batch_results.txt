@@ -1,0 +1,274 @@
+INTENSIVE BATCH RESULTS (All rotation+offset combinations)
+======================================================================
+
+
+======================================================================
+PAGE 29 - Best Score: 101
+======================================================================
+Operation: xor
+Rotation: 6, Offset: 17
+Words: THE(9), AN(1), BE(1), IS(2), TO(1), OF(2), IN(3), HE(11)
+Text: IATHEACHTHEOOERCFINGDBHEOCEATUSOEHEOXUFEOMNGTENGEOGIEOAEUOMUEATHMJLEOCSTDTHIAPSAETHWEOFFLETDTHEOEOJFSMNNGXOEXTTPFUDNGHATHEXRWXUSTHNTHEWUSRFILTHEOFURPARJFTHAEMMTMCJHTHTHFUAEMBEEAUSMOOEEAEAWFINGEADAJNUWXGNGELCUHOSOEEAWIAEOGUGUEAUTHGMXISWYINGLJIUCMFWAEXDTOEYIHISUFFURCUEARUAREANGFEBFWMJLEAWUTHENHSDAESDBXMOEJIAPXCBMLOETHTHTHAEFSUUNGXETHEFNGIMBDCOTHTHEAUIB
+
+All results for page 29:
+  Score=101, Op=xor, Rot=6, Off=17
+  Score=88, Op=xor, Rot=53, Off=18
+  Score=83, Op=sub, Rot=43, Off=16
+  Score=79, Op=xor, Rot=20, Off=9
+  Score=79, Op=xor, Rot=72, Off=9
+  Score=78, Op=xor, Rot=9, Off=24
+  Score=77, Op=xor, Rot=76, Off=22
+  Score=76, Op=xor, Rot=42, Off=9
+  Score=75, Op=xor, Rot=2, Off=8
+  Score=73, Op=xor, Rot=8, Off=24
+
+======================================================================
+PAGE 47 - Best Score: 101
+======================================================================
+Operation: xor
+Rotation: 52, Offset: 16
+Words: THE(8), THAT(1), AN(3), IT(1), OF(4), IN(1), HE(9), WE(2)
+Text: UEJNRYODCEOEACFUFNGJDINJUEALRUAFTFTHEIDJOYGOETHEANTHEIAUOGSHEOTNHOELEATHEOSUTHCTHMEONCBTHPEORFIOGIAABTNFEANYPCEAEAIATLOEJSNGYEFEANGTHATHIADTGEOXMTHGURUTHLIHCJOETHROFAWEOMUEONNCOMMXEOIEEOUXRFXFTHOEXUXXOEAESWBDPNGCUIITHROEMNTHEEDOUNGNUGJNUTEOIAREAIPEIAOHHARUPCEAELAEFMFLNGEOFFFPNGNFCWEOTHEOCTHFEOWBJNOFJCRTHEAOFFIAPOEYTHIMDAENGEETHTHXURYUUCOTHDEHTHEO
+
+All results for page 47:
+  Score=101, Op=xor, Rot=52, Off=16
+  Score=82, Op=xor, Rot=84, Off=26
+  Score=78, Op=xor, Rot=65, Off=24
+  Score=76, Op=xor, Rot=1, Off=22
+  Score=75, Op=sub, Rot=1, Off=21
+  Score=73, Op=xor, Rot=70, Off=23
+  Score=72, Op=xor, Rot=10, Off=23
+  Score=72, Op=xor, Rot=16, Off=18
+  Score=71, Op=xor, Rot=54, Off=10
+  Score=71, Op=xor, Rot=62, Off=6
+
+======================================================================
+PAGE 28 - Best Score: 99
+======================================================================
+Operation: xor
+Rotation: 34, Offset: 14
+Words: THE(8), THEY(1), AN(1), BE(1), IT(1), IS(1), TO(1), OF(1)
+Text: EAUFOHFLAUTHJEOLYOURPIEOTHEJAEWUEOLYAEEOFISSNSTHOEOEEODOEWMHBIAAENEOTHNGLRRINGXYOAEGFLSEFEODFPHUJLNGIAWEAFPGFAFEAIAEFJLJAIALCXFAETNGUEAREOUTHSIUBJIPPGOIRTHEYULNHTNUUDTOEEAFGWUHXTHEOBEODUAESOSIGLIARORIGNGSREAEOOHGSNIODXDGUMCDXRIEAGTHEANRWIRPYDAPLTHEAJEADWRNGFYTHPECCFETHITHEAOEEAUYHJIJEJTHJLTHUAEWDTHEABLOEJTHTHPTHIAAEETHTHEOHATHWSDCTHYJFLNGG
+
+All results for page 28:
+  Score=99, Op=xor, Rot=34, Off=14
+  Score=90, Op=xor, Rot=14, Off=6
+  Score=81, Op=xor, Rot=17, Off=14
+  Score=79, Op=xor, Rot=15, Off=16
+  Score=78, Op=xor, Rot=11, Off=10
+  Score=75, Op=xor, Rot=86, Off=5
+  Score=74, Op=xor, Rot=66, Off=12
+  Score=72, Op=xor, Rot=25, Off=11
+  Score=72, Op=xor, Rot=54, Off=1
+  Score=72, Op=xor, Rot=75, Off=15
+
+======================================================================
+PAGE 31 - Best Score: 92
+======================================================================
+Operation: xor
+Rotation: 70, Offset: 17
+Words: THE(8), AN(3), IT(2), TO(1), OF(2), IN(1), HE(9), OR(1)
+Text: GXTHUEANGPWHARBFFEEAHSNBOEOFWSTHEUGEIUOEBHCYTHEFNGPAETHFUAENGCCTRFUERNGIAOECNGFORBTHEAEOFTHIAOUEAHEOGTHTOELJREAJHHATWHIAEODDHIANIAUUMLHOPMNGUFNIAWHLAEAEOEDMDFFAERUEARFTHEAEARFRGEAEITHILOERPTFTAEDIAMTAEJDXIETHRFFITHBFTHEANGAIOEUFRADFNGGAEJIAEAXUUHNGREAYFYMTHJLBUWWLPCGDROILENFJTHEEADYTHEIAINGCHDOJAYOEIABMPOOETHCTHTHLAEMAETHIAPTHTHEOXIAEONEAMOEEAOUXTBLAE
+
+All results for page 31:
+  Score=92, Op=xor, Rot=70, Off=17
+  Score=90, Op=xor, Rot=36, Off=1
+  Score=80, Op=sub, Rot=85, Off=12
+  Score=76, Op=xor, Rot=1, Off=13
+  Score=73, Op=xor, Rot=4, Off=15
+  Score=73, Op=sub, Rot=58, Off=3
+  Score=72, Op=xor, Rot=20, Off=16
+  Score=72, Op=xor, Rot=35, Off=20
+  Score=71, Op=xor, Rot=0, Off=20
+  Score=70, Op=sub, Rot=86, Off=0
+
+======================================================================
+PAGE 45 - Best Score: 92
+======================================================================
+Operation: xor
+Rotation: 75, Offset: 2
+Words: THE(8), AN(4), BE(2), IT(1), IS(2), TO(1), OF(3), HE(8)
+Text: MYFTHSUAEOYIPPOUANGGAESCTHEOTHNTHEOEFBEOCJOETIACUTHEOGTNPFNEAEORHAFUIATHIEADXYRAUTHHCTHUULTHTHNOETHEIANTDEALDIAYFEOWFNGXEOFUIADDTHUCIATYTHITHEONCTHNGEIMWXEEAPCBEOUTEANWUNGFDRSIUTHUEGFTHEODIAPJCXLUMEOWFNGUMTHTHEAOFEONGOEHMTSWJOHNGPTOABIBUNGTTFMUTHONGMWBRCWPFTHOEOEUENEANNGUEOWLJEAEAGOEAEEOFIAAFMTHTHHAEOISPADJHISPAETHEOYEWOENGBOTHNUPPEAUEOWOHUMEALYGAE
+
+All results for page 45:
+  Score=92, Op=xor, Rot=75, Off=2
+  Score=88, Op=xor, Rot=77, Off=5
+  Score=82, Op=xor, Rot=57, Off=5
+  Score=80, Op=xor, Rot=60, Off=17
+  Score=79, Op=xor, Rot=30, Off=17
+  Score=79, Op=xor, Rot=45, Off=3
+  Score=79, Op=xor, Rot=92, Off=26
+  Score=78, Op=xor, Rot=89, Off=15
+  Score=77, Op=xor, Rot=85, Off=11
+  Score=76, Op=xor, Rot=24, Off=17
+
+======================================================================
+PAGE 44 - Best Score: 86
+======================================================================
+Operation: xor
+Rotation: 36, Offset: 24
+Words: THE(7), THEY(1), AN(3), BE(1), IT(1), TO(3), OF(2), HE(7)
+Text: NGUFEOAENSEYYTHEOXJETHEOEOEODTHCOEEJFWWEFAFLJJAEGIANTHEYXABTHEOXAFUHJTIAROMNGWAEYETGAUBPFMDSEAFLFWBYNNNGLRFDELYAEIAAHTTEJIIAUTHOAEOEFFSTHAHDOEDUHRATXSRIANJTEAPEANFCTHITHFLOARFDTOEIEAEAIOEUPAEWGPJAEAEFBATHAEAEOFDMPGUOEUMTOOELCPPJIATHEOEOSYBUAEIAUCOTMTYHOEOFTOERUOETHEEOTHEOOTBHUTHCCWNIAEOBEOAYBGUNGLOENSTDXXTHHLIACSFUAIACXBJFFGTHLYEAPYATHMTIXTGEO
+
+All results for page 44:
+  Score=86, Op=xor, Rot=36, Off=24
+  Score=77, Op=xor, Rot=87, Off=20
+  Score=75, Op=xor, Rot=66, Off=8
+  Score=74, Op=xor, Rot=6, Off=16
+  Score=74, Op=xor, Rot=93, Off=7
+  Score=72, Op=xor, Rot=13, Off=26
+  Score=72, Op=xor, Rot=56, Off=7
+  Score=71, Op=xor, Rot=64, Off=9
+  Score=70, Op=sub, Rot=47, Off=2
+  Score=68, Op=xor, Rot=4, Off=5
+
+======================================================================
+PAGE 48 - Best Score: 86
+======================================================================
+Operation: xor
+Rotation: 5, Offset: 15
+Words: THE(8), AN(1), IT(1), IS(1), TO(1), OF(3), HE(10), WE(1)
+Text: IAFHLTHEATHBSTHIUBIAEOAEYIJYEAOEEOIAFHPNIMTHMOOEUSUEORWAEOFBCAESURMTHGATHRPCODOEPPDISOETHTLAENDAERMXBOELCHCUTHTEAPIALFUWUPGOECRPTJFEOOXNOETHEOWCEOLAOOEEOCFEATMOEBURYUTHJWFNGHNUCOMOYFTHOEAPBWCMDNGTHYJTHEAXCNFCLXUUGDSTOXAESDNGHNGWANGUTHOFNCCPAEOECUSUNPAMSNGTHTHBMHEOBXWCFUEOATHAEOYIATHIAITWOETHEOSBUOFFETEOCEACOETEAWEATHEHEAATHEODFPXXSETHEAWAESTHEOIAC
+
+All results for page 48:
+  Score=86, Op=xor, Rot=5, Off=15
+  Score=85, Op=xor, Rot=27, Off=23
+  Score=85, Op=xor, Rot=35, Off=8
+  Score=80, Op=xor, Rot=78, Off=7
+  Score=78, Op=xor, Rot=2, Off=13
+  Score=78, Op=xor, Rot=26, Off=20
+  Score=78, Op=xor, Rot=45, Off=21
+  Score=76, Op=xor, Rot=71, Off=25
+  Score=76, Op=xor, Rot=82, Off=9
+  Score=73, Op=xor, Rot=11, Off=28
+
+======================================================================
+PAGE 52 - Best Score: 84
+======================================================================
+Operation: xor
+Rotation: 21, Offset: 11
+Words: TRUTH(1), THE(4), AND(1), AN(3), BE(1), IT(1), IS(1), OF(2)
+Text: GULTHINGTRUTHGYTHJOECJCFOEMBOEYXURIAEOFMALIFMFFTHSNTHEAAEADOEIUNGTHTFTHGANDTIDJOEOEGOEOEEANIAFFSJWPEATHFMNGBURHDOFBRUXLWAEUUEORRFIWCCACWOOMPIAOTHGXTHJCFWLTHEOTCEAUCEAXJWLIABMXOLFIIYOEIUSSFFNTHFOEEORSOEFAEDAAEFDIADBOUXYDMHETIATHTHCXTHOEXGITHWXBTHESIAMUUEARTHXTHOEFOAEURFEBEAADYCEORTSFNGNGWNUOUXGOERTHTHEADYOEFAEBUAISONUEANGBYFNGCSBDC
+
+All results for page 52:
+  Score=84, Op=xor, Rot=21, Off=11
+  Score=79, Op=xor, Rot=69, Off=27
+  Score=78, Op=xor, Rot=34, Off=22
+  Score=76, Op=sub, Rot=18, Off=18
+  Score=76, Op=xor, Rot=92, Off=11
+  Score=75, Op=xor, Rot=60, Off=15
+  Score=74, Op=xor, Rot=45, Off=3
+  Score=73, Op=xor, Rot=84, Off=19
+  Score=72, Op=xor, Rot=4, Off=3
+  Score=71, Op=xor, Rot=16, Off=3
+
+======================================================================
+PAGE 30 - Best Score: 83
+======================================================================
+Operation: xor
+Rotation: 12, Offset: 6
+Words: THE(7), THEY(1), AN(1), TO(3), OF(1), HE(7), WE(2), OR(1)
+Text: UIANGMMDDIAOETHYWIAMAEFTUOFROEWGCWEPEAEAEPOEUCUSJRWEOCPMMEABUTHEOHUAEGMNIATHEYMOYIAEUIBTHHJIARGNGOCJYNMAEIACAEOEMAAETOEEOIMIAFGFFWFETHTHBOETEORRUNGRAETHTXIWFAEIATHTHEOTXRCYUTTHEOGTJTHRFDTHCONTHUAETHEEONBXYPFEAXMSFHRECLNGFBIAUWFADIAGNMOTHNGFHAMBMNGRYEODTHEAUJLPSGNJUTOCHBPMEUUFJOCNGUFTHEXRTONOAEEAXNMNGMEUPDLIAUIADGOEIAHUARXEDTWAW
+
+All results for page 30:
+  Score=83, Op=xor, Rot=12, Off=6
+  Score=78, Op=xor, Rot=0, Off=17
+  Score=76, Op=xor, Rot=78, Off=8
+  Score=71, Op=xor, Rot=49, Off=2
+  Score=70, Op=xor, Rot=17, Off=18
+  Score=70, Op=xor, Rot=19, Off=1
+  Score=70, Op=xor, Rot=23, Off=28
+  Score=70, Op=xor, Rot=28, Off=3
+  Score=68, Op=xor, Rot=9, Off=26
+  Score=68, Op=xor, Rot=29, Off=18
+
+======================================================================
+PAGE 27 - Best Score: 80
+======================================================================
+Operation: xor
+Rotation: 34, Offset: 5
+Words: THE(6), THIS(1), THEY(1), AN(2), IT(1), IS(1), TO(2), IN(2)
+Text: IANGDUTHPETHEYEATHFOEEONGJNUYRNGNAETHUPAYTHSRUOENFIAFTHECJYUIAOEEITHTHBMIAAEAEFJEBMCWXJJNNNLNGPWIOSNGAEDNREOTRTHFDPUOEDLETUMONOEIATOESWOEUCTFIRAEAEJSCHWINGEANEAFSTHEAYAEEAEAXGTTHFBTHISXDAAPSSHFGSTEEOIIAEAEOXWIXEOIFAEWAOTOEAETHEOMGUXFAELJPTHENGNBOEEACTHEAEFUFLIAILSDMLSDNAECNGDMNTTHIAEATHNGGRPPINGBBOIA
+
+All results for page 27:
+  Score=80, Op=xor, Rot=34, Off=5
+  Score=76, Op=xor, Rot=66, Off=7
+  Score=74, Op=xor, Rot=0, Off=6
+  Score=74, Op=xor, Rot=60, Off=1
+  Score=72, Op=sub, Rot=12, Off=10
+  Score=71, Op=xor, Rot=16, Off=1
+  Score=69, Op=xor, Rot=26, Off=0
+  Score=65, Op=sub, Rot=69, Off=22
+  Score=64, Op=sub, Rot=18, Off=5
+  Score=64, Op=xor, Rot=20, Off=14
+
+======================================================================
+PAGE 46 - Best Score: 80
+======================================================================
+Operation: sub
+Rotation: 3, Offset: 6
+Words: THE(6), THEY(2), AN(1), IS(1), TO(2), OF(1), IN(2), HE(6)
+Text: SOXHNBAEWEOAEFFJAERROEIAERAEOEISNGEATHEAIDPGHAEAPAOEUMEXLMUEAPAEONGTHOETAPOEJFEAJTEYTHEYINGRTHEOWPTSUUEOUOEFSJTODDTHEATOEWXEAXTHWMUNHLHINXNCLTNNGOEFFLMMJXIWXEOEOGEJPEODLNGUGYYOEGJMTJIXMDYHTHEYGUSNAEOJCGNPEOBOEGYUIFPAEOELMHCGRFEEAXEAPYPEAOXCMSPPYEOOEFNGOCJBCTXANGRTEYXTSNGSBDTTHEMSIAMAEAENGUEAGXFATAEAAECNOFNGATWTSEFAEAONGNPLFDCRMTGRD
+
+All results for page 46:
+  Score=80, Op=sub, Rot=3, Off=6
+  Score=79, Op=xor, Rot=1, Off=14
+  Score=76, Op=xor, Rot=92, Off=22
+  Score=74, Op=xor, Rot=70, Off=4
+  Score=73, Op=xor, Rot=1, Off=11
+  Score=72, Op=xor, Rot=85, Off=2
+  Score=71, Op=xor, Rot=52, Off=21
+  Score=70, Op=xor, Rot=72, Off=18
+  Score=70, Op=xor, Rot=76, Off=14
+  Score=69, Op=xor, Rot=48, Off=21
+
+======================================================================
+PAGE 41 - Best Score: 79
+======================================================================
+Operation: xor
+Rotation: 30, Offset: 2
+Words: THE(6), THAT(1), WITH(1), AN(1), IT(3), TO(1), HE(6), OR(1)
+Text: BUTHEOPAEABHMTHTOEIAEFFNGFNTEABMUUJIHNGYIFIGATHIAGFIBMXBUSAYUUDASJEUBFTHEORIAXNEAIITHCHIYIAIAXNCWWURPHYFDCXGCHYNYUNEMJJUDRBCIAIAFIDFWFEHTHEOECDTHDIATNGAEDBXNITBRLIBUPWHCTHEONGOEOGNGJYADSOENGARTHWITHPYDDEAWTAEIRPOWTHEAAEANGUNGFOHNTHATHEOSDGPFTHJOOEBTHMUGEAMJGEEONGOTHTHHTHAE
+
+All results for page 41:
+  Score=79, Op=xor, Rot=30, Off=2
+  Score=76, Op=sub, Rot=21, Off=9
+  Score=76, Op=xor, Rot=69, Off=12
+  Score=70, Op=xor, Rot=49, Off=15
+  Score=69, Op=sub, Rot=40, Off=1
+  Score=64, Op=sub, Rot=5, Off=11
+  Score=64, Op=xor, Rot=57, Off=5
+  Score=64, Op=xor, Rot=66, Off=26
+  Score=62, Op=xor, Rot=15, Off=16
+  Score=62, Op=sub, Rot=38, Off=2
+
+======================================================================
+PAGE 40 - Best Score: 70
+======================================================================
+Operation: xor
+Rotation: 24, Offset: 22
+Words: THE(7), AN(1), IT(1), OF(2), HE(9), OR(1)
+Text: THJHEOICEOHTHIXFBTHDETHEALGOEOTERTHETBMDEAGAEFATLCOJTHEOAEPAEPRWOFXUUEEAUFETHDXTFAEBHTHEFACIANPRUTHEARUEIIAXJHHROECFUCEAPAAEEAWLNJTHEDUAXJGFNGNGMUJYBJATHEOGOEROESMPLFFDYTHNGXUUXTYAEAEMASMXARSSIDEAIAFWYUXJNTHMBHEOUSIAMNGWJAITTTHTHPHDUTHIAUPMACXLRTHNGGLLIADNGOFEORJFURUSYPELEOEOGEONGNBSSTH
+
+All results for page 40:
+  Score=70, Op=xor, Rot=24, Off=22
+  Score=70, Op=xor, Rot=30, Off=20
+  Score=70, Op=sub, Rot=75, Off=4
+  Score=69, Op=xor, Rot=66, Off=10
+  Score=66, Op=sub, Rot=6, Off=20
+  Score=64, Op=xor, Rot=82, Off=23
+  Score=63, Op=xor, Rot=20, Off=18
+  Score=62, Op=xor, Rot=16, Off=8
+  Score=62, Op=xor, Rot=36, Off=4
+  Score=62, Op=xor, Rot=48, Off=8
+
+======================================================================
+PAGE 15 - Best Score: 60
+======================================================================
+Operation: sub
+Rotation: 61, Offset: 3
+Words: THE(5), AN(2), IT(1), IS(2), IN(1), HE(6), WE(2), OR(1)
+Text: JHBLDHNGCJTHMAEIADFFRJWEEPHAEHHODOMTFFCITHTHEOGMNGEAFIAJNGXBAGBSNGTLAEELBWTHEOYINGSWIMEATHEATHRTAWPISLLNCMIENRNGYMTHEAEOWEAOEEOTHEOLOEMTANGEODBYHUEOGLISTEAWBNMRWHGBNGLHEOEODFEAEOTFLSDNGIEORDWBTHNANLEUOE
+
+All results for page 15:
+  Score=60, Op=sub, Rot=61, Off=3
