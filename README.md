@@ -9,9 +9,45 @@ You can watch this [great overview by Lemino](https://www.youtube.com/watch?v=I2
 
 
 # This cicada3301 Repository
-this repository contains all the important pages from the uncovering cicada wiki including all the images, videos and external links.
 
-I re-orgenized them into a ready-to-print form and saved additional images, programs and more - sorted by years.
+This repository contains comprehensive materials for researching and solving Cicada 3301 puzzles, including all important pages from the Uncovering Cicada wiki, images, tools, and analysis.
+
+---
+
+## 📁 Repository Structure (Reorganized January 2026)
+
+### Primary Sections
+
+| Section | Description |
+|---------|-------------|
+| [**LiberPrimus/**](LiberPrimus/) | 🔓 **The Liber Primus manuscript** - 75 pages organized individually with images, rune text, and analysis per page |
+| [**OtherCicadaPuzzles/**](OtherCicadaPuzzles/) | All other Cicada 3301 puzzles (2012-2017) |
+
+### Liber Primus Quick Links
+- [Master Solving Document](LiberPrimus/MASTER_SOLVING_DOCUMENT.md) - Proven methodology
+- [Gematria Primus Alphabet](LiberPrimus/GEMATRIA_PRIMUS.md) - 29-character cipher
+- [Page 57 - The Parable](LiberPrimus/pages/page_57/) - ✅ SOLVED (Plaintext)
+- [Page 56](LiberPrimus/pages/page_56/) - ✅ SOLVED (Prime shift)
+
+### Other Puzzles Quick Links
+- [2012 Puzzle](OtherCicadaPuzzles/2012/) - ✅ SOLVED
+- [2013 Puzzle](OtherCicadaPuzzles/2013/) - ✅ SOLVED
+- [2014 Other](OtherCicadaPuzzles/2014_other/) - Onion sites
+- [2015-2017](OtherCicadaPuzzles/) - Messages & announcements
+
+---
+
+## 🔐 Liber Primus Status
+
+| Status | Count | Pages |
+|--------|-------|-------|
+| ✅ Solved | 2 | 56, 57 |
+| 🔄 Work in Progress | 5 | 1-5 (decryption found, interpretation ongoing) |
+| ❌ Unsolved | 68 | 0, 6-55, 58-74 |
+
+---
+
+## 📚 Legacy Links (Original Structure)
 
 [2012 puzzle](/2012) &nbsp;&nbsp;&nbsp;&nbsp; [[assets]](/assets/2012)</br>
 [2013 puzzle](/2013) &nbsp;&nbsp;&nbsp;&nbsp; [[assets]](/assets/2013)</br>
@@ -22,13 +58,7 @@ I re-orgenized them into a ready-to-print form and saved additional images, prog
 
 [More Wiki Pages](/EXTRA%20WIKI%20PAGES)
 
-
-# assets
-All the original images and files can be found in [assets/](/assets)
-
-# Media Coverage and old sites
-All old sites and media coverags can be found in [archive/](/Archive)
-
+---
 
 # Credits and Links
 The credit for the articles, images, code and more are to the cicada solvers community from over the years and to the 3301 organization.
