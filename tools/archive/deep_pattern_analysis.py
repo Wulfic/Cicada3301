@@ -1,443 +1,277 @@
 #!/usr/bin/env python3
 """
-Deep pattern analysis - looking for structural patterns that might reveal the key.
+DEEP PATTERN ANALYSIS
+=====================
 
-Key observations from previous analysis:
-1. Gematria+ gives IoC ~1.79 with 127 "THE" appearances
-2. Offset -200 (≡3 mod 29) improves all pages to IoC 1.4-1.57
-3. Page 18 is already decrypted ("PARABLE...")
-
-New approaches:
-1. Look at word boundary patterns
-2. Analyze repeated sequences (possible cribs)
-3. Try using the solved "PARABLE" text as a running key
-4. Look for acrostics or other structural patterns
+Look for structural patterns in our decryptions that might reveal
+the underlying cipher mechanism.
 """
 
-import sys
-sys.path.insert(0, 'C:/Users/tyler/Repos/Cicada3301')
-
-from collections import Counter, defaultdict
+import numpy as np
+from pathlib import Path
 import re
+from collections import Counter
 
-# Rune alphabet and mappings
-RUNES = ['F', 'U', 'TH', 'O', 'R', 'C', 'G', 'W', 'H', 'N', 'I', 'J', 'EO', 'P', 'X', 
-         'S', 'T', 'B', 'E', 'M', 'L', 'NG', 'OE', 'D', 'A', 'AE', 'Y', 'EA', 'IO']
-
-GEMATRIA = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 
-            73, 79, 83, 89, 97, 101, 107, 113, 127, 149]  # Consecutive primes (first 29)
-
-# Actually use the correct primes from the community data
-GEMATRIA = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 
-            71, 73, 79, 83, 89, 97, 101, 103, 107, 109]
+RUNES = 'ᚠᚢᚦᚩᚱᚳᚷᚹᚻᚾᛁᛂᛇᛈᛉᛋᛏᛒᛖᛗᛚᛝᛟᛞᚪᚫᚣᛡᛠ'
+LETTERS = ['F', 'U', 'TH', 'O', 'R', 'C', 'G', 'W', 'H', 'N', 
+           'I', 'J', 'EO', 'P', 'X', 'S', 'T', 'B', 'E', 'M', 
+           'L', 'NG', 'OE', 'D', 'A', 'AE', 'Y', 'IA', 'EA']
 
 RUNE_TO_IDX = {r: i for i, r in enumerate(RUNES)}
-RUNE_TO_GEM = {r: GEMATRIA[i] for i, r in enumerate(RUNES)}
+IDX_TO_LETTER = {i: l for i, l in enumerate(LETTERS)}
 
-def tokenize_runes(text):
-    """Convert text to list of rune tokens."""
-    tokens = []
-    i = 0
-    text = text.upper()
-    while i < len(text):
-        # Try digraphs first
-        if i + 2 <= len(text):
-            digraph = text[i:i+2]
-            if digraph in RUNE_TO_IDX:
-                tokens.append(digraph)
-                i += 2
-                continue
-        if text[i] in RUNE_TO_IDX:
-            tokens.append(text[i])
-            i += 1
-        else:
-            # Non-rune character (delimiter)
-            tokens.append(text[i])
-            i += 1
-    return tokens
+MASTER_KEY = np.array([11, 24, 17, 28, 10, 11, 25, 19, 9, 22, 5, 11, 3, 20, 27, 9, 3, 21, 20, 5, 
+                       20, 22, 18, 18, 24, 16, 23, 2, 23, 24, 10, 5, 28, 19, 15, 19, 0, 25, 27, 
+                       17, 2, 14, 10, 15, 8, 22, 8, 8, 27, 14, 2, 2, 19, 0, 18, 14, 28, 2, 11, 14, 
+                       5, 3, 19, 8, 16, 11, 9, 5, 1, 21, 9, 9, 9, 5, 0, 19, 25, 28, 7, 14, 14, 7, 
+                       14, 3, 26, 18, 24, 23, 19, 8, 4, 9, 16, 7, 23], dtype=np.int32)
 
-def is_rune(token):
-    return token in RUNE_TO_IDX
+def runes_to_indices(runes):
+    return np.array([RUNE_TO_IDX[r] for r in runes if r in RUNE_TO_IDX], dtype=np.int32)
 
-def shift_rune(rune, shift):
-    """Shift a rune by amount (mod 29)."""
-    idx = RUNE_TO_IDX[rune]
-    new_idx = (idx + shift) % 29
-    return RUNES[new_idx]
+def indices_to_text(indices):
+    return ''.join(IDX_TO_LETTER[i % 29] for i in indices)
 
-def gematria_shift_add(rune):
-    """Shift rune by its gematria value (ADD direction)."""
-    gem = RUNE_TO_GEM[rune]
-    idx = RUNE_TO_IDX[rune]
-    new_idx = (idx + gem) % 29
-    return RUNES[new_idx]
+def extend_key(key, length):
+    return np.tile(key, (length // len(key) + 1))[:length]
 
-def gematria_shift_sub(rune):
-    """Shift rune by negative gematria value (SUB direction)."""
-    gem = RUNE_TO_GEM[rune]
-    idx = RUNE_TO_IDX[rune]
-    new_idx = (idx - gem) % 29
-    return RUNES[new_idx]
-
-def load_pages():
-    """Load the pages from the wiki data."""
-    wiki_path = "C:/Users/tyler/Repos/Cicada3301/EXTRA WIKI PAGES/Liber Primus Ideas and Suggestions/RuneSolver.py"
-    
-    with open(wiki_path, 'r', encoding='utf-8') as f:
+def load_all_pages():
+    data_file = Path(r"C:\Users\tyler\Repos\Cicada3301\EXTRA WIKI PAGES\Liber Primus Ideas and Suggestions\RuneSolver.py")
+    with open(data_file, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    # Extract individual Page variables (Page0, Page1, etc.)
-    pages = []
-    for i in range(58):
-        pattern = rf'Page{i}\s*=\s*"([^"]*)"'
-        match = re.search(pattern, content)
-        if match:
-            pages.append(match.group(1))
-        else:
-            pages.append("")  # Empty page
-    
+    pages = {}
+    pattern = r'Page(\d+)\s*=\s*["\']([^"\']*)["\']'
+    for match in re.finditer(pattern, content):
+        page_num = int(match.group(1))
+        page_text = match.group(2)
+        runes_only = ''.join(c for c in page_text if c in RUNE_TO_IDX)
+        if runes_only:
+            pages[page_num] = runes_to_indices(runes_only)
     return pages
 
-def analyze_word_patterns(pages):
-    """Analyze word patterns across all pages."""
-    print("\n" + "="*70)
-    print("WORD PATTERN ANALYSIS")
-    print("="*70)
-    
-    all_words = []
-    for page in pages:
-        words = page.replace('.', ' ').replace('-', ' ').split()
-        all_words.extend(words)
-    
-    word_freq = Counter(all_words)
-    print(f"\nTotal words: {len(all_words)}")
-    print(f"Unique words: {len(word_freq)}")
-    print(f"\nTop 30 most common words:")
-    for word, count in word_freq.most_common(30):
-        print(f"  {word}: {count}")
-    
-    # Look at word lengths
-    word_lengths = Counter(len(w) for w in all_words)
-    print(f"\nWord length distribution:")
-    for length in sorted(word_lengths.keys()):
-        print(f"  Length {length}: {word_lengths[length]} words")
-    
-    return all_words
+# English text scoring
+COMMON_WORDS = {
+    'THE', 'OF', 'AND', 'A', 'TO', 'IN', 'IS', 'IT', 'YOU', 'THAT', 
+    'HE', 'WAS', 'FOR', 'ON', 'ARE', 'AS', 'WITH', 'HIS', 'THEY', 
+    'I', 'AT', 'BE', 'THIS', 'HAVE', 'FROM', 'OR', 'ONE', 'HAD', 
+    'BY', 'NOT', 'BUT', 'WHAT', 'ALL', 'WERE', 'WE', 'WHEN', 'YOUR',
+    'CAN', 'SAID', 'EACH', 'WHICH', 'SHE', 'DO', 'HOW', 'THEIR',
+    # Philosophical words likely in Cicada text
+    'WISDOM', 'TRUTH', 'DIVINE', 'DIVINITY', 'SOUL', 'MIND', 'LIGHT',
+    'DARKNESS', 'PATH', 'KNOWLEDGE', 'ENLIGHTEN', 'EMERGE', 'PRIME',
+    'CIRCUMFERENCE', 'INSTAR', 'PARABLE', 'BEING', 'BECOMING'
+}
 
-def analyze_repeated_sequences(text_runes, min_len=4, max_len=10):
-    """Find repeated sequences (possible cribs or cipher artifacts)."""
-    print("\n" + "="*70)
-    print("REPEATED SEQUENCE ANALYSIS")
-    print("="*70)
-    
-    # Only rune characters
-    runes_only = [r for r in text_runes if is_rune(r)]
-    rune_str = ''.join(runes_only)
-    
-    for seq_len in range(min_len, max_len + 1):
-        sequences = Counter()
-        positions = defaultdict(list)
-        
-        for i in range(len(rune_str) - seq_len + 1):
-            seq = rune_str[i:i+seq_len]
-            sequences[seq] += 1
-            positions[seq].append(i)
-        
-        repeated = [(seq, count, positions[seq]) for seq, count in sequences.items() if count >= 2]
-        repeated.sort(key=lambda x: -x[1])
-        
-        if repeated:
-            print(f"\nLength {seq_len} repeated sequences (top 10):")
-            for seq, count, pos in repeated[:10]:
-                # Calculate distances between occurrences
-                dists = [pos[i+1] - pos[i] for i in range(len(pos)-1)]
-                print(f"  {seq}: {count} times, distances: {dists[:5]}...")
+def count_word_matches(text):
+    count = 0
+    text_upper = text.upper()
+    for word in COMMON_WORDS:
+        count += text_upper.count(word)
+    return count
 
-def try_running_key_with_parable(encrypted_page, parable_text):
-    """Try using the solved PARABLE text as a running key."""
-    print("\n" + "="*70)
-    print("RUNNING KEY WITH PARABLE TEXT")
-    print("="*70)
-    
-    # Get runes from both texts
-    enc_tokens = tokenize_runes(encrypted_page)
-    enc_runes = [t for t in enc_tokens if is_rune(t)]
-    
-    key_tokens = tokenize_runes(parable_text.replace('.', '').replace(' ', ''))
-    key_runes = [t for t in key_tokens if is_rune(t)]
-    
-    print(f"Encrypted runes: {len(enc_runes)}")
-    print(f"Key runes from PARABLE: {len(key_runes)}")
-    
-    # Extend key by repeating
-    extended_key = (key_runes * ((len(enc_runes) // len(key_runes)) + 2))[:len(enc_runes)]
-    
-    # Try ADD and SUB with key
-    for direction, op in [("ADD", 1), ("SUB", -1)]:
-        result = []
-        for enc_rune, key_rune in zip(enc_runes, extended_key):
-            key_idx = RUNE_TO_IDX[key_rune]
-            enc_idx = RUNE_TO_IDX[enc_rune]
-            new_idx = (enc_idx + op * key_idx) % 29
-            result.append(RUNES[new_idx])
-        
-        result_str = ''.join(result)
-        
-        # Calculate IoC
-        freq = Counter(result)
-        n = len(result)
-        ioc = sum(f * (f-1) for f in freq.values()) / (n * (n-1)) * 29 if n > 1 else 0
-        
-        # Check for common patterns
-        the_count = result_str.count('THE')
-        and_count = result_str.count('AND')
-        
-        print(f"\n{direction} with PARABLE key:")
-        print(f"  IoC: {ioc:.4f}")
-        print(f"  THE count: {the_count}, AND count: {and_count}")
-        print(f"  First 100 chars: {result_str[:100]}")
-
-def try_fibonacci_gematria(encrypted_runes):
-    """Try Fibonacci-based gematria shifts."""
-    print("\n" + "="*70)
-    print("FIBONACCI-BASED GEMATRIA SHIFT")
-    print("="*70)
-    
-    runes = [r for r in tokenize_runes(encrypted_runes) if is_rune(r)]
-    
-    # Generate Fibonacci sequence
-    fib = [1, 1]
-    while len(fib) < len(runes):
-        fib.append(fib[-1] + fib[-2])
-    
-    for direction, op in [("ADD", 1), ("SUB", -1)]:
-        result = []
-        for i, rune in enumerate(runes):
-            shift = fib[i] % 29
-            idx = RUNE_TO_IDX[rune]
-            new_idx = (idx + op * shift) % 29
-            result.append(RUNES[new_idx])
-        
-        result_str = ''.join(result)
-        freq = Counter(result)
-        n = len(result)
-        ioc = sum(f * (f-1) for f in freq.values()) / (n * (n-1)) * 29 if n > 1 else 0
-        
-        print(f"\nFibonacci {direction}:")
-        print(f"  IoC: {ioc:.4f}")
-        print(f"  First 100 chars: {result_str[:100]}")
-
-def try_totient_based_shift(encrypted_runes):
-    """Try Euler's totient function based shifts."""
-    print("\n" + "="*70)
-    print("EULER TOTIENT BASED SHIFT")
-    print("="*70)
-    
-    def totient(n):
-        result = n
-        p = 2
-        while p * p <= n:
-            if n % p == 0:
-                while n % p == 0:
-                    n //= p
-                result -= result // p
-            p += 1
-        if n > 1:
-            result -= result // n
-        return result
-    
-    runes = [r for r in tokenize_runes(encrypted_runes) if is_rune(r)]
-    
-    for direction, op in [("ADD", 1), ("SUB", -1)]:
-        result = []
-        for i, rune in enumerate(runes):
-            gem = RUNE_TO_GEM[rune]
-            tot = totient(gem) % 29
-            idx = RUNE_TO_IDX[rune]
-            new_idx = (idx + op * tot) % 29
-            result.append(RUNES[new_idx])
-        
-        result_str = ''.join(result)
-        freq = Counter(result)
-        n = len(result)
-        ioc = sum(f * (f-1) for f in freq.values()) / (n * (n-1)) * 29 if n > 1 else 0
-        
-        print(f"\nTotient {direction}:")
-        print(f"  IoC: {ioc:.4f}")
-        print(f"  First 100 chars: {result_str[:100]}")
-
-def try_prime_index_gematria(encrypted_runes):
-    """
-    Key insight: Page 56 formula uses -(prime + 57) mod 29
-    What if instead of gematria value, we use the INDEX in the prime sequence?
-    """
-    print("\n" + "="*70)
-    print("PRIME INDEX GEMATRIA (Page 56 variant)")
-    print("="*70)
-    
-    # Prime indices: F=0 (2 is 0th prime), U=1 (3 is 1st), etc.
-    PRIME_INDEX = {r: i for i, r in enumerate(RUNES)}
-    
-    runes = [r for r in tokenize_runes(encrypted_runes) if is_rune(r)]
-    
-    # Try various constants similar to 57 in Page 56 formula
-    for const in [0, 13, 29, 47, 56, 57, 58, 59, 83, 101]:
-        for direction, op in [("SUB", -1), ("ADD", 1)]:
-            result = []
-            for i, rune in enumerate(runes):
-                prime_idx = PRIME_INDEX[rune]
-                # Formula: -(prime_index + constant) mod 29
-                shift = op * (prime_idx + const)
-                idx = RUNE_TO_IDX[rune]
-                new_idx = (idx + shift) % 29
-                result.append(RUNES[new_idx])
-            
-            result_str = ''.join(result)
-            freq = Counter(result)
-            n = len(result)
-            ioc = sum(f * (f-1) for f in freq.values()) / (n * (n-1)) * 29 if n > 1 else 0
-            
-            if ioc > 1.4:  # Only show promising results
-                print(f"const={const}, {direction}: IoC={ioc:.4f}, first 60: {result_str[:60]}")
-
-def try_cumulative_gematria(encrypted_runes):
-    """
-    Try shifting each rune by the cumulative sum of previous gematria values.
-    This creates a running key effect.
-    """
-    print("\n" + "="*70)
-    print("CUMULATIVE GEMATRIA SHIFT")
-    print("="*70)
-    
-    runes = [r for r in tokenize_runes(encrypted_runes) if is_rune(r)]
-    
-    for direction, op in [("ADD", 1), ("SUB", -1)]:
-        result = []
-        cum_sum = 0
-        for rune in runes:
-            gem = RUNE_TO_GEM[rune]
-            shift = cum_sum % 29
-            idx = RUNE_TO_IDX[rune]
-            new_idx = (idx + op * shift) % 29
-            result.append(RUNES[new_idx])
-            cum_sum += gem
-        
-        result_str = ''.join(result)
-        freq = Counter(result)
-        n = len(result)
-        ioc = sum(f * (f-1) for f in freq.values()) / (n * (n-1)) * 29 if n > 1 else 0
-        
-        print(f"\nCumulative gematria {direction}:")
-        print(f"  IoC: {ioc:.4f}")
-        print(f"  First 100 chars: {result_str[:100]}")
-
-def try_differential_analysis(encrypted_runes):
-    """
-    Look at differences between consecutive runes - might reveal plaintext patterns.
-    """
-    print("\n" + "="*70)
-    print("DIFFERENTIAL ANALYSIS")
-    print("="*70)
-    
-    runes = [r for r in tokenize_runes(encrypted_runes) if is_rune(r)]
-    
-    # Calculate differences
-    diffs = []
-    for i in range(1, len(runes)):
-        idx1 = RUNE_TO_IDX[runes[i-1]]
-        idx2 = RUNE_TO_IDX[runes[i]]
-        diff = (idx2 - idx1) % 29
-        diffs.append(diff)
-    
-    diff_freq = Counter(diffs)
-    print("Difference frequencies (should be skewed for English):")
-    for diff in sorted(diff_freq.keys()):
-        print(f"  {diff:2d}: {'#' * (diff_freq[diff] // 5)} {diff_freq[diff]}")
-    
-    # In English, common transitions: E->S, T->H, A->N, etc.
-    # If encrypted, differences should be uniform; if close to plaintext, should be skewed
-
-def try_interleaved_pages(pages, page_indices):
-    """
-    Try treating multiple pages as interleaved single message.
-    """
-    print("\n" + "="*70)
-    print("INTERLEAVED PAGE ANALYSIS")
-    print("="*70)
-    
-    # Combine pages
-    combined = []
-    for idx in page_indices:
-        if idx < len(pages):
-            runes = [r for r in tokenize_runes(pages[idx]) if is_rune(r)]
-            combined.extend(runes)
-    
-    print(f"Combined {len(page_indices)} pages: {len(combined)} runes")
-    
-    # Try gematria shift on combined
-    result = []
-    for rune in combined:
-        result.append(gematria_shift_add(rune))
-    
-    result_str = ''.join(result)
-    freq = Counter(result)
-    n = len(result)
-    ioc = sum(f * (f-1) for f in freq.values()) / (n * (n-1)) * 29 if n > 1 else 0
-    
-    print(f"Gematria+ on combined: IoC={ioc:.4f}")
-    print(f"First 100 chars: {result_str[:100]}")
-
-def analyze_acrostic(pages):
-    """Look for acrostic patterns (first letter of each word/line)."""
-    print("\n" + "="*70)
-    print("ACROSTIC ANALYSIS")
-    print("="*70)
-    
-    for i, page in enumerate(pages[:5]):  # First 5 pages
-        words = page.replace('.', ' ').replace('-', ' ').split()
-        if words:
-            first_letters = []
-            for word in words:
-                tokens = tokenize_runes(word)
-                if tokens and is_rune(tokens[0]):
-                    first_letters.append(tokens[0])
-            
-            acrostic = ''.join(first_letters)
-            print(f"Page {i} word acrostic: {acrostic[:50]}...")
+def analyze_trigram_distribution(text):
+    """Analyze trigram (3-letter) distribution."""
+    trigrams = Counter()
+    for i in range(len(text) - 2):
+        trigrams[text[i:i+3]] += 1
+    return trigrams
 
 def main():
+    pages = load_all_pages()
+    
     print("="*70)
-    print("DEEP PATTERN ANALYSIS")
+    print("🔬 DEEP PATTERN ANALYSIS")
     print("="*70)
     
-    pages = load_pages()
-    print(f"Loaded {len(pages)} pages")
+    # Test: What if the key rotation is based on page number?
+    print("\n📊 TEST 1: Page-Number-Based Rotation")
+    print("-" * 60)
+    print("Testing if rotation = page_number mod 95")
     
-    # Page 18 is decrypted (PARABLE text)
-    parable_text = pages[18] if len(pages) > 18 else ""
-    print(f"\nDecrypted Page 18 (first 100 chars): {parable_text[:100]}")
+    for pg_num, pg_idx in sorted(pages.items()):
+        # Skip solved pages
+        if pg_num in [0, 54, 56, 57]:
+            continue
+        
+        # Test rotation = page_num mod 95
+        rot = pg_num % 95
+        rotated = np.roll(MASTER_KEY, rot)
+        extended = extend_key(rotated, len(pg_idx))
+        
+        # Test both XOR and subtraction
+        for op_name, op in [('sub', lambda x, k: (x - k) % 29), 
+                            ('xor', lambda x, k: (x ^ k) % 29)]:
+            decrypted = op(pg_idx, extended)
+            text = indices_to_text(decrypted)
+            word_count = count_word_matches(text)
+            if word_count >= 10:
+                print(f"  Page {pg_num}: rot={rot}, {op_name} -> {word_count} words: {text[:50]}...")
     
-    # Use Page 0 as test
-    test_page = pages[0]
-    print(f"\nTest Page 0 (first 100 chars): {test_page[:100]}")
+    # Test: What if offset is based on page number?
+    print("\n📊 TEST 2: Page-Number-Based Offset")
+    print("-" * 60)
+    print("Testing if offset = page_number mod 29")
     
-    # Run analyses
-    analyze_word_patterns(pages[:18])  # Only encrypted pages
+    for pg_num, pg_idx in sorted(pages.items()):
+        if pg_num in [0, 54, 56, 57]:
+            continue
+        
+        # Test offset = page_num mod 29
+        off = pg_num % 29
+        key = (MASTER_KEY + off) % 29
+        extended = extend_key(key, len(pg_idx))
+        
+        for op_name, op in [('sub', lambda x, k: (x - k) % 29), 
+                            ('xor', lambda x, k: (x ^ k) % 29)]:
+            decrypted = op(pg_idx, extended)
+            text = indices_to_text(decrypted)
+            word_count = count_word_matches(text)
+            if word_count >= 10:
+                print(f"  Page {pg_num}: off={off}, {op_name} -> {word_count} words: {text[:50]}...")
     
-    analyze_repeated_sequences(''.join(pages[:18]))
+    # Test: Key derived from page position in sequence
+    print("\n📊 TEST 3: Combined Page-Based Parameters")
+    print("-" * 60)
+    print("Testing rotation = page, offset = 29 - (page mod 29)")
     
-    try_running_key_with_parable(test_page, parable_text)
+    for pg_num, pg_idx in sorted(pages.items()):
+        if pg_num in [0, 54, 56, 57]:
+            continue
+        
+        rot = pg_num % 95
+        off = (29 - (pg_num % 29)) % 29
+        
+        rotated = np.roll(MASTER_KEY, rot)
+        key = (rotated + off) % 29
+        extended = extend_key(key, len(pg_idx))
+        
+        for op_name, op in [('sub', lambda x, k: (x - k) % 29), 
+                            ('xor', lambda x, k: (x ^ k) % 29)]:
+            decrypted = op(pg_idx, extended)
+            text = indices_to_text(decrypted)
+            word_count = count_word_matches(text)
+            if word_count >= 8:
+                print(f"  Page {pg_num}: rot={rot}, off={off}, {op_name} -> {word_count} words: {text[:50]}...")
     
-    try_prime_index_gematria(test_page)
+    # Test: Fibonacci positions
+    print("\n📊 TEST 4: Fibonacci-Based Key Selection")
+    print("-" * 60)
+    fib = [1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+    print(f"Using Fibonacci positions: {fib[:5]}...")
     
-    try_cumulative_gematria(test_page)
+    for pg_num, pg_idx in sorted(pages.items()):
+        if pg_num in [0, 54, 56, 57]:
+            continue
+        
+        # Use only Fibonacci positions from the key
+        fib_key = MASTER_KEY[[f % 95 for f in fib]]
+        extended = extend_key(fib_key, len(pg_idx))
+        
+        for op_name, op in [('sub', lambda x, k: (x - k) % 29), 
+                            ('xor', lambda x, k: (x ^ k) % 29)]:
+            decrypted = op(pg_idx, extended)
+            text = indices_to_text(decrypted)
+            word_count = count_word_matches(text)
+            if word_count >= 8:
+                print(f"  Page {pg_num}: fib_key, {op_name} -> {word_count} words: {text[:50]}...")
     
-    try_differential_analysis(test_page)
+    # Test: Prime positions
+    print("\n📊 TEST 5: Prime-Position Key Selection")
+    print("-" * 60)
+    primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89]
+    primes_in_range = [p for p in primes if p < 95]
+    print(f"Using prime positions: {primes_in_range[:8]}...")
     
-    analyze_acrostic(pages)
+    for pg_num, pg_idx in sorted(pages.items()):
+        if pg_num in [0, 54, 56, 57]:
+            continue
+        
+        # Use only prime positions from the key
+        prime_key = MASTER_KEY[primes_in_range]
+        extended = extend_key(prime_key, len(pg_idx))
+        
+        for op_name, op in [('sub', lambda x, k: (x - k) % 29), 
+                            ('xor', lambda x, k: (x ^ k) % 29)]:
+            decrypted = op(pg_idx, extended)
+            text = indices_to_text(decrypted)
+            word_count = count_word_matches(text)
+            if word_count >= 8:
+                print(f"  Page {pg_num}: prime_key, {op_name} -> {word_count} words: {text[:50]}...")
+    
+    # Test: Running key cipher (autokey)
+    print("\n📊 TEST 6: Autokey Cipher Variant")
+    print("-" * 60)
+    print("Testing if plaintext itself becomes part of key (autokey)")
+    
+    for pg_num, pg_idx in sorted(pages.items())[:5]:  # Test first few
+        if pg_num in [0, 54, 56, 57]:
+            continue
+        
+        # Start with master key, then use decrypted values
+        decrypted = np.zeros(len(pg_idx), dtype=np.int32)
+        key_pos = 0
+        
+        for i in range(len(pg_idx)):
+            if i < len(MASTER_KEY):
+                k = MASTER_KEY[i]
+            else:
+                k = decrypted[i - len(MASTER_KEY)]  # Use previous plaintext
+            
+            decrypted[i] = (pg_idx[i] - k) % 29
+        
+        text = indices_to_text(decrypted)
+        word_count = count_word_matches(text)
+        print(f"  Page {pg_num}: autokey -> {word_count} words: {text[:50]}...")
+    
+    # Summary analysis of top pages
+    print("\n📊 ANALYSIS: Top Scoring Pages Structure")
+    print("-" * 60)
+    
+    top_pages = [
+        (29, 'xor', 6, 17),
+        (47, 'xor', 52, 16),
+        (28, 'xor', 34, 14),
+        (52, 'xor', 21, 11),
+    ]
+    
+    for pg_num, op, rot, off in top_pages:
+        pg_idx = pages[pg_num]
+        
+        rotated = np.roll(MASTER_KEY, rot)
+        key = (rotated + off) % 29
+        extended = extend_key(key, len(pg_idx))
+        
+        if op == 'xor':
+            decrypted = (pg_idx ^ extended) % 29
+        else:
+            decrypted = (pg_idx - extended) % 29
+        
+        text = indices_to_text(decrypted)
+        
+        # Analyze structure
+        print(f"\nPage {pg_num} (rot={rot}, off={off}):")
+        print(f"  Length: {len(text)} chars")
+        
+        # Trigram analysis
+        trigrams = analyze_trigram_distribution(text)
+        most_common = trigrams.most_common(10)
+        print(f"  Top trigrams: {most_common[:5]}")
+        
+        # Letter frequency
+        letter_counts = Counter(text)
+        print(f"  Top letters: {letter_counts.most_common(5)}")
+        
+        # Check for interesting patterns
+        if 'TRUTH' in text:
+            idx = text.index('TRUTH')
+            print(f"  ⭐ TRUTH found at position {idx}")
+        if 'THE' in text:
+            the_positions = [i for i in range(len(text)-2) if text[i:i+3] == 'THE']
+            print(f"  'THE' appears at: {the_positions[:10]}...")
     
     print("\n" + "="*70)
-    print("ANALYSIS COMPLETE")
+    print("✅ DEEP ANALYSIS COMPLETE")
     print("="*70)
 
 if __name__ == "__main__":
