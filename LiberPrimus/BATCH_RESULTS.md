@@ -1,123 +1,401 @@
-# BATCH ANALYSIS REPORT
+# BATCH ANALYSIS RESULTS
+
+Date: Thu Jan  8 17:02:35 2026
 Iterations: 50000
---------------------------------------------------
+
+## Page 00
+- **Key Length:** 43
+- **Score:** 4224
+- **Preview:** ELEOATNGCYOIOORDTHIONGEALUCYAETHEAEATHEATHEOFHNTHTHEAYAEEOHENTHEATFORNGRTHEXSTHGTHEXSBYMIOWOFOJTHEAJ...
+- **Key:** [26, 17, 6, 8, 19, 27, 22, 3, 12, 28, 15, 17, 11, 0, 13, 14, 26, 9, 10, 17, 6, 13, 0, 10, 19, 5, 18, 22, 3, 22, 4, 1, 19, 28, 10, 28, 10, 27, 23, 19, 8, 7, 28]
+
+## Page 01
+- **Key Length:** 37
+- **Score:** 3543
+- **Preview:** AENGDEADNBWDABFTHEATHEDCSBXEDOBTNSRHWHEANGPXTHRTHSTHIONGTHEIOTHEEORRRTHEATRRTHTHEANTHEONGTHEATDYTHEA...
+- **Key:** [8, 0, 10, 25, 25, 27, 23, 3, 14, 23, 22, 27, 8, 20, 23, 8, 13, 23, 9, 8, 24, 8, 24, 10, 23, 9, 16, 8, 6, 6, 16, 2, 16, 20, 8, 6, 2]
+
+## Page 02
+- **Key Length:** 43
+- **Score:** 3713
+- **Preview:** EAITTTHEAMEASTHLTTTALEATHIOCGTHFJLTYIOETHEOWITHAREATHEAREONGTHEOTHEANWIWBTHEOYANTUEATHEOTHERHAESTHEA...
+- **Key:** [23, 9, 14, 21, 14, 18, 22, 21, 8, 6, 26, 3, 12, 17, 22, 18, 9, 15, 20, 1, 6, 21, 20, 25, 21, 11, 16, 22, 15, 16, 16, 0, 0, 2, 15, 4, 2, 0, 9, 22, 26, 22, 15]
+
+## Page 03
+- **Key Length:** 43
+- **Score:** 5345
+- **Preview:** ENGTHRTHAOEIAPTHTHARDANSTHIBSGPUJWDDWPAITEANIOTHYEONTOENGMUTHYEOOEDNGOEPYWTHHEAIOJEAUTHEOCONTCHHSMSE...
+- **Key:** [11, 9, 26, 17, 13, 17, 7, 24, 9, 28, 28, 4, 18, 24, 5, 5, 27, 28, 14, 24, 3, 13, 20, 6, 27, 1, 9, 11, 15, 18, 8, 24, 17, 11, 20, 10, 9, 23, 16, 11, 12, 11, 11]
+
+## Page 04
+- **Key Length:** 43
+- **Score:** 2769
+- **Preview:** THEARTHOUTHEASXDTUNGIOTHDTHETHECLTHOUTHEATHEATHEOHTHEATHEAFTHTHEATHEAHATHEAIFINGLBHEATHISATHITICIOET...
+- **Key:** [27, 18, 15, 2, 28, 28, 11, 8, 18, 26, 10, 27, 4, 0, 13, 26, 28, 9, 0, 24, 1, 18, 6, 9, 2, 24, 25, 2, 27, 14, 27, 12, 26, 3, 0, 2, 2, 11, 2, 22, 20, 15, 14]
+
+## Page 05
+- **Key Length:** 41
+- **Score:** 3252
+- **Preview:** JWJTHTHBCNGTXIOFAUTHEATHNTHEBDTHEREANGTHFTHEYONGTHTHEATHEATHEADPTHEAITHATHTHELTHTHEAPAEATHISMTHATHEM...
+- **Key:** [4, 25, 8, 16, 5, 22, 10, 2, 16, 5, 4, 18, 18, 3, 8, 20, 16, 6, 22, 15, 1, 21, 22, 16, 0, 19, 2, 0, 18, 14, 14, 19, 7, 26, 7, 14, 1, 28, 10, 3, 17]
+
+## Page 06
+- **Key Length:** 43
+- **Score:** 8345
+- **Preview:** IUIOTHUIIOIOENTDNGNTEOXTHEOXOEAEJWDIONGRIOIROEWYIOUEPIOEMIIOEMIOANGJXTHIOFCYPPILXTXINTHIENGTHEOFIOEO...
+- **Key:** [26, 25, 1, 5, 21, 26, 14, 26, 0, 28, 26, 3, 0, 28, 26, 25, 1, 26, 13, 14, 14, 26, 26, 9, 21, 3, 16, 1, 26, 11, 25, 14, 5, 10, 18, 14, 24, 14, 25, 24, 5, 3, 24]
+
+## Page 07
+- **Key Length:** 43
+- **Score:** 3688
+- **Preview:** THIOOEDIOTHEANNGIOTHEAJWTHEAOCTHEOTHRENOENGPAETHEATHEATHEAITHEATHEYTHEAINGNGLNGFOEUTHEATHETHPCTHAERE...
+- **Key:** [6, 23, 27, 8, 19, 13, 6, 21, 25, 26, 0, 18, 6, 0, 7, 22, 10, 9, 9, 26, 7, 11, 26, 1, 20, 27, 7, 8, 21, 12, 11, 18, 3, 2, 0, 17, 8, 6, 1, 25, 21, 21, 28]
+
+## Page 08
+- **Key Length:** 43
+- **Score:** 4054
+- **Preview:** CINTHEANDIUTOEHEEATHEATHTHONGIOHEACJNGGIONGEOTHJAPTHEATHESTHESTRERDAENGSIONTHEAAYAETHBTHETHXIOETWNGI...
+- **Key:** [9, 0, 5, 3, 22, 15, 10, 11, 21, 12, 16, 24, 19, 20, 17, 26, 15, 11, 2, 23, 11, 7, 20, 20, 16, 24, 22, 14, 3, 0, 27, 14, 21, 16, 16, 19, 16, 18, 20, 8, 1, 1, 26]
+
+## Page 09
+- **Key Length:** 37
+- **Score:** 1807
+- **Preview:** THEATHEATHEATHTHEATHEATHEATHEATHEATHEATHEATHEATHEATHEATHEATHTHEATHEATHEATHF...
+- **Key:** [5, 23, 19, 23, 14, 16, 25, 28, 27, 13, 5, 20, 9, 26, 3, 26, 2, 25, 2, 20, 28, 1, 17, 26, 23, 5, 15, 9, 14, 27, 8, 17, 1, 27, 21, 9, 5]
+
 ## Page 10
-* **Best Score:** 7685
-* **Key Length:** 137
-* **Key:** `[15, 12, 18, 20, 14, 19, 10, 0, 14, 2, 25, 18, 19, 19, 18, 1, 2, 19, 15, 7, 20, 5, 20, 5, 13, 5, 10, 21, 10, 8, 0, 27, 4, 8, 4, 23, 11, 28, 16, 22, 5, 13, 15, 21, 8, 15, 19, 17, 24, 12, 0, 23, 17, 19, 21, 19, 6, 8, 15, 26, 1, 23, 15, 19, 5, 10, 22, 3, 9, 25, 17, 13, 19, 24, 19, 7, 16, 23, 9, 7, 20, 28, 7, 12, 24, 8, 14, 16, 20, 12, 11, 10, 21, 6, 21, 28, 17, 22, 20, 20, 5, 10, 16, 27, 15, 6, 26, 17, 3, 21, 16, 3, 15, 3, 20, 10, 7, 25, 18, 17, 20, 10, 23, 10, 1, 8, 14, 1, 27, 7, 13, 0, 23, 14, 13, 3, 1]`
-```
-mtheooethaelengfththeaaeileodeaththetheoaethletheodeoioetheatheaththatheathileojxodeatheaiomheaththeoearaluileathetwaleaioxiothaleattheomaeathstheoauioxhtheoealleotheathealeatheoaeththaettheomuiothleo
-```
-
-
-## Page 11
-* **Best Score:** 5669
-* **Key Length:** 83
-* **Key:** `[18, 1, 10, 27, 24, 10, 14, 1, 15, 27, 1, 8, 4, 2, 26, 6, 27, 6, 20, 17, 19, 23, 25, 28, 2, 26, 12, 11, 4, 2, 3, 23, 10, 28, 27, 23, 13, 25, 3, 14, 0, 9, 12, 8, 10, 28, 14, 19, 11, 12, 17, 17, 26, 19, 28, 8, 8, 16, 20, 5, 13, 11, 1, 23, 25, 16, 4, 28, 26, 6, 3, 21, 15, 0, 4, 2, 16, 8, 3, 2, 28, 23, 14]`
-```
-nxaleowamgrhthasuiotheommmgdthreoeanutheortyealethoaelethaeoeuioeaylcaleouthaetepthwdiaeoeiothaleoleohaeththeathaleaaththwagtheaoetheoaeothethtceomjcetheofngihtheapsuiothaleocicnaleoaeuileoeopheathile
-```
-
-
-## Page 12
-* **Best Score:** 6204
-* **Key Length:** 103
-* **Key:** `[1, 4, 9, 25, 22, 26, 16, 23, 6, 27, 11, 14, 19, 18, 20, 23, 19, 11, 18, 18, 1, 8, 15, 6, 5, 18, 25, 5, 27, 22, 5, 19, 28, 9, 15, 9, 14, 11, 25, 15, 7, 1, 1, 26, 27, 10, 4, 7, 13, 4, 12, 0, 4, 22, 20, 15, 1, 13, 20, 27, 15, 28, 4, 13, 2, 25, 10, 10, 18, 19, 2, 27, 22, 2, 15, 14, 12, 24, 11, 7, 22, 4, 4, 15, 27, 4, 3, 20, 10, 5, 22, 12, 12, 8, 28, 14, 3, 17, 4, 17, 19, 10, 28]`
-```
-rganxthaeoeaewythetheooetheoauiojamujfleaeanawoethaetheoxwleoeomaleathetheantheoleangwppthaetheuileaatheathpgaleathanlethatheoeatheanmaleoatheoxlealeathypfeatheaaethieamtheaieathsleatilethegjeatheocau
-```
-
+- **Key Length:** 41
+- **Score:** 7566
+- **Preview:** DTHEAXEARENGWCXTHWDJEOTHESDTHEAEOOPTHYXNGEOTHATHEYSNGEAEEALAETHYEATHYIOEJEAEAEAGDFDCAJEATAEFRTEAHEAE...
+- **Key:** [8, 16, 21, 18, 16, 11, 14, 8, 16, 5, 16, 8, 2, 16, 5, 14, 0, 0, 19, 16, 2, 6, 18, 16, 16, 16, 7, 4, 17, 22, 16, 18, 2, 6, 8, 1, 18, 16, 22, 16, 11]
 
 ## Page 13
-* **Best Score:** 4952
-* **Key Length:** 71
-* **Key:** `[5, 19, 19, 20, 17, 3, 26, 27, 5, 18, 13, 20, 16, 7, 0, 14, 25, 18, 10, 22, 17, 18, 20, 18, 9, 15, 0, 1, 2, 24, 15, 22, 7, 21, 21, 14, 17, 8, 8, 16, 6, 4, 28, 16, 16, 20, 1, 15, 21, 8, 27, 25, 16, 7, 1, 4, 1, 18, 20, 22, 9, 16, 27, 0, 3, 19, 23, 5, 26, 21, 4]`
-```
-ueoilethleoxtheahlthaeoeixiotheallheouioleahxreonaetheocaetheaoeuthaetheacjthethaeathaetheomleaioeotheatheojythealexoethydthdwtdthcaethxwrthnthaethuleotheotheasuileaoethoethjhfleuytheathstheaiothabthe
-```
-
+- **Key Length:** 43
+- **Score:** 2882
+- **Preview:** ATHEOTHESALEANGBUOEXHREAONGTHEUXTHEARTHPDEANGTHEEATHEDGRPPDEOGUHIOTHEOIOEANTHEATEOYTHEANIOOXTHEATHPT...
+- **Key:** [20, 1, 7, 16, 18, 24, 20, 3, 4, 27, 7, 18, 2, 1, 7, 2, 5, 25, 24, 20, 20, 2, 1, 24, 16, 2, 14, 2, 4, 24, 6, 11, 17, 0, 25, 14, 27, 1, 28, 4, 5, 10, 22]
 
 ## Page 14
-* **Best Score:** 4277
-* **Key Length:** 79
-* **Key:** `[6, 20, 11, 3, 18, 21, 26, 5, 24, 0, 23, 24, 18, 11, 2, 20, 19, 7, 2, 27, 25, 2, 17, 27, 22, 22, 10, 13, 24, 16, 26, 16, 12, 28, 28, 5, 3, 2, 3, 5, 20, 25, 25, 24, 13, 21, 13, 20, 13, 25, 2, 0, 16, 15, 0, 26, 19, 6, 14, 28, 3, 15, 26, 7, 3, 5, 14, 26, 18, 9, 16, 22, 13, 4, 25, 20, 12, 19, 2]`
-```
-ilefththeouileoaileathethleathileathleatheanthetheootheothealethatheodcthpaeaethileowaeoetheatheatheatheouileatheatheatheaththeoaeheotheaxbthyuleaaoaeoeothaeththeaiotthaeioltheosuiaeoeoethththheoleoth
-```
-
+- **Key Length:** 41
+- **Score:** 4673
+- **Preview:** NGEATHBOWFIMLEOLUMOEBXFXXIOBNTHTHIOTHATHEUTHEAATHOEEAEOTHABICEOUWITHEAINGAENGPTHEAPWLTHOOENGTHREABTH...
+- **Key:** [8, 25, 13, 19, 21, 3, 13, 20, 3, 5, 1, 9, 17, 14, 22, 25, 28, 2, 5, 24, 26, 16, 11, 20, 5, 16, 5, 11, 6, 26, 21, 9, 6, 24, 25, 20, 6, 12, 6, 26, 15]
 
 ## Page 15
-* **Best Score:** 3959
-* **Key Length:** 71
-* **Key:** `[1, 20, 15, 7, 5, 0, 24, 27, 8, 20, 20, 1, 10, 14, 12, 16, 28, 6, 12, 26, 8, 2, 8, 28, 10, 1, 11, 1, 23, 12, 26, 19, 10, 6, 15, 16, 8, 21, 22, 3, 19, 23, 28, 11, 25, 6, 13, 0, 18, 22, 7, 28, 22, 6, 7, 13, 8, 28, 11, 25, 20, 15, 0, 26, 23, 3, 17, 23, 14, 15, 25]`
-```
-eaiceomeathatfilealeuiibatheaththeoafeathenathweaileathjolealeooeaeatheaileotheatheathpuiletheoeoeteanoeoeleoweiaeodsleocptheoethaeaeoeleallmileaetheorathththeomarththealeodhanatheosileocadomileotheoa
-```
-
+- **Key Length:** 43
+- **Score:** 3157
+- **Preview:** THESLTHLIOTHEACOGFJTHEATHXTHONGYOHENGAESEATHEDHFINGTHEAHAENRAEDITHYTHSPIOLDOENTHNGLTHENGEAHIOWTHEATI...
+- **Key:** [27, 12, 5, 28, 22, 8, 28, 20, 25, 15, 27, 15, 9, 23, 28, 18, 7, 2, 27, 18, 18, 4, 7, 22, 4, 4, 15, 14, 26, 14, 27, 25, 18, 5, 14, 16, 7, 4, 16, 15, 14, 18, 18]
 
 ## Page 16
-* **Best Score:** 5685
-* **Key Length:** 89
-* **Key:** `[23, 25, 28, 23, 4, 7, 10, 23, 26, 21, 18, 20, 27, 1, 25, 3, 3, 25, 26, 20, 16, 8, 15, 11, 1, 28, 27, 22, 20, 26, 6, 23, 6, 2, 16, 16, 4, 13, 25, 0, 9, 12, 10, 2, 14, 14, 15, 11, 4, 26, 10, 14, 5, 25, 5, 1, 11, 28, 9, 14, 15, 24, 1, 21, 9, 8, 2, 18, 23, 14, 19, 28, 1, 27, 28, 26, 24, 7, 25, 4, 8, 26, 22, 12, 6, 23, 24, 20, 7]`
-```
-aioaetheoaeeathoethethiothaephjoslearhathileathaetheailogbeoacthaewthealeaitheathleaeooetheeorpoeftheatnheodscegleotheoaewaefthloefeoilealthdnaethbththiothothethnrniththeoseeatholeaetheatheogjythoefyl
-```
-
+- **Key Length:** 43
+- **Score:** 2422
+- **Preview:** AIOJREATHEOORSTHEAREADJTHEOTHEONGTHEOURNTHEAATHIOEAFNFUTHHEOTHEATHEAYNGTHEAEAREATHEATHAITHEATHEATENN...
+- **Key:** [0, 11, 28, 5, 16, 14, 21, 27, 1, 1, 25, 10, 1, 8, 24, 4, 14, 15, 7, 12, 28, 18, 19, 20, 11, 14, 8, 16, 10, 1, 3, 19, 4, 7, 4, 0, 0, 2, 26, 13, 11, 21, 19]
 
 ## Page 17
-* **Best Score:** 5250
-* **Key Length:** 71
-* **Key:** `[21, 0, 24, 0, 17, 25, 9, 7, 22, 28, 23, 7, 11, 16, 0, 27, 9, 27, 1, 4, 5, 11, 17, 9, 25, 12, 15, 27, 1, 7, 10, 11, 3, 18, 9, 2, 25, 10, 28, 9, 15, 25, 24, 12, 4, 17, 14, 17, 1, 13, 20, 27, 19, 7, 23, 19, 20, 8, 5, 17, 20, 21, 13, 13, 19, 18, 14, 0, 1, 25, 7]`
-```
-eathedxthltheuthhenlenleoeaihjyioyealleacunggoeoeththeohscngathxwafaetheaneomnthatbeoeareatheooaelaewaettheoethegtheatheaecngdtheoheanfearngthetheoiotheatheotheoaeuiaeoetheodaeioiongiogeomnwoebuilemle
-```
-
+- **Key Length:** 43
+- **Score:** 7713
+- **Preview:** OTHEOLTHEOITHLFGDPTHEOIIONGREATHGSTHAERAENOFXGHEATHAEXTHEATHEAGGUJOFWAWDTHBCAENGEEARTIOOENGEOPPGHECG...
+- **Key:** [12, 6, 6, 12, 4, 7, 17, 27, 24, 26, 12, 27, 21, 0, 28, 25, 27, 8, 7, 23, 1, 3, 16, 7, 22, 3, 21, 15, 12, 22, 27, 4, 13, 2, 7, 0, 21, 8, 3, 6, 18, 3, 21]
 
 ## Page 18
-* **Best Score:** 4901
-* **Key Length:** 71
-* **Key:** `[9, 20, 22, 10, 25, 12, 2, 7, 6, 28, 14, 15, 3, 4, 11, 17, 28, 20, 6, 2, 9, 26, 21, 1, 26, 19, 25, 2, 12, 25, 25, 24, 0, 24, 11, 27, 22, 28, 16, 14, 11, 27, 18, 18, 27, 3, 7, 20, 10, 19, 10, 10, 19, 1, 22, 0, 18, 0, 2, 22, 23, 9, 2, 8, 7, 13, 24, 8, 4, 20, 18]`
-```
-mrethohtheanhethwadoealeobanowthuiutheothydnaecleailleodeoeomanaeoefthhbdioaetheathryscuileathfioeangaeoealtheatheantheieathaaeoefthdeathngolileathsemaeogleicjeaeoththeoeuhathleathalistheowmeojieatheo
-```
-
+- **Key Length:** 43
+- **Score:** 4217
+- **Preview:** FPLNOXJJJBTHEAWXHEOTHEONGEONGTHEAENTJYJEEARYTHIOETHECGATHEATHEAREASHGTHHNGLTHEAGFYRSTHIONGSAENGOYTHT...
+- **Key:** [28, 11, 20, 3, 25, 6, 22, 24, 4, 19, 1, 18, 3, 14, 26, 27, 21, 28, 9, 13, 21, 14, 22, 19, 3, 11, 19, 21, 17, 26, 9, 3, 28, 0, 10, 1, 3, 5, 24, 16, 26, 4, 17]
 
 ## Page 19
-* **Best Score:** 6266
-* **Key Length:** 103
-* **Key:** `[10, 12, 2, 26, 0, 24, 27, 17, 16, 5, 4, 27, 5, 16, 23, 11, 15, 16, 14, 16, 23, 12, 1, 18, 20, 8, 18, 5, 7, 5, 22, 2, 18, 21, 13, 13, 19, 3, 12, 16, 19, 21, 27, 15, 22, 17, 9, 5, 24, 15, 9, 27, 4, 28, 22, 13, 11, 15, 21, 9, 8, 14, 18, 17, 17, 10, 27, 15, 14, 12, 4, 8, 23, 17, 14, 9, 25, 5, 20, 24, 17, 23, 28, 25, 17, 12, 0, 12, 19, 21, 20, 20, 10, 23, 9, 17, 22, 5, 13, 11, 22, 26, 16]`
-```
-ealleofheoeoxicaetheoetheteauijilthrgtaeeomxeohthngwuioeatheodythaenhathaeuththealeolealeoileooefpuileathlethceaeotheathaetheealeathaioyileatileathetheohatarilealeadtheafemeoeaetheotheeathlealethethle
-```
-
+- **Key Length:** 43
+- **Score:** 4299
+- **Preview:** BTHETHITHERTHEOROYNGTTHEOTHGTHEAXNGOATHEATHERNGOERTHMUTOEPPIGXBESIOATHESATHAERTHATHUTIOFMEONGEOTHEOW...
+- **Key:** [21, 1, 4, 7, 19, 1, 21, 25, 28, 3, 5, 20, 10, 7, 25, 11, 21, 1, 26, 9, 25, 8, 20, 25, 16, 8, 23, 9, 5, 26, 13, 28, 28, 2, 2, 14, 24, 17, 0, 1, 8, 17, 25]
 
 ## Page 20
-* **Best Score:** 5849
-* **Key Length:** 97
-* **Key:** `[18, 5, 23, 11, 15, 17, 3, 6, 18, 23, 26, 20, 5, 0, 13, 0, 26, 13, 5, 13, 16, 22, 18, 6, 23, 18, 20, 13, 23, 2, 12, 10, 17, 4, 24, 28, 27, 25, 8, 21, 9, 15, 15, 4, 20, 5, 28, 5, 13, 23, 25, 11, 12, 22, 24, 17, 17, 8, 16, 24, 23, 21, 20, 8, 19, 21, 19, 25, 28, 0, 17, 0, 13, 22, 15, 3, 2, 8, 13, 9, 12, 27, 7, 8, 0, 2, 17, 15, 13, 3, 25, 15, 16, 3, 16, 7, 18]`
-```
-agwgloenwaeotthydleaioxtxuiomaethaetheouithajaeutheagwheoxeotheoluistheoeosthateoththethajpxeoeaoetheahetheatheathioleathaieagxthayptheatheaileoiceoxeoetheasthgngcphthutheatheoleoeoetheaththdngeathxth
-```
-
+- **Key Length:** 43
+- **Score:** 8095
+- **Preview:** THWUOEMOEHOEEAOEABJEAREAJRTHEAWEOMLUEETHXXLEAPDMEAITHEAFNGNGTHTHYYCWTHEANGLNOMOIOOEPDTHEOJXTHNGIONGT...
+- **Key:** [18, 4, 11, 15, 2, 12, 23, 23, 26, 18, 21, 26, 26, 27, 6, 18, 16, 2, 0, 4, 27, 2, 12, 16, 21, 20, 20, 18, 27, 12, 24, 26, 0, 14, 19, 19, 8, 0, 5, 17, 28, 3, 28]
 
 ## Page 21
-* **Best Score:** 5090
-* **Key Length:** 71
-* **Key:** `[6, 23, 16, 4, 23, 4, 12, 20, 24, 7, 23, 14, 10, 5, 11, 22, 11, 20, 1, 11, 8, 1, 5, 9, 28, 19, 16, 23, 23, 20, 18, 14, 7, 28, 25, 25, 24, 10, 24, 7, 25, 7, 9, 25, 22, 2, 27, 4, 1, 23, 1, 11, 2, 8, 23, 11, 24, 5, 20, 11, 21, 23, 4, 19, 12, 5, 20, 20, 8, 12, 7]`
-```
-eatheomjthlmbtheangtfleoleaaethttheatheoeoethydeoxfwthbtheoioeathioxlethmmngrtheabeapxheonuiothaleailehtheabthoutheoeadnalnglcxthethardaeththeeatheathearnxoeththethgthysrxeaeaethetmmthaoethmiodleleooe
-```
-
+- **Key Length:** 43
+- **Score:** 4254
+- **Preview:** NDANDHTHEAOCTTHTHNSTHATHANTHEAHEARDERAECOENGUGCTHEATHREONRCTHEEORJCEONDTHRERIOTHTHEOOEANIONGTHGXOETH...
+- **Key:** [25, 2, 4, 14, 11, 27, 1, 11, 9, 4, 6, 4, 24, 25, 16, 3, 7, 17, 2, 4, 22, 18, 5, 9, 26, 14, 20, 12, 0, 12, 19, 11, 9, 7, 20, 1, 27, 25, 22, 7, 26, 25, 28]
 
 ## Page 22
-* **Best Score:** 4007
-* **Key Length:** 71
-* **Key:** `[22, 28, 21, 17, 9, 7, 24, 17, 1, 8, 11, 22, 24, 7, 0, 10, 7, 18, 25, 28, 12, 28, 26, 21, 3, 23, 20, 25, 6, 20, 0, 8, 4, 15, 0, 22, 4, 4, 27, 10, 18, 15, 14, 25, 25, 24, 25, 3, 3, 7, 8, 19, 5, 19, 21, 22, 26, 27, 26, 12, 18, 17, 15, 2, 19, 19, 13, 20, 2, 25, 5]`
-```
-ealeetheaisuilethoetharnoeththeohthileathetheothethaleallnaeoelheoyeatheodilegwtheaiomtheatheatheatheatheathahaethathalethiothealeoetheththeaotheatheofttheatheayththeochetheaiaeoetheayhuioyileaththeot
-```
-
+- **Key Length:** 43
+- **Score:** 2793
+- **Preview:** XBTHEATHEATHEAPTHEOEAPNTHHENGONGTHENGUTHEATHEOREOTHGTHEEATHEATHEASEANTHEASOEIOTIOJNESTHYIONTHRMHEOTH...
+- **Key:** [7, 2, 8, 7, 9, 7, 3, 4, 18, 16, 19, 12, 13, 20, 0, 26, 22, 18, 12, 27, 22, 9, 16, 16, 10, 2, 12, 22, 25, 5, 19, 18, 0, 17, 23, 28, 25, 1, 19, 28, 28, 25, 8]
 
 ## Page 23
-* **Best Score:** 4648
-* **Key Length:** 71
+- **Key Length:** 43
+- **Score:** 4696
+- **Preview:** WNGJEATTHIOYUIOTHITHEDCTHEOTHUIONGYOEANIONEOROXYWSBPANGICCEATHIOLUHAEWDTHMAEAIOEONORIOTHGWJRYIOTHMTH...
+- **Key:** [17, 24, 3, 18, 3, 4, 0, 18, 16, 16, 10, 25, 7, 10, 2, 1, 19, 11, 12, 17, 18, 23, 0, 1, 18, 9, 7, 7, 1, 14, 7, 13, 8, 6, 1, 18, 23, 21, 23, 6, 22, 18, 19]
+
+## Page 24
+- **Key Length:** 43
+- **Score:** 4099
+- **Preview:** FTHINGSTHEXUBSGTHEOIOJHNGAGAONGGOETEGAETMLTHIOPEONTHTHAEPITHHEATHUBOIDEATITHEAEAOEMSIOWDEANTHEOTHAND...
+- **Key:** [23, 2, 19, 26, 25, 23, 20, 20, 7, 19, 26, 21, 11, 16, 9, 8, 12, 15, 27, 1, 4, 21, 17, 18, 12, 8, 17, 14, 6, 1, 13, 16, 28, 8, 7, 17, 6, 6, 7, 18, 8, 9, 16]
+
+## Page 25
+- **Key Length:** 43
+- **Score:** 13976
+- **Preview:** DGROEIONATHOXCOJNHALWDEAGDTHOEILNGPJNGRLAEIOEANGTIOFDCEOEOCFPIPGWDOTIOEOTHSGEDOEDXTIRTNGTNGBEOEIOAED...
+- **Key:** [20, 4, 10, 26, 3, 5, 24, 3, 28, 28, 27, 14, 16, 0, 8, 4, 23, 6, 10, 27, 26, 11, 26, 26, 11, 15, 22, 7, 19, 0, 6, 25, 7, 13, 1, 0, 28, 22, 9, 0, 27, 7, 0]
+
+## Page 26
+- **Key Length:** 41
+- **Score:** 4248
+- **Preview:** YATHTHTHERTHATHEAOIOTXTIOTHETYUEOUTHIONEARYNGIONGAMFNRAJCEONGJLBCITHEOIOFTHEATHATEIORJHIRTHPIOEATHIS...
+- **Key:** [1, 8, 7, 26, 1, 22, 22, 10, 19, 26, 25, 24, 11, 7, 7, 21, 15, 26, 19, 11, 4, 20, 25, 1, 26, 6, 3, 19, 27, 9, 25, 10, 17, 5, 18, 10, 16, 8, 6, 27, 13]
+
+## Page 27
+- **Key Length:** 43
+- **Score:** 3949
+- **Preview:** THDTHUTEANTHIOFTHEBOEIOCHREOYMNGJUUOEAEONEARTHEAEXJFDLXGIWBIOJWLATHTHEAJOGCTHEOTHEAAEAGOEMPTITHEASIO...
+- **Key:** [17, 19, 24, 19, 28, 4, 15, 23, 10, 20, 16, 23, 22, 26, 22, 15, 7, 1, 1, 12, 18, 14, 19, 26, 7, 27, 18, 17, 14, 12, 26, 15, 0, 14, 11, 18, 13, 2, 22, 17, 27, 9, 13]
+
+## Page 28
+- **Key Length:** 37
+- **Score:** 4205
+- **Preview:** IOIIOUAUTHPIOIOWGCIONGHTHEAHAAWNUWIONGSITHTHEONTHAYFTTHTHIOSLEOIUTHEATHEOTHAREANGESINGIOUOENGORCDMEA...
+- **Key:** [15, 24, 13, 1, 22, 9, 5, 10, 9, 23, 21, 21, 2, 22, 15, 3, 7, 25, 14, 21, 28, 7, 17, 17, 26, 25, 12, 1, 2, 8, 3, 1, 12, 0, 27, 9, 11]
+
+## Page 29
+- **Key Length:** 43
+- **Score:** 4216
+- **Preview:** DTHTHMEJNGTHTHEATHCCPJEATNGTOUTHETHXCDTHHUOETHEAIYBLIOIORXRIONNGEPAXJIOIONGTHOAEAEITHEOGINGLACTHONGG...
+- **Key:** [8, 21, 4, 11, 27, 9, 24, 24, 28, 22, 4, 17, 19, 3, 0, 3, 10, 4, 21, 21, 16, 19, 13, 28, 19, 19, 15, 21, 2, 20, 3, 18, 26, 25, 10, 22, 26, 28, 11, 21, 15, 16, 17]
+
+## Page 30
+- **Key Length:** 43
+- **Score:** 4052
+- **Preview:** PEAUHAEOEDENJDIOEOUIIODTHTHTHOEYPTHWYJIDLTHTHREATHEOIEAWURTHEREOIOAEJTHYEATHERSTHEONGGTHEANDTHEARTHE...
+- **Key:** [10, 25, 12, 10, 23, 21, 2, 28, 3, 22, 24, 28, 10, 25, 23, 1, 19, 28, 26, 24, 25, 27, 24, 1, 7, 2, 19, 27, 4, 2, 4, 23, 28, 18, 12, 13, 23, 24, 8, 2, 0, 4, 10]
+
+## Page 31
+- **Key Length:** 43
+- **Score:** 4280
+- **Preview:** FNNGWOEPTHTHEYTHEOSRTHEOHOHTHTHEATHNGEANEOTEYEONGTHEOHNTHATHXYTHEXATHENGEATHEOEOAEAHEAREANTHSTHAESHM...
+- **Key:** [2, 25, 25, 14, 23, 1, 25, 21, 26, 1, 1, 17, 27, 14, 21, 3, 2, 17, 2, 6, 7, 22, 2, 16, 14, 3, 18, 9, 5, 23, 25, 22, 3, 1, 2, 10, 12, 10, 9, 11, 12, 21, 26]
+
+## Page 32
+- **Key Length:** 43
+- **Score:** 14864
+- **Preview:** HOGPUNGTHLISOLATHFEORHEONGTHEORSTHFYAEATHPDCIOTIOHIOXGFEAULDGEANGANIOTHNGIOGJWPMAOYRRAENNUJTHEAXRNGG...
+- **Key:** [12, 27, 15, 25, 4, 9, 15, 18, 6, 14, 18, 19, 6, 23, 22, 22, 13, 7, 21, 13, 9, 4, 2, 8, 27, 12, 26, 2, 24, 0, 12, 9, 20, 22, 4, 21, 1, 1, 26, 20, 24, 6, 10]
+
+## Page 33
+- **Key Length:** 41
+- **Score:** 3748
+- **Preview:** HNGSTHEATHTHJEOTEATHBTHRTHEATHEOIOITHEANYTHTHDWCOEREATHNGINGIONGTHITHEAEGFOERTHUEAEIOOETHEOUTNGTHALT...
+- **Key:** [15, 20, 28, 3, 1, 8, 22, 25, 25, 19, 13, 20, 12, 14, 14, 20, 0, 22, 15, 17, 25, 24, 0, 0, 5, 9, 25, 1, 4, 12, 2, 21, 15, 27, 21, 25, 6, 12, 3, 19, 6]
+
+## Page 34
+- **Key Length:** 43
+- **Score:** 4214
+- **Preview:** ATHEANGXMDTHITHAECHHOENGFBLJTHIOTHEATHORPNGNGEANGTHEIOUEIODIOGOERXLCOEROESTHTITHITHATHEATHEAUTHEANHT...
+- **Key:** [24, 15, 10, 16, 27, 4, 14, 17, 10, 8, 3, 4, 2, 17, 25, 9, 16, 14, 21, 4, 11, 10, 6, 13, 3, 25, 21, 10, 28, 23, 22, 18, 20, 16, 16, 5, 15, 23, 23, 12, 7, 25, 22]
+
+## Page 35
+- **Key Length:** 41
+- **Score:** 4359
+- **Preview:** NINGITEATHNGTHALEASTHERYINGXNGBATHEASUXANTHEASGITHEATIOGNAEUEATEATHETHERHDEATMTHEATHAARENGNJJSTSIATH...
+- **Key:** [12, 6, 13, 14, 12, 27, 4, 25, 25, 16, 14, 10, 11, 10, 23, 22, 9, 3, 23, 24, 16, 28, 2, 23, 10, 3, 9, 20, 9, 10, 18, 0, 14, 8, 4, 18, 16, 19, 16, 27, 6]
+
+## Page 36
+- **Key Length:** 43
+- **Score:** 4026
+- **Preview:** BFFAENTIOPIOESIODTHATNGETHUGONGREATHIOOETHTHEONGYAJAEJRIOFEOOEWTHSLTHMNGTHONIONGTHETHAEIOTHEATHAAERE...
+- **Key:** [9, 9, 1, 11, 12, 21, 8, 13, 23, 10, 24, 22, 15, 12, 14, 16, 21, 11, 26, 24, 19, 0, 22, 5, 16, 20, 27, 27, 7, 23, 19, 9, 2, 2, 14, 17, 28, 8, 3, 4, 28, 20, 15]
+
+## Page 37
+- **Key Length:** 43
+- **Score:** 3967
+- **Preview:** EONJPOENTHEOAHIXITHILRATHEANEATHEATHTHEAAEATHEAOEARTTHTHNCJFXBTHWPNGTHEAEOREYRJTHHTHENGTHITHEDXEASTH...
+- **Key:** [26, 17, 7, 1, 16, 21, 12, 27, 26, 8, 3, 22, 5, 24, 6, 8, 9, 19, 22, 11, 2, 16, 2, 25, 14, 13, 22, 21, 6, 4, 6, 15, 23, 18, 17, 22, 25, 28, 0, 10, 17, 4, 16]
+
+## Page 38
+- **Key Length:** 41
+- **Score:** 3825
+- **Preview:** NGTHIRTHEFTHEONCHETHCACOENTHEATHEOITHEORAEDTHEAWMAERYEOMEATHEAITHEATHAEANGCMYTHAESEALTHEAYAEIOTHANTX...
+- **Key:** [9, 23, 24, 8, 18, 18, 9, 25, 14, 6, 25, 24, 7, 19, 13, 28, 6, 26, 17, 6, 19, 20, 21, 13, 20, 26, 18, 20, 13, 27, 3, 19, 6, 17, 18, 26, 17, 13, 19, 14, 3]
+
+## Page 39
+- **Key Length:** 43
+- **Score:** 3907
+- **Preview:** EONGANGREAWTHYIOAIRWTHNANDTSNUIOJTHIOSTHTHEAIONGSTHEONGTHTHTOYLLOETPEATHAEREATHECEONGTHEOGTHETHEARTH...
+- **Key:** [3, 15, 7, 17, 11, 11, 1, 15, 17, 1, 26, 7, 26, 13, 20, 21, 14, 21, 8, 16, 4, 15, 8, 13, 22, 1, 23, 28, 9, 13, 24, 22, 0, 27, 20, 10, 26, 21, 26, 18, 0, 5, 17]
+
+## Page 40
+- **Key Length:** 43
+- **Score:** 9984
+- **Preview:** WOERAUIONTPIOEANEBTHJYSXTHEOHFIOIOANTHNGUXNOTHOEAMGUBFIRIOATHEGBFHMOLREAEYORINGNGTHBOTHEASIFBEONJACI...
+- **Key:** [23, 2, 3, 26, 5, 16, 14, 19, 26, 19, 11, 3, 27, 0, 8, 15, 2, 20, 1, 23, 1, 28, 19, 1, 14, 16, 3, 5, 16, 9, 21, 19, 14, 14, 18, 15, 2, 2, 1, 0, 16, 15, 22]
+
+## Page 41
+- **Key Length:** 43
+- **Score:** 4358
+- **Preview:** THEONIOETOEEAWTHNGAENTHEDUTHNGEOOENTHEAREATHEASWWEATHATHEALTHETHEOSIOREASEAREATHGIOTHPXIOIOAEIYGJIRC...
+- **Key:** [12, 2, 12, 6, 16, 26, 7, 4, 16, 10, 21, 19, 27, 23, 7, 27, 26, 4, 22, 0, 21, 13, 28, 4, 12, 3, 1, 22, 2, 26, 16, 9, 20, 9, 15, 5, 17, 15, 22, 3, 24, 12, 14]
+
+## Page 42
+- **Key Length:** 41
+- **Score:** 4231
+- **Preview:** THEOWYURAEGNOEEATHBLBATHEAOEIONGTHEANOETHLNEAERITHEATHEAETHTOFEANPHTHPOEIOUEOMJWRTHEOOEENGEAUETHTHLU...
+- **Key:** [21, 25, 6, 12, 5, 9, 7, 8, 7, 5, 8, 26, 0, 0, 9, 23, 7, 27, 25, 28, 20, 15, 5, 27, 11, 19, 28, 6, 0, 15, 28, 9, 28, 5, 21, 7, 17, 2, 28, 1, 1]
+
+## Page 43
+- **Key Length:** 41
+- **Score:** 4280
+- **Preview:** THAEOERIWTXIOHRYTHNGTHLNMAEXLYTHEANFGEOTHEOXAEIOTHEANEGWIUXIOAULEANGAEUTHHTHSTIOSTHOECYTHTHITHEMDTHA...
+- **Key:** [6, 15, 17, 14, 6, 20, 19, 25, 5, 1, 1, 4, 23, 27, 11, 24, 15, 8, 10, 6, 6, 10, 20, 1, 21, 14, 23, 13, 21, 11, 24, 26, 13, 10, 13, 3, 20, 27, 23, 4, 23]
+
+## Page 44
+- **Key Length:** 43
+- **Score:** 11951
+- **Preview:** PJARANGNAEINTPTHBTHIOBJRSNGTEODOAENGTHGTHEOAESFEIOMYNGDWEASRIEACEANYNGIRUJTHEAEHIOPEMEIOOTHAEALEAFEA...
+- **Key:** [6, 2, 2, 16, 20, 23, 18, 16, 12, 10, 9, 25, 26, 17, 3, 18, 17, 17, 2, 5, 22, 14, 14, 15, 14, 27, 21, 8, 21, 5, 28, 5, 22, 24, 25, 11, 3, 22, 23, 5, 12, 25, 13]
+
+## Page 45
+- **Key Length:** 43
+- **Score:** 4128
+- **Preview:** IGNGATTHOEBTHEATHATHTTHEOAENTHAJWTHEATHEACTHYITHEAXUJDLWOENTHEATHENIOSOEWGTHOFTHOOENGEATHBIOTHHEAJTH...
+- **Key:** [24, 25, 28, 27, 5, 25, 22, 15, 15, 14, 2, 8, 7, 9, 22, 27, 21, 6, 6, 20, 11, 17, 12, 22, 22, 18, 25, 5, 15, 2, 20, 28, 24, 19, 1, 20, 18, 4, 10, 15, 1, 3, 22]
+
+## Page 46
+- **Key Length:** 41
+- **Score:** 4351
+- **Preview:** THEATHGWHMOESPUONITHIODEHLTHATHEIOTHERBEANDTHSTHETHIOCEWEOYSTHEOTHEAUNGTHTHATHAEATHEADPTHXOEDRFOGAET...
+- **Key:** [6, 17, 12, 19, 3, 3, 11, 1, 14, 14, 24, 12, 1, 26, 19, 15, 25, 25, 3, 22, 21, 24, 19, 23, 22, 21, 8, 25, 15, 24, 12, 12, 7, 26, 4, 0, 18, 16, 21, 7, 13]
+
+## Page 47
+- **Key Length:** 43
+- **Score:** 4500
+- **Preview:** CNGLIOTHEAIONWEAIOYEATHEAENGPTHEAOOTHEOLTHELOEATHECETHEOJNUTHEADFTHEAAEHNGUWTHIWESAEDEAJLEEAFNUGGTHE...
+- **Key:** [23, 18, 11, 19, 26, 21, 4, 25, 16, 11, 14, 3, 2, 12, 26, 18, 18, 18, 23, 16, 16, 28, 5, 1, 26, 13, 27, 5, 6, 5, 8, 13, 7, 9, 2, 8, 16, 27, 0, 1, 16, 10, 7]
+
+## Page 48
+- **Key Length:** 41
+- **Score:** 4268
+- **Preview:** BAETHEOEONGXAENGTHTHLEAREATHEATHEAATHEAETHEAAXOENNGNGEANGLDLPPWITHEACEANGJSWITHNGSNGIONGXTHTHIODPLEX...
+- **Key:** [20, 9, 8, 19, 28, 14, 7, 22, 9, 25, 0, 2, 0, 4, 0, 14, 27, 25, 11, 24, 9, 15, 22, 21, 13, 7, 5, 24, 20, 20, 25, 1, 3, 18, 8, 1, 7, 3, 25, 27, 21]
+
+## Page 49
+- **Key Length:** 43
+- **Score:** 2212
+- **Preview:** AETHHOEUTHEAYTHEATHTHEATHEATHEATHEATHEANTHEATHEATHEATHEATHTHEATHEATHEATHEATHTHEATHEATHEATHEARTHEALIO...
+- **Key:** [2, 16, 3, 7, 19, 20, 11, 8, 8, 22, 4, 0, 20, 13, 26, 4, 25, 26, 20, 8, 18, 18, 14, 10, 19, 20, 0, 17, 24, 26, 9, 16, 9, 27, 25, 25, 7, 22, 20, 8, 21, 15, 14]
+
+## Page 50
+- **Key Length:** 41
+- **Score:** 12181
+- **Preview:** UEGJDOEJGEASOXXIOOEXIOUTHAETHMEATHEONGAGXIOEALIOEOTHSLGXTHEOTHJDIEATHEOENNDEAEBEOSTHTOEHWGNEAGNGUDEW...
+- **Key:** [20, 13, 6, 28, 6, 12, 11, 6, 24, 2, 23, 13, 12, 3, 4, 24, 4, 3, 16, 23, 8, 22, 24, 2, 24, 22, 22, 2, 20, 13, 28, 4, 28, 4, 26, 17, 14, 21, 4, 27, 22]
+
+## Page 51
+- **Key Length:** 37
+- **Score:** 3828
+- **Preview:** NDYALNSAEJNEAGALENGEIOUTEONBPNGBENGUJISDCUYOEIOELEAAENGTHIONGIFEASTHFEOGBCLEAEREDNGONGOENTHRIYEOTHEO...
+- **Key:** [4, 6, 22, 26, 4, 3, 23, 26, 25, 3, 15, 20, 1, 23, 5, 1, 15, 19, 26, 17, 10, 27, 28, 22, 12, 23, 0, 7, 12, 9, 13, 22, 8, 28, 1, 0, 27]
+
+## Page 52
+- **Key Length:** 43
+- **Score:** 3484
+- **Preview:** AEIOSEONGTHEAMFRYTHEAATHEOEALTSTHEOEANTHATHERIOTHENGTHEJAENGTHEALNTHEOBIONGEAFWYTANGTHEMEATHEOIOTIOL...
+- **Key:** [16, 27, 13, 13, 5, 28, 20, 23, 14, 6, 4, 22, 24, 23, 14, 4, 11, 3, 7, 9, 21, 21, 10, 19, 24, 17, 14, 16, 19, 2, 19, 28, 22, 9, 0, 1, 7, 27, 0, 15, 7, 6, 24]
+
+## Page 53
+- **Key Length:** 43
+- **Score:** 3917
+- **Preview:** WREOTHETHEOEATHMLUTHEATHEONTHJXGEAREATHEAXUPBAETHEANUAEONGHTHAIOPUTHITHEATDNGLTHTEATHIOERNDUTHEGTNGT...
+- **Key:** [17, 15, 9, 21, 9, 0, 2, 11, 17, 8, 3, 12, 19, 2, 5, 12, 10, 14, 13, 7, 15, 3, 23, 8, 13, 9, 25, 4, 12, 25, 1, 17, 1, 20, 1, 23, 22, 0, 24, 28, 1, 5, 28]
+
+## Page 54
+- **Key Length:** 43
+- **Score:** 2362
+- **Preview:** STHEATHEAEIOGTHEATHEARETHTHIOAREATHEOWTHEATHTHEATHEATHEATHEATHEATHEATHTHEATHEATHEXRITHEATHEIOAEHEATH...
+- **Key:** [6, 23, 20, 8, 8, 26, 19, 8, 17, 16, 10, 7, 19, 13, 23, 27, 0, 0, 13, 6, 28, 24, 26, 15, 0, 27, 12, 11, 17, 2, 3, 14, 6, 22, 18, 13, 17, 16, 21, 25, 14, 27, 18]
+
+## Page 55
+- **Key Length:** 43
+- **Score:** 2495
+- **Preview:** THEANDTHEOIORTHEATHTHEATHTHEATHEANIONGSTHEAREATHEANGTHENGTHEATHIOEIOEOPIONGJPNGTHIOTHEATHEAFRIOIOFNG...
+- **Key:** [23, 12, 13, 21, 2, 7, 28, 16, 1, 9, 1, 23, 6, 0, 4, 8, 5, 21, 16, 16, 11, 9, 11, 20, 19, 24, 28, 7, 15, 18, 5, 17, 24, 12, 3, 19, 5, 15, 23, 10, 28, 26, 10]
+
+## Page 56
+- **Key Length:** 51
+- **Score:** 3085
+- **Preview:** DIOIOUTHAENGTHEATHESTHEATHEAIOENOEROEATHETHTHEATHEANNUTHATHEATHEOIOTHATIONGAEISCOIOTHBTHATHEALTHNMEA...
+- **Key:** [4, 7, 17, 12, 21, 19, 6, 22, 8, 0, 26, 18, 7, 17, 8, 8, 18, 13, 13, 3, 8, 16, 11, 16, 23, 4, 6, 18, 3, 15, 27, 15, 11, 22, 0, 5, 6, 24, 19, 20, 3, 13, 0, 9, 20, 10, 14, 6, 25, 11, 18]
+
+## Page 57
+- **Key Length:** 43
+- **Score:** 21575
+- **Preview:** EJOAPOETHYIOGNEANGEATHEEHLOEHINGEOTEAGUBYMAEIPPXNGTEONGOTHOLTHGROENGTTHAEWIMLIOLEOMOEIOIOIOUIONGYEAF...
+- **Key:** [11, 27, 16, 2, 22, 1, 23, 11, 26, 7, 5, 27, 16, 13, 26, 14, 0, 8, 1, 6, 12, 0, 24, 19, 13, 20, 18, 4, 1, 26, 15, 20, 23, 9, 22, 14, 17, 9, 5, 9, 15, 15, 27]
+
+## Page 59
+- **Key Length:** 37
+- **Score:** 3544
+- **Preview:** AENGDEADNBWDAIOITHEATHEWNGEOBXEDOBTHEOWBWTHEMFEATHRTHSTHIONGTHEIOTHEAOERRRTHEOOURTHTHEANTHEOLEATHAED...
+- **Key:** [8, 0, 10, 25, 25, 27, 23, 3, 14, 23, 12, 17, 8, 20, 23, 8, 0, 7, 12, 8, 24, 8, 24, 10, 23, 9, 17, 11, 3, 26, 16, 8, 26, 22, 21, 21, 2]
+
+## Page 61
+- **Key Length:** 43
+- **Score:** 5381
+- **Preview:** NGTHRTHANGPAPTHTHARDANAEXIBSTOEPLWDDHINGEAGLNIOTHYTHEATOENGMUTHYEONGYNGOEPYWTHHEAIONGJUTHEOSEONGAECH...
+- **Key:** [9, 26, 17, 13, 17, 8, 21, 9, 28, 28, 4, 18, 24, 5, 5, 27, 18, 2, 24, 3, 13, 10, 26, 15, 21, 9, 11, 15, 17, 11, 27, 28, 21, 28, 10, 9, 23, 16, 21, 22, 11, 11, 11]
+
+## Page 62
+- **Key Length:** 41
+- **Score:** 2745
+- **Preview:** HEOOEPYTHEOTHEOUATHEOWBINGEONTHEAOEAWRATHEATHEAWOENGTHOIOAPREAREATHEAIOIORMUGASBTHEATTHATHEAITHEOUMO...
+- **Key:** [9, 7, 11, 18, 3, 11, 24, 2, 28, 3, 19, 3, 9, 4, 11, 12, 19, 6, 17, 17, 24, 4, 16, 27, 21, 3, 28, 11, 18, 27, 25, 27, 12, 7, 2, 27, 13, 9, 11, 15, 18]
+
+## Page 63
+- **Key Length:** 41
+- **Score:** 3158
+- **Preview:** JWJTHDXHBTXIOFAUTHEATHNJTHBDGHJTHETHTHEOBFSSTHEOTHYWTHEADPTHEATHEAIOIOTHELTHTHEAPAEATHMEAMTHEANGAEOE...
+- **Key:** [4, 25, 8, 16, 13, 25, 7, 6, 16, 5, 4, 18, 18, 3, 8, 20, 16, 6, 13, 2, 1, 21, 18, 26, 22, 16, 5, 0, 16, 4, 15, 16, 24, 3, 7, 4, 27, 4, 2, 3, 17]
+
+## Page 64
+- **Key Length:** 43
+- **Score:** 7945
+- **Preview:** TEOBPJPIOITHCPDNGDPCTHTHEOBOTATHEATHJDAEIROEWDJBSTIHWHIAUBGTHXXTHWAETHYPIOWPTHTXPMOEDPYGTHMAEEOOITOE...
+- **Key:** [20, 14, 11, 23, 11, 23, 14, 26, 20, 3, 0, 3, 0, 14, 0, 3, 13, 26, 13, 11, 4, 6, 13, 14, 16, 28, 26, 11, 28, 11, 25, 14, 5, 13, 5, 27, 27, 11, 13, 5, 17, 5, 12]
+
+## Page 67
+- **Key Length:** 37
+- **Score:** 1807
+- **Preview:** RTHEATHEATHEATHEATHEATHTHEATHEATHEATHEATHEATHEATHTHEATHEATHEATHEATHEATHEATH...
+- **Key:** [3, 20, 22, 20, 17, 13, 28, 28, 27, 13, 5, 20, 6, 0, 0, 0, 28, 28, 28, 23, 25, 4, 14, 0, 20, 5, 15, 9, 14, 27, 11, 14, 4, 24, 24, 6, 8]
+
+## Page 68
+- **Key Length:** 41
+- **Score:** 7746
+- **Preview:** NGTHTHGNUAPWCXTHOETHFTHEAEAEJBTXBEATHEATHTEINGJWETHAENEAESDTHFLEODTXJEAEAEANGTHEPTHANGTTHPTHETHEAITW...
+- **Key:** [10, 16, 18, 26, 6, 14, 8, 16, 16, 5, 16, 8, 16, 8, 16, 24, 3, 0, 9, 28, 16, 18, 16, 2, 1, 16, 5, 16, 22, 16, 8, 21, 22, 17, 16, 14, 14, 25, 0, 19, 16]
+
+## Page 71
+- **Key Length:** 13
+- **Score:** 2938
+- **Preview:** WYEATHATHEATJSTHXBPXTHIOPAGIODSSTROEEOONGOEGBAETHEOYREOMIWCIOTAEHOTYGCJEOGYUOSLSATEBEOTHEOMIOOAERLIO...
+- **Key:** [17, 22, 22, 21, 3, 0, 15, 23, 8, 12, 21, 28, 4]
+
+## Page 73
+- **Key Length:** 43
+- **Score:** 2514
+- **Preview:** FMTHAEREATHERTHEATHTHEATHTHEATHEATHUTHEATHEATHETHMITHEATHEATHATHEATHEATHEATHEATHEOANGMTHEAFRIOIOFNGT...
+- **Key:** [0, 6, 9, 26, 11, 5, 17, 8, 16, 1, 9, 1, 23, 6, 0, 4, 8, 5, 21, 23, 13, 1, 25, 26, 11, 24, 21, 12, 4, 17, 10, 21, 10, 24, 12, 3, 5, 25, 26, 14, 14, 10, 25]
+
+## Page 74
+- **Key Length:** 41
+- **Score:** 2473
+- **Preview:** THATHETHEAREAOESTATHEANGTHENTHTHEATHEASRATHATHESTHEOTHEYHEAXTHAERTPTHOTHENTPCTHEEATNGORIORTHJEATHTHE...
+- **Key:** [11, 0, 2, 6, 15, 21, 14, 21, 17, 19, 2, 7, 16, 11, 17, 13, 27, 15, 2, 14, 2, 7, 10, 3, 16, 26, 14, 8, 0, 0, 0, 28, 21, 27, 6, 8, 10, 8, 4, 17, 5]
+
