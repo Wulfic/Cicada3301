@@ -33,6 +33,9 @@ RUNES = "ᚠᚢᚦᚩᚱᚳᚷᚹᚻᚾᛁᛂᛇᛈᛉᛋᛏᛒᛖᛗᛚᛝᛟ�
 RUNE_TO_INDEX = {r: i for i, r in enumerate(RUNES)}
 INDEX_TO_RUNE = {i: r for i, r in enumerate(RUNES)}
 
+# Some transcriptions use the Unicode rune ᛄ for J instead of ᛂ.
+RUNE_TO_INDEX.setdefault("ᛄ", 11)
+
 LETTERS = [
     "F", "U", "TH", "O", "R", "C", "G", "W", "H", "N", "I", "J", "EO", "P", "X",
     "S", "T", "B", "E", "M", "L", "NG", "OE", "D", "A", "AE", "Y", "IA", "EA"
@@ -46,42 +49,70 @@ PRIMES = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61,
 # DATA LOADING
 # ============================================================================
 
-def get_repo_root():
-    """Get repository root directory"""
-    return Path(__file__).parent.parent
+def get_liber_primus_root() -> Path:
+    """Get LiberPrimus directory (parent of tools/)."""
+    return Path(__file__).resolve().parent.parent
+
+
+def get_pages_root() -> Path:
+    """Get LiberPrimus/pages directory."""
+    return get_liber_primus_root() / "pages"
 
 def load_all_pages():
-    """Load all pages from the transcription file"""
-    trans_path = get_repo_root() / "2014" / "Liber Primus" / "runes in text format.txt"
-    
-    with open(trans_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-    
-    # Split by page separator
-    segments = content.split('%')
-    pages = []
-    
-    for i, segment in enumerate(segments):
-        if not segment.strip():
+    """Load all pages from LiberPrimus/pages/page_XX/runes.txt."""
+    pages_root = get_pages_root()
+    pages: list[dict] = []
+
+    if not pages_root.exists():
+        raise FileNotFoundError(f"Pages directory not found: {pages_root}")
+
+    for child in pages_root.iterdir():
+        if not child.is_dir():
             continue
-        # Extract rune indices only (ignore separators and formatting)
-        indices = [RUNE_TO_INDEX[c] for c in segment if c in RUNE_TO_INDEX]
-        if indices:
-            pages.append({
-                'page_num': i + 1,
-                'indices': indices,
-                'raw_text': segment
-            })
-    
+        if not child.name.startswith("page_"):
+            continue
+        try:
+            page_num = int(child.name.split("page_")[-1])
+        except ValueError:
+            continue
+
+        rune_path = child / "runes.txt"
+        if not rune_path.exists():
+            continue
+
+        raw_text = rune_path.read_text(encoding="utf-8")
+        indices = [RUNE_TO_INDEX[c] for c in raw_text if c in RUNE_TO_INDEX]
+        if not indices:
+            continue
+
+        pages.append({
+            "page_num": page_num,
+            "indices": indices,
+            "raw_text": raw_text,
+            "path": rune_path,
+        })
+
+    pages.sort(key=lambda p: p["page_num"])
     return pages
 
-def load_page(page_num):
-    """Load a specific page by number (1-indexed)"""
-    pages = load_all_pages()
-    for page in pages:
-        if page['page_num'] == page_num:
-            return page
-    raise ValueError(f"Page {page_num} not found")
+def load_page(page_num: int):
+    """Load a specific page by number (0-74)."""
+    pages_root = get_pages_root()
+    rune_path = pages_root / f"page_{page_num:02d}" / "runes.txt"
+    if not rune_path.exists():
+        raise ValueError(f"Page {page_num} not found at {rune_path}")
+
+    raw_text = rune_path.read_text(encoding="utf-8")
+    indices = [RUNE_TO_INDEX[c] for c in raw_text if c in RUNE_TO_INDEX]
+    if not indices:
+        raise ValueError(f"Page {page_num} has no runes in {rune_path}")
+
+    return {
+        "page_num": page_num,
+        "indices": indices,
+        "raw_text": raw_text,
+        "path": rune_path,
+    }
 
 # ============================================================================
 # INDEX OF COINCIDENCE
@@ -137,6 +168,20 @@ def find_key_length_candidates(indices, max_length=150, top_n=10):
     # Sort by IoC descending
     results.sort(key=lambda x: x['ioc'], reverse=True)
     return results[:top_n]
+
+
+def find_best_prime_key_length(indices, max_length=150):
+    """Return the best (highest IoC) prime key length candidate within max_length."""
+    best = None
+    upper = min(max_length, len(indices) - 1)
+    for klen in PRIMES:
+        if klen < 1 or klen > upper:
+            continue
+        ioc = compute_ioc(indices, klen)
+        candidate = {"key_length": klen, "ioc": ioc, "is_prime": True}
+        if best is None or candidate["ioc"] > best["ioc"]:
+            best = candidate
+    return best
 
 # ============================================================================
 # SUB CIPHER OPERATIONS
@@ -406,8 +451,10 @@ def attack_page(page_num, key_length=None, verbose=True):
                 prime_str = "✓" if c['is_prime'] else ""
                 print(f"{i:<6} {c['key_length']:<8} {c['ioc']:<12.6f} {prime_str}")
         
-        # Use top candidate
-        key_length = candidates[0]['key_length']
+        # Prefer a prime candidate when available
+        prime_candidates = [c for c in candidates if c['is_prime']]
+        chosen = prime_candidates[0] if prime_candidates else candidates[0]
+        key_length = chosen['key_length']
         if verbose:
             print(f"\nUsing key length: {key_length}")
     
@@ -495,7 +542,7 @@ def attack_page(page_num, key_length=None, verbose=True):
     
     return result
 
-def run_ioc_analysis(page_num):
+def run_ioc_analysis(page_num, top_n=20):
     """Run IoC analysis only (no attack)"""
     print("=" * 80)
     print(f"IOC ANALYSIS - PAGE {page_num}")
@@ -509,12 +556,55 @@ def run_ioc_analysis(page_num):
     print(f"{'Rank':<6} {'KeyLen':<8} {'IoC':<12} {'Prime?'}")
     print("-" * 40)
     
-    candidates = find_key_length_candidates(cipher, top_n=20)
+    candidates = find_key_length_candidates(cipher, top_n=top_n)
     for i, c in enumerate(candidates, 1):
         prime_str = "✓" if c['is_prime'] else ""
         print(f"{i:<6} {c['key_length']:<8} {c['ioc']:<12.6f} {prime_str}")
     
     return candidates
+
+
+def run_ioc_analysis_range(start_page: int, end_page: int, top_n: int = 10, quiet: bool = False):
+    """Run IoC analysis for a range of pages. Returns per-page summaries."""
+    summaries: list[dict] = []
+
+    for page_num in range(start_page, end_page + 1):
+        try:
+            page = load_page(page_num)
+        except ValueError as e:
+            if not quiet:
+                print(f"Skipping page {page_num}: {e}")
+            continue
+
+        cipher = page["indices"]
+        candidates = find_key_length_candidates(cipher, top_n=top_n)
+        best = candidates[0] if candidates else None
+        best_prime = find_best_prime_key_length(cipher)
+        summaries.append({
+            "page_num": page_num,
+            "runes": len(cipher),
+            "best_key_length": best["key_length"] if best else None,
+            "best_ioc": best["ioc"] if best else None,
+            "best_is_prime": best["is_prime"] if best else None,
+            "best_prime_key_length": best_prime["key_length"] if best_prime else None,
+            "best_prime_ioc": best_prime["ioc"] if best_prime else None,
+            "top_candidates": candidates,
+        })
+
+    if not quiet:
+        print("=" * 80)
+        print(f"IOC SUMMARY ({start_page}-{end_page})")
+        print("=" * 80)
+        print(f"{'Page':<6} {'Runes':<8} {'BestLen':<8} {'IoC':<12} {'Prime?'} {'BestPrime':<10} {'PrimeIoC'}")
+        print("-" * 50)
+        for s in summaries:
+            prime = "✓" if s["best_is_prime"] else ""
+            ioc_str = f"{s['best_ioc']:.6f}" if s["best_ioc"] is not None else ""
+            prime_len = "" if s["best_prime_key_length"] is None else str(s["best_prime_key_length"])
+            prime_ioc = "" if s["best_prime_ioc"] is None else f"{s['best_prime_ioc']:.6f}"
+            print(f"{s['page_num']:<6} {s['runes']:<8} {str(s['best_key_length']):<8} {ioc_str:<12} {prime:<6} {prime_len:<10} {prime_ioc}")
+
+    return summaries
 
 def save_result(result, output_dir=None):
     """Save attack result to file"""
@@ -524,7 +614,9 @@ def save_result(result, output_dir=None):
     output_dir = Path(output_dir)
     output_dir.mkdir(exist_ok=True)
     
-    filename = output_dir / f"page{result['page_num']}_result.txt"
+    key_len = result.get('key_length')
+    key_suffix = f"_k{key_len}" if isinstance(key_len, int) else ""
+    filename = output_dir / f"page{result['page_num']}{key_suffix}_result.txt"
     
     with open(filename, 'w', encoding='utf-8') as f:
         f.write(f"LIBER PRIMUS - PAGE {result['page_num']} DECRYPTION\n")
@@ -545,6 +637,29 @@ def save_result(result, output_dir=None):
     
     print(f"\nResult saved to: {filename}")
 
+
+def save_ioc_summary(summaries, output_dir=None, filename="ioc_summary.csv"):
+    """Save IoC batch summaries to a CSV file."""
+    if output_dir is None:
+        output_dir = Path(__file__).parent / "results"
+
+    output_dir = Path(output_dir)
+    output_dir.mkdir(exist_ok=True)
+    out_path = output_dir / filename
+
+    lines = ["page,runes,best_key_length,best_ioc,best_is_prime,best_prime_key_length,best_prime_ioc\n"]
+    for s in summaries:
+        best_ioc = "" if s["best_ioc"] is None else f"{s['best_ioc']:.8f}"
+        best_is_prime = "" if s["best_is_prime"] is None else ("1" if s["best_is_prime"] else "0")
+        best_prime_len = "" if s.get("best_prime_key_length") is None else str(s.get("best_prime_key_length"))
+        best_prime_ioc = "" if s.get("best_prime_ioc") is None else f"{s.get('best_prime_ioc'):.8f}"
+        lines.append(
+            f"{s['page_num']},{s['runes']},{s['best_key_length']},{best_ioc},{best_is_prime},{best_prime_len},{best_prime_ioc}\n"
+        )
+
+    out_path.write_text("".join(lines), encoding="utf-8")
+    print(f"\nIoC summary saved to: {out_path}")
+
 # ============================================================================
 # MAIN
 # ============================================================================
@@ -562,7 +677,7 @@ Examples:
         """
     )
     
-    parser.add_argument('--page', type=int, help='Page number to attack (1-indexed)')
+    parser.add_argument('--page', type=int, help='Page number to attack (0-74)')
     parser.add_argument('--key-length', type=int, help='Specific key length to use')
     parser.add_argument('--ioc-only', action='store_true', help='Only run IoC analysis')
     parser.add_argument('--all-pages', action='store_true', help='Attack multiple pages')
@@ -573,7 +688,11 @@ Examples:
     
     args = parser.parse_args()
     
-    if args.ioc_only and args.page:
+    if args.ioc_only and args.all_pages:
+        summaries = run_ioc_analysis_range(args.start, args.end, top_n=10, quiet=args.quiet)
+        if args.save:
+            save_ioc_summary(summaries)
+    elif args.ioc_only and args.page is not None:
         run_ioc_analysis(args.page)
     elif args.all_pages:
         for page_num in range(args.start, args.end + 1):
