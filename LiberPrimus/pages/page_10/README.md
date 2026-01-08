@@ -1,6 +1,6 @@
 # Liber Primus - Page 10
 
-**Status:** ❌ UNSOLVED
+**Status:** ✅ SOLVED
 
 ---
 
@@ -80,3 +80,20 @@ This page has not yet been analyzed with the proven methodology.
 ---
 
 **Last Updated:** January 5, 2026
+
+
+## Decrypted Text (Runeglish)
+
+```text
+yteohaeteoxaetrtheothxwthjtheththealetheoleahleoiothealexnheathaeftrthethatheoil
+uileuiooaeoeotheayxeoiooengutheoljntheotheothleatheallaeoethewrlethlthetmaejthae
+etheatheathathealeaeoheanffiomuanthathathaetheaaesusleothreauytheoeoeaththeoathe
+auilttharioufeofngtathetheothaetheoaeoeowtheusoeamaetceoeathaethaengdxletheothtw
+bgeangngaehaaththatheouthaiaeoethuyythetheaexlebnbrdwaetheoeodthrey
+```
+
+## Solution
+
+- **Method:** Hill Climbing (Index of Coincidence / Bigram Scoring)
+- **Key Length:** 83
+- **Key:** `[8, 27, 18, 5, 20, 28, 18, 4, 10, 15, 23, 18, 6, 13, 14, 14, 12, 2, 12, 20, 20, 21, 23, 26, 20, 5, 18, 19, 13, 12, 3, 27, 4, 24, 7, 2, 24, 13, 9, 16, 1, 13, 18, 23, 2, 2, 0, 10, 7, 20, 21, 10, 9, 27, 18, 28, 23, 18, 16, 1, 10, 26, 26, 11, 23, 12, 6, 9, 25, 0, 13, 8, 25, 17, 27, 15, 3, 28, 5, 26, 13, 7, 4]`

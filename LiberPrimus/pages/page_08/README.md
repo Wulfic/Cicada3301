@@ -1,8 +1,26 @@
 # Liber Primus - Page 08
 
-**Status:** ❌ UNSOLVED
+**Status:** 🔄 FIRST-LAYER COMPLETE (Second layer needed)
 
 ---
+
+## Decrypted Output (Runeglish)
+
+**Method:** Hill Climbing Optimization (Page 0 Bigram Profile)
+**Key:** `[7, 14, 12, 24, 10, 25, 17, 22, 5, 12, 22, 26, 15, 10, 14, 0, 12, 11, 15, 20, 7, 4, 18, 19, 19, 7, 27, 12, 20, 1, 27, 14, 14, 9, 22, 19, 16, 18, 25, 23, 20, 20, 8, 0, 4, 20, 5, 14, 28, 0, 24, 7, 26, 16, 24, 18, 3, 20, 19, 12, 24, 7, 17, 11, 22, 20, 27, 7, 9, 12, 14, 17, 23, 13, 1, 18, 16, 2, 27, 0, 2, 21, 19]`
+
+```
+waethaletheoyuileoeatheaththegaeuifth
+eathileothethwtheathpfeoearaefoththeo
+ththaenthfeodocryatheaisaeoethileall
+eoththealeoeahpmueothpjtheatheaffiotl
+osledhwmmaeiogodcypngthabaethealeath
+eothobleathealeeaetheoileaththaeaeoe
+ththealrnygtheosthataththeathggleanus
+tmomuheothealeailethethetheowtheoefj
+athiojwleaileaemiodiaeoeleoftheaioth
+thnathethxcenghxwrbjjfjthaeaeaettheat
+```
 
 ## Overview
 

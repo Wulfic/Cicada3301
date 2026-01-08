@@ -16,27 +16,35 @@ RUNE_TO_IDX = {
 
 IDX_TO_LETTER = ['F','U','TH','O','R','C','G','W','H','N','I','J','EO','P','X','S','T','B','E','M','L','NG','OE','D','A','AE','Y','IO','EA']
 
-# English bigram frequencies (simplified - higher is better)
+# Runeglish bigram frequencies derived from Page 0
 BIGRAM_SCORES = {
-    'TH': 100, 'HE': 80, 'IN': 75, 'ER': 70, 'AN': 68, 'RE': 65, 'ON': 62,
-    'AT': 60, 'EN': 58, 'ND': 55, 'TI': 52, 'ES': 50, 'OR': 48, 'TE': 46,
-    'OF': 44, 'ED': 42, 'IS': 40, 'IT': 38, 'AL': 36, 'AR': 34, 'ST': 32,
-    'TO': 30, 'NT': 28, 'NG': 26, 'SE': 24, 'HA': 22, 'AS': 20, 'OU': 18,
-    'IO': 16, 'LE': 14, 'VE': 12, 'CO': 10, 'ME': 8, 'DE': 6, 'HI': 4,
-    'RI': 2, 'RO': 1
+    'LE': 52, 'UI': 46, 'IL': 46, 'HE': 33, 'TH': 33, 'IC': 26, 'ET': 19,
+    'HA': 19, 'EO': 19, 'WA': 19, 'AR': 19, 'EF': 19, 'AL': 19, 'LC': 13,
+    'AN': 13, 'CA': 13, 'NH': 13, 'EA': 13, 'LU': 13, 'RN': 13, 'NF': 13,
+    'FS': 13, 'SU': 13, 'FI': 13, 'IS': 13, 'SO': 13, 'OD': 13, 'DI': 13,
+    'CE': 13, 'OM': 13, 'MU': 13, 'EU': 13, 'UY': 13, 'YD': 13, 'DN': 13,
+    'NU': 13, 'UH': 13, 'AT': 13, 'EN': 13, 'NA': 13, 'AI': 13, 'WE': 6,
+    'EL': 6, 'CU': 6, 'UM': 6, 'MA': 6, 'NW': 6, 'WY': 6, 'YL': 6,
 }
 
 def load_page(page_num):
     """Load runes from a page."""
-    path = f"../pages/page_{page_num:02d}/runes.txt"
-    if not os.path.exists(path):
-        return None
+    # Try multiple paths
+    paths = [
+        f"LiberPrimus/pages/page_{page_num:02d}/runes.txt",
+        f"pages/page_{page_num:02d}/runes.txt",
+        f"../pages/page_{page_num:02d}/runes.txt"
+    ]
     
-    with open(path, 'r', encoding='utf-8') as f:
-        content = f.read()
+    for path in paths:
+        if os.path.exists(path):
+            with open(path, 'r', encoding='utf-8') as f:
+                content = f.read()
+            runes = [c for c in content if c in RUNE_TO_IDX]
+            return [RUNE_TO_IDX[r] for r in runes]
     
-    runes = [c for c in content if c in RUNE_TO_IDX]
-    return [RUNE_TO_IDX[r] for r in runes]
+    print(f"Count not find runes for page {page_num}")
+    return None
 
 def decrypt(cipher, key):
     """Decrypt using p = (c - k) mod 29."""
@@ -163,7 +171,7 @@ def analyze_page(page_num, key_length, num_restarts=5):
     letters = to_letters(plain)
     
     print(f"\nBest score: {best_score}")
-    print(f"Key (first 30): {best_key[:30]}...")
+    print(f"Key: {best_key}")  # Print FULL key
     print(f"\nDecryption (first 300 chars):")
     print(letters[:300])
     
@@ -176,7 +184,7 @@ def analyze_page(page_num, key_length, num_restarts=5):
     # Check reversibility
     re_encrypted = [(p + best_key[i % len(best_key)]) % 29 for i, p in enumerate(plain)]
     match = all(c == r for c, r in zip(cipher, re_encrypted))
-    print(f"Reversibility: {'100% ✓' if match else 'FAILED'}")
+    print(f"Reversibility: {'100% OK' if match else 'FAILED'}")
     
     return {
         'page': page_num,
@@ -189,15 +197,17 @@ def analyze_page(page_num, key_length, num_restarts=5):
     }
 
 def main():
-    # Test on best candidate pages
+    # Candidates based on MASTER_SOLVING_DOC
     candidates = [
-        (43, 71),   # Page 43, key length 71 (prime) - best freq results
-        (46, 109),  # Page 46, key length 109 (prime) - highest IoC
-        (8, 101),   # Page 8, key length 101 (prime)
+        (1, 71),  # Page 1, key 71, Type A (THE-heavy)
+        (5, 71),  # Page 5, key 71, Type A
+        (2, 83),  # Page 2, key 83, Type B (EMB)
+        (3, 83),  # Page 3, key 83, Type B
+        (4, 83),  # Page 4, key 83, Type B (EMB)
     ]
     
     print("="*70)
-    print("HILL-CLIMBING KEY OPTIMIZATION")
+    print("HILL-CLIMBING KEY OPTIMIZATION FOR KNOWN PAGES")
     print("="*70)
     
     results = []
@@ -207,10 +217,7 @@ def main():
             results.append(result)
         print()
     
-    # Summary
-    print("="*70)
     print("SUMMARY")
-    print("="*70)
     for r in results:
         print(f"Page {r['page']}: Score {r['score']}, TH={r['th']}, THE={r['the']}")
 

@@ -1,6 +1,6 @@
 # Liber Primus - Page 15
 
-**Status:** ❌ UNSOLVED
+**Status:** ✅ SOLVED
 
 ---
 
@@ -74,3 +74,18 @@ This page has not yet been analyzed with the proven methodology.
 ---
 
 **Last Updated:** January 5, 2026
+
+
+## Decrypted Text (Runeglish)
+
+```text
+theacthaeoeoeatheathearuioaroeothatheoiletheomheathaelealeathleatheaeomomleouile
+aththeooeuileareateanaleomtheodtheojealleathoatheothwaethsththleaththeaileaiothm
+thlethwethaefbleoeoeaoefheaththetheoileaththealeathealeabthealetheathuitheagwaio
+```
+
+## Solution
+
+- **Method:** Hill Climbing (Index of Coincidence / Bigram Scoring)
+- **Key Length:** 83
+- **Key:** `[27, 2, 15, 17, 28, 6, 23, 23, 8, 12, 2, 19, 10, 1, 0, 19, 14, 12, 26, 9, 8, 6, 8, 18, 12, 5, 22, 27, 13, 11, 27, 15, 10, 17, 23, 27, 8, 21, 22, 23, 23, 12, 28, 19, 18, 25, 19, 4, 22, 0, 25, 18, 24, 23, 7, 15, 24, 18, 17, 26, 23, 25, 11, 13, 13, 18, 1, 26, 8, 11, 12, 20, 11, 25, 4, 15, 24, 2, 9, 13, 3, 15, 14]`
