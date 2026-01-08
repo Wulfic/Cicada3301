@@ -11,12 +11,12 @@
 
 | Category | Count | Pages |
 |----------|-------|-------|
-| ✅ **FULLY SOLVED** | 2 | [56](pages/page_56/README.md), [57](pages/page_57/README.md) |
-| 🔄 **FIRST-LAYER COMPLETE** | 6 | [0](pages/page_00/README.md)-[5](pages/page_05/README.md) |
-| ❌ **UNSOLVED** | 51 | 6-55 |
+| ✅ **FULLY SOLVED (Modern English)** | 4 | [11](pages/page_11/README.md), [12](pages/page_12/README.md), [56](pages/page_56/README.md), [57](pages/page_57/README.md) |
+| 🔄 **DECRYPTED (Old English)** | 1 | [0](pages/page_00/README.md) (Needs Translation) |
+| ❌ **UNSOLVED / GARBAGE** | 54 | 1-10, 13-55 |
 | 📝 **NEEDS TRANSCRIPTION** | 16 | 58-74 |
 
-**Bottom Line:** ~97% unsolved. First-layer decryption complete for pages 0-5. Output is **Runeglish** (Old English transliterated from runes), not garbled text. Requires translation.
+**Audit Update (Jan 2026):** Only Pages 11, 12, 56, 57 are truly solved as readable Modern English. Page 0 is readable Old English. All other pages produce "THE"-heavy garbage or high entropy and are reverted to **Unsolved**.
 
 ---
 
@@ -162,9 +162,13 @@ MUST match original cipher 100%
 ## 🎯 Active Research Leads
 
 ### High Priority
-1. **Translation of Pages 0-5** - Decrypted text is Old English/Runeglish. Needs translation.
-   - Page 0: `æþatæyeþ-esþes...` -> Contains `FLETH` (Dwelling), `HATHEN` (Heathen).
-2. **Interleaving** - Every-2nd-char shows promise
+1. **Translation of Page 00 (Runeglish)**
+   - The "Decrypted" text is confirmed to be Old English (Runeglish).
+   - "Deep Web Hash" pages (56/57) were Modern English. This suggests other pages might be Modern English too if we find the right key, OR Page 00 is special.
+2. **Re-attacking P01-10 with Modern English probability**
+   - Since P11 and P12 solved to Modern English, the assumption that P0-5 are "Runeglish" might only apply to Page 0.
+   - We should re-examine P1-5 assuming the target is Modern English.
+3. **Interleaving** - Every-2nd-char shows promise
 3. **Old English segmentation** - DOETH, GOETH, HATH patterns confirmed.
 
 ### Medium Priority

@@ -4,6 +4,29 @@
 
 ---
 
+## 🟢 Solution
+
+**Plaintext (Modern English):**
+```
+MOST THINGS ARE NOT WORTH PRESERV
+ING:
+ADHERENCE: WE FOLLOW DOGMA
+SO THAT WE CAN BELONG AND BE RIGH
+T. OR WE FOLLOW REASON SO WE CAN
+BELONG AND BE RIGHT.
+THERE IS NOTHING TO BE RIGHT ABOUT.
+TO BELONG IS DEATH.
+IT IS THE BEHAVIORS OF CONSUMPT
+ION, PRESERVATION, AND ADHEREN
+```
+
+**Key:**
+`[8, 17, 2, 8, 26, 11, 23, 22, 16, 26, 27, 26, 27, 12, 18, 5, 23, 11, 10, 8, 9, 21, 18, 5, 20, 26, 25, 26, 8, 4, 18, 16, 2, 10, 24, 6, 27, 24, 0, 12, 2, 2, 13, 2, 22, 16, 27, 26, 8, 11, 19, 11, 28, 26, 0, 16, 21, 24, 1, 10, 8, 24, 2, 6, 21, 6, 12, 12, 2, 25, 27, 0, 12, 18, 2, 8, 28, 0, 18, 27, 10, 3, 9]`
+
+**Key Length:** 83 (23rd Prime)
+
+---
+
 ## Overview
 
 **Description:** Standard content page  

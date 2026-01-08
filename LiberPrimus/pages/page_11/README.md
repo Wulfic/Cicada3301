@@ -4,6 +4,30 @@
 
 ---
 
+## 🟢 Solution
+
+**Plaintext (Modern English):**
+```
+2 WE HAVE WHAT WE HAVE N
+OW BY LUCK, AND WE WILL NOT
+BE STRONG ENOUGH LATER T
+O OBTAIN WHAT WE NEED.
+MOST THINGS ARE NOT WORTH CONSUM
+ING:
+PRESERVATION: WE PRESERVE
+THINGS BECAUSE WE BELIEVE WE AR
+E WEAK. IF WE LOSE THEM WE WILL NO
+T BE STRONG ENOUGH TO GAIN THEM
+AGAIN. THIS IS THE DECEPTION.
+```
+
+**Key:**
+`[18, 24, 4, 18, 25, 23, 23, 26, 4, 10, 11, 23, 8, 22, 11, 5, 24, 12, 17, 2, 22, 21, 20, 24, 25, 12, 26, 17, 8, 16, 14, 24, 8, 27, 26, 17, 12, 16, 26, 20, 15, 27, 25, 12, 1, 0, 16, 8, 11, 19, 11, 28, 26, 0, 16, 21, 24, 1, 10, 8, 24, 2, 6, 21, 6, 12, 12, 2, 25, 27, 0, 12, 18, 2, 8, 28, 0, 18, 27, 10, 3, 9, 23]`
+
+**Key Length:** 83 (23rd Prime)
+
+---
+
 ## Overview
 
 **Description:** Standard content page  

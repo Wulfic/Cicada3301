@@ -1,6 +1,35 @@
 # Liber Primus - Page 00
 
-**Status:** 🔄 FIRST-LAYER COMPLETE (Second layer needed)
+**Status:** 🔄 DECRYPTED (Runeglish) - Needs Translation
+
+---
+
+## 🟢 Decrypted Output (Runeglish)
+
+**Note:** This page decrypts to Old English (Runeglish), not Modern English. Translation is in progress.
+
+**Plaintext (Old English Transliterated):**
+```
+æþatæyeþ-esþes.þeaeaþ-eorŋ-
+þro-þiasþdiaþeþeaŋ-eneaþe-sþeaæ-
+þat-hþeo-fleþ-eaþþ-ychþead-
+þeoþbtmiŋdœþ-es-þi-þeon-þeaþ-l
+aþeoealn-þeaþeoea-þoumtœdþ-iaœ-þee
+s-þeo-þeaþ-eagœ-þnþeoc-ly-dþea-xþ
+an-tplþ-eiadþþea-þæsi-gþerea
+n-upt.theoþ-eaþiŋnþeof-haþenþea-
+sþw-ia-sþeaþan-þeajrdi-nþe-sœdn-
+þedþa-þe-reþŋþeoþea-þeþea-r
+þe-nþea-ingxþmi-þeatheagm-ye-eoo
+tixwt-h-eaþphŋþeaxa-þpia-sþip-l
+```
+
+**Known Words:**
+- `FLETH` (Dwelling/Floor)
+- `HATHEN` (Heathen)
+- `THEON` (Thrive)
+
+For full translation analysis, see [translation.md](translation.md).
 
 ---
 
