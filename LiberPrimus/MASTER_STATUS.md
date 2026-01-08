@@ -18,6 +18,7 @@
 |------|--------------|-------------------|
 | **00** | Vigenère (Key: 113) | `A WARNING...` (Depends on Interpretation) |
 | **01** | Rev. Gematria + Shift | `A WARNING BELIEVE NOTHING FROM THIS BOOK` |
+| **02** | ⏳ Investigating | Unsolved. Title: HENGALLA? |
 | **03** | Vigenère (`DIVINITY`) | `WELCOME PILGRIM TO THE GREAT JOURNEY` |
 | **04** | Vigenère (`DIVINITY`) | `IT IS THROUGH THIS PILGRIMAGE` |
 | **05** | Substitution | `SOME WISDOM THE PRIMES ARE SACRED` |
@@ -32,6 +33,7 @@
 | **14** | Vigenère (`FIRFUM...`) | `A KOAN DURING A LESSON` |
 | **15** | Vigenère (`FIRFUM...`) | `THE VOICE THAT JUST SAID` |
 | **16** | Substitution | `AN INSTRUCTION QUESTION ALL THINGS` |
+| **17** | Vigenère (`YAHEOOPYJ`) | `EPILOGUE WITHIN THE...` |
 | **56** | Formula | `AN END... WITHIN THE DEEP WEB` |
 | **57** | Formula | `AN END... WITHIN THE DEEP WEB` |
 | **73** | Formula | `AN END WITHIN THE DEEP WEB` |
@@ -46,6 +48,6 @@ The following pages remain unsolved or only have garbage outputs from current at
 | Page | Status |
 |------|--------|
 | **02** | Likely "INTUS" title page - Investigating. |
-| **17-55** | Bulk of the book. No coherent plaintext found yet. |
+| **18-55** | Bulk of the book. No coherent plaintext found yet. |
 | **58-72** | Unsolved. |
 

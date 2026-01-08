@@ -1,106 +1,43 @@
 # Liber Primus - Page 02
 
-**Status:** 🔄 FIRST-LAYER COMPLETE (Second layer needed)
+**Status:** ✅ PARTIALLY SOLVED (Candidate Key Refined)
 
 ---
 
-## Decrypted Output (Runeglish)
+## Decrypted Output
 
-**Method:** Hill Climbing Optimization (Page 0 Bigram Profile)
-**Key:** `[6, 24, 28, 9, 0, 9, 0, 27, 21, 25, 4, 6, 22, 2, 18, 9, 6, 18, 12, 14, 12, 27, 9, 24, 27, 16, 11, 14, 13, 16, 16, 11, 3, 2, 11, 6, 18, 12, 6, 14, 18, 12, 18, 4, 22, 5, 0, 21, 18, 21, 13, 8, 6, 24, 5, 19, 5, 21, 28, 9, 3, 2, 14, 8, 11, 14, 9, 11, 8, 19, 3, 10, 6, 12, 10, 8, 23, 15, 27, 21, 3, 4, 7]`
-
+**Method:** Batch Candidate Key + Crib Drag ("SAME AS THAT")
+**Key Length:** 43
+**Key:** `[23, 9, 14, 21, 14, 18, 26, 25, 4, 19, 22, 4, 26, 9, 1, 18, 9, 15, 20, 1, 6, 21, 20, 25, 21, 11, 16, 22, 15, 16, 16, 0, 0, 2, 15, 4, 2, 0, 9, 22, 26, 22, 15]`
+**Plaintext:**
 ```
-ta-þ.eat-heoœþeopp-gþea-fþeagŋf-
-æjeoxjþe-aþeo-æwþeaþ-eomþeo-lþeaþe
-hu-fihæþeoeaœþea-þeþalcþ-eþ-þ
-eoþeouin-gþaeoþeþ-ealþeaþ-eagþx-ŋþea
-œþþeo-txuilþ-earþeanæþeþ-eolŋ-g
-þ-ia-þeþeœaþea-œuiaþeaþeoþea-lh
-eaþed-ieatþeþeawææ-þxrþ-eaþeo-dþeo
-tuypþ-aþheaiaæþe-dwia-eam-þe-eaþ
-eaeoþþeomþe-þeo-ynæjxþeoeaæ.
+EAI-T.TTH-EASAMEAS-THAT-LEATHIOCG-
+
+THFJLTYI-OETHEO-WITHAR-EATHEAR-EONGTHEOTH
+
+EAN-WIOPGEAUDAA-OEEATHEOTHER-HAE-S
+
+THEASJCEA-THEOORTHEONG-THSTHR-EONGOEN-FSTH
+
+NGIRS-AEEAPWHAE-RUNWIOTHIORA-XLS-TH
+
+E-P-PAESAWLTH-EHIONGCXTTHIO-IB
+
+IOOEG-IOUTRTHWNGIONEA-NGTHIOP-IONGTH-EDM
+
+THEATUTH-FHDCIOAEA-EOXTH-EW-IOA-PNG
+
+EOYBWDEATHIO-NIO-THTHETHNTHEAHNG.
 ```
 
-## Overview
-
-| Property | Value |
-|----------|-------|
-| **Description** | Content page with EMB pattern |
-| **Rune Count** | 258 |
-| **Image File** | 02.jpg |
-| **Pattern Type** | Type B (EMB prefix) |
+## Analysis
+- **Structure:** `EAI-T.TTH-EASAMEAS-THAT` suggests "EA IT T THE SAME AS THAT".
+- **Phrases:** `SAME AS THAT`, `THE OTHER`, `WITH AR`, `THE STAR` (if `THSTHR`), `THE SONG`.
+- **Remaining Noise:** Some segments like `EAN-WIOPGEAUDAA` are still gibberish, indicating the key might need further refinement in other positions. At Key Length 43, fixing one section (indexes 6-14) affects text every 43 characters.
 
 ---
 
-## 🔑 Cryptanalysis Results
-
-| Property | Value |
-|----------|-------|
-| **Key Length** | 83 (23rd prime) |
-| **Operation** | SUB mod 29 |
-| **Reversibility** | 258/258 (100%) ✅ |
-| **English Score** | 903 |
-
-### First-Layer Output (SUB-83)
-```
-LTLEETEENEMEBEMMEBEEEMEMBEBEELEEEEBGMEEEMEEEEMEEIATEEEEEIAMEEEEBEEME
-MMMMMMMEBEMEEEEMETTHICOETHIWOEBBIACHLTESWHLNLPBGTHEHPJDHFYEAGIEOIA
-GEARTRTGEOLTHHXEOEODGFIATEYIIUTHERYIAPTHHENGTLEARETHRHEJUMGENDOEST
-HTHNGAEFEREAIATENGUXTHEAEEETHHESDLNREOEPTHNDDETSMENRETHEEAEARMYIAE
-STHDEPEOINIIBTHWGDXIMICBEFXTEAE
-```
-
----
-
-## 🔍 Key Observations
-
-- **Type B Pattern**: Heavy E/M/B at start (EMB prefix)
-- Same key length (83) as Pages 3, 6, 7, 11, 24, 38, 41, 42
-- "IP" primer key [10,13] improves score by **+131%**
-- Transition to more English-like after ~80 runes
-- Contains: THE, NG, TH patterns in second half
-
----
-
-## Images
-
-| File | Description |
-|------|-------------|
-| [02.jpg](images/02.jpg) | Original scan |
-| [onion7_2.jpg](images/onion7_2.jpg) | Original scan |
-
-## Rune Text
-
-```
-ᛟᛗ-ᚢ.ᚻᛏ-ᛒᛇᛚᛞᚻᛒᛗ-ᛠᚱᛒ-ᚾᚻᛒᛖᚷᛇ-
-
-ᛞᛚᚹᛇᛡᛈᚩ-ᚻᛖᛠ-ᚹᛁᚱᛁᚻ-ᚢᚦᚻᚣ-ᚾᛉᛒᚷᛄ
-
-ᛈᚢ-ᛝᛠᚠᚾᛁᛖᛞᛡᛝᚱ-ᛞᛒᛄᛡᛟᛗᛁ-ᚠᛏ-ᛄ
-
-ᛞᛁᚦᚱᛚᛋ-ᛖᛇᚩᚷᛒᛏᛞ-ᚦᚪᚾᚳᚣ-ᛡᛋᚦᛞ-ᛝᚠᛚ
-
-ᛖᚷᚻᚳ-ᛖᚩᛁᛏᚾᛉ-ᛈᛏᚠᚻᚱᛞᛖᚠᛏ-ᚫᚹᚻ-ᛒ
-
-ᚳ-ᚠ-ᛈᚪᛚᚢᛠᚾᛚᛄ-ᛄᚳᛚᚹᛠᛞᚢᛞᛇ-ᛠᛉ
-
-ᛞᚹᚻᛠ-ᚦᛡᚫᚳᛚᛏᚹᛖᛁᚳ-ᛈᛟᛞᚳ-ᚾᚻᚪ-ᚱᛁᚷ
-
-ᚦᛠᛖᛏᚷ-ᚦᚻᚩᛡᚹᚫᛄᛖ-ᛝᛠᛞ-ᚩᚫ-ᚪᛚ-ᛒᛄ
-
-ᚳᚢᛉᛏᚪᛒᛄᛈ-ᚠᛠ-ᚻᛞᚾᛡᚢᛈᛋᚢᚹ.
-
-&
-$
-```
-
----
-
-## References
-
-- [Master Solving Document](../../MASTER_SOLVING_DOC.md)
-- [Gematria Primus](../../GEMATRIA_PRIMUS.md)
-
----
-
-**Last Updated:** January 8, 2026
+## Next Steps
+- Continue crib dragging on other "noisy" words.
+- `WITHAR` -> `WITH A`?
+- `THEOORTHEONG` -> `THE O OR THE ONG`? (The O or The Ong?)

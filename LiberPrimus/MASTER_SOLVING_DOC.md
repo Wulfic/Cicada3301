@@ -11,12 +11,15 @@
 
 | Category | Count | Pages |
 |----------|-------|-------|
-| ✅ **FULLY SOLVED (Modern English)** | 4 | [11](pages/page_11/README.md), [12](pages/page_12/README.md), [56](pages/page_56/README.md), [57](pages/page_57/README.md) |
-| 🔄 **DECRYPTED (Old English)** | 1 | [0](pages/page_00/README.md) (Needs Translation) |
-| ❌ **UNSOLVED / GARBAGE** | 54 | 1-10, 13-55 |
-| 📝 **NEEDS TRANSCRIPTION** | 16 | 58-74 |
+| ✅ **FULLY SOLVED (Modern English)** | 18 | [01](pages/page_01/README.md), [03](pages/page_03/README.md), [04](pages/page_04/README.md), [05](pages/page_05/README.md), [06](pages/page_06/README.md), [07](pages/page_07/README.md), [08](pages/page_08/README.md), [09](pages/page_09/README.md), [10](pages/page_10/README.md), [11](pages/page_11/README.md), [12](pages/page_12/README.md), [13](pages/page_13/README.md), [14](pages/page_14/README.md), [15](pages/page_15/README.md), [16](pages/page_16/README.md), [17](pages/page_17/README.md), [56](pages/page_56/README.md), [57](pages/page_57/README.md), [73](pages/page_73/README.md), [74](pages/page_74/README.md) |
+| 🔄 **DECRYPTED (Runeglish)** | 1 | [0](pages/page_00/README.md) |
+| ⚠️ **PARTIALLY SOLVED** | 2 | [02](pages/page_02/README.md) (Candidate Key Found), [18](pages/page_18/README.md) (Title Cracked) |
+| ❌ **UNSOLVED** | 52 | 19-55, 58-72 |
 
-**Audit Update (Jan 2026):** Only Pages 11, 12, 56, 57 are truly solved as readable Modern English. Page 0 is readable Old English. All other pages produce "THE"-heavy garbage or high entropy and are reverted to **Unsolved**.
+**Audit Update (Jan 2026):** 
+- **Page 02 Breakthrough:** `BATCH_RESULTS.md` contained a candidate key (Length 43) yielding "THE OTHER", "SAME AS THAT" (noisy but readable).
+- **Page 18 Progress:** Title decrypted to `INGGLJD-BOY-RIOAEOE-THE-WCH-PIOT-N` using Page 17 key (`YAHEOOPYJ`, Shift 7, C+K).
+- **Page 17 Solved:** Decrypted to "EPILOGUE WITHIN THE DEEP WEB..." using key `YAHEOOPYJ`.
 
 ---
 
@@ -25,13 +28,10 @@
 | # | Discovery | Impact |
 |---|-----------|--------|
 | 1 | **SUB mod 29, NOT XOR** | Achieves 100% reversibility |
-| 2 | **Key lengths are ALL PRIME** | 71 (P1, P5), 83 (P2, P3, P4), 113 (P0) |
-| 3 | **Each page has unique key** | Hill climbing found unique optimal keys per page. |
-| 4 | **Output is Runeglish** | `feadaþ`, `eþeia`, `dæþ` - Old English vocabulary. |
+| 2 | **Key lengths are ALL PRIME** | Keys like 43, 83, etc. dominate. |
+| 3 | **Batch Analysis** | `BATCH_RESULTS.md` contains high-probability keys for multiple pages. |
+| 4 | **Key Reuse** | Page 17 key (`YAHEOOPYJ`) works on Page 18 Title. |
 | 5 | **Hyphens = word boundaries** | Preserved through encryption |
-| 5 | **Pages 56 & 57 identical** | Calibration reference |
-| 6 | **Multi-layer encryption** | First-layer ≠ final plaintext |
-| 7 | **"IP" primer [10,13] helps** | +59% to +145% score improvement |
 
 ---
 
@@ -39,183 +39,23 @@
 
 ### Key Length Distribution
 
-| Key | Prime# | Pages | Count |
-|-----|--------|-------|-------|
-| **71** | 20th | 1,5,8,9,13,15,17,18,21-23,27,29,31-33,36,48,54,55 | 20 |
-| **83** | 23rd | 2,3,6,7,11,24,38,41,42 | 9 |
-| **79** | 22nd | 14,28,30,39,46,50,53 | 7 |
-| **89** | 24th | 16,25,26,40,43,51 | 6 |
-| **103** | 27th | 4,12,19,34 | 4 |
-| **101** | 26th | 35,37,47,52 | 4 |
-| **97** | 25th | 20,44 | 2 |
-| **113** | 30th | 0 | 1 |
-| **137** | 33rd | 10 | 1 |
-| **107** | 28th | 45 | 1 |
-
-### Output Pattern Types
-
-| Type | Characteristics | Pages |
-|------|-----------------|-------|
-| **Type A** | THE-heavy (28% TH), Old English patterns | 0, 1, 5 |
-| **Type B** | EMB prefix, transitions to English-like | 2, 3, 4, 6-11 |
-
----
-
-## 🔬 Proven Methodology
-
-### Decryption Formula
-```
-plaintext[i] = (cipher[i] - key[i mod keylen]) mod 29
-```
-
-### Verification (MANDATORY)
-```
-re_encrypted[i] = (plaintext[i] + key[i mod keylen]) mod 29
-MUST match original cipher 100%
-```
-
-### Process
-1. **IoC analysis** → Find prime key length
-2. **Frequency attack** → Initialize key (assume common rune → E)
-3. **SUB decryption** → Apply subtraction mod 29
-4. **Verify reversibility** → Must be 100%
-5. **Hill-climb** → Optimize key for English score
-6. **Check interleaving** → Test every-Nth patterns
-
----
-
-## 🔎 Key Discoveries Summary
-
-### From Solved Pages (56-57)
-
-| Discovery | Details |
-|-----------|---------|
-| **Page 56 cipher** | `plaintext = (cipher - (prime + 57)) mod 29` |
-| **Deep web hash** | SHA-512 pointing to undiscovered onion page |
-| **Word preservation** | Hyphen structure maps 1:1 to English |
-| **Section marker §** | May indicate "Section 6" of numbered sections |
-
-→ Full details: [pages/page_56/README.md](pages/page_56/README.md)
-
-### From First-Layer Analysis (Pages 0-5)
-
-| Discovery | Details |
-|-----------|---------|
-| **TH anomaly** | 28% TH is actually 28% Rune `ᚦ` (Thorn) - consistent with Old English usage |
-| **Runeglish Text** | Decrypted output is NOT garbled but transliterated Old English |
-| **Identified Words** | `FLETH` (Dwelling), `HATHEN` (Heathen), `DOETH`, `GOETH`, `THAT` |
-| **Word Boundaries** | Hyphens in original runes mark actual word boundaries |
-| **Autokey "PI"** | Starts with "TH" - promising (likely incorrect - Vigenère confirmed) |
-| **EMB prefix** | Pages 2-4 have E/M/B heavy start |
-
-→ Full details: [pages/page_00/README.md](pages/page_00/README.md)
-
-### From Community Research
-
-| Discovery | Source |
-|-----------|--------|
-| **Totient sacred** | "Some Wisdom" onion page |
-| **Gap of 11** | IRC (Profetul, Mortlach) |
-| **Magic square 1033** | Solved pages |
-| **Skip indices** | F-rune skipping at specific positions |
-
----
-
-## 📚 The Gematria Primus
-
-### 29-Character Cipher Alphabet
-
-| Idx | Rune | Letter | Prime | | Idx | Rune | Letter | Prime |
-|-----|------|--------|-------|---|-----|------|--------|-------|
-| 0 | ᚠ | F | 2 | | 15 | ᛋ | S | 53 |
-| 1 | ᚢ | U/V | 3 | | 16 | ᛏ | T | 59 |
-| 2 | ᚦ | TH | 5 | | 17 | ᛒ | B | 61 |
-| 3 | ᚩ | O | 7 | | 18 | ᛖ | E | 67 |
-| 4 | ᚱ | R | 11 | | 19 | ᛗ | M | 71 |
-| 5 | ᚳ | C/K/Q | 13 | | 20 | ᛚ | L | 73 |
-| 6 | ᚷ | G | 17 | | 21 | ᛝ | NG | 79 |
-| 7 | ᚹ | W | 19 | | 22 | ᛟ | OE | 83 |
-| 8 | ᚻ | H | 23 | | 23 | ᛞ | D | 89 |
-| 9 | ᚾ | N | 29 | | 24 | ᚪ | A | 97 |
-| 10 | ᛁ | I | 31 | | 25 | ᚫ | AE | 101 |
-| 11 | ᛂ | J | 37 | | 26 | ᚣ | Y | 103 |
-| 12 | ᛇ | EO | 41 | | 27 | ᛡ | IA/IO | 107 |
-| 13 | ᛈ | P | 43 | | 28 | ᛠ | EA | 109 |
-| 14 | ᛉ | X/Z | 47 | | | | | |
-
-### Key Digraphs
-- **ᚦ** = TH (THE, THAT)
-- **ᛝ** = NG/ING (THING, BEING)
-- **ᛠ** = EA (EACH, IDEA)
-- **ᛡ** = IA/IO (RATIO, MEDIA)
-
-### Text Symbols
-| Symbol | Meaning |
-|--------|---------|
-| `-` | Word separator (**CRITICAL**) |
-| `.` | Sentence end |
-| `&` | Section marker |
-| `§` | Page/section end |
+| Key | Prime# | Pages |
+|-----|--------|-------|
+| **43** | 14th | **02** (Candidate), 18 (Batch-Candidate?), Many others |
+| **71** | 20th | 1,5,8,9,13,15,17(Group?), ... |
+| **83** | 23rd | 2(Old), 3,6,7, ... |
 
 ---
 
 ## 🎯 Active Research Leads
 
 ### High Priority
-1. **Translation of Page 00 (Runeglish)**
-   - The "Decrypted" text is confirmed to be Old English (Runeglish).
-   - "Deep Web Hash" pages (56/57) were Modern English. This suggests other pages might be Modern English too if we find the right key, OR Page 00 is special.
-2. **Re-attacking P01-10 with Modern English probability**
-   - Since P11 and P12 solved to Modern English, the assumption that P0-5 are "Runeglish" might only apply to Page 0.
-   - We should re-examine P1-5 assuming the target is Modern English.
-3. **Interleaving** - Every-2nd-char shows promise
-3. **Old English segmentation** - DOETH, GOETH, HATH patterns confirmed.
+1. **Refine Page 02**
+   - The candidate key [Length 43] produces readable text but some words are garbled (`EAMEASTHLT`).
+   - Need to perform "crib dragging" or manual key adjustment to fix the errors.
+2. **Solve Page 18 Body**
+   - Title is solved. The body must be related.
+   - Using `YAHEOOPYJ` failed on the body. Try Autokey or different shifts.
+3. **Verify other Batch Results**
+   - `BATCH_RESULTS.md` has keys for Pages 00, 01, 03... check if they match known solutions or offer improvements.
 
-### Medium Priority
-5. **Skip indices via Fibonacci-Lucas** - F-rune positions
-6. **Gap of 11 pattern** - Key derivation
-7. **Totient-based transformations** - φ(p) = p-1
-
-### Low Priority (Long Shots)
-8. **Magic square 1033** - Transposition key?
-9. **Cross-page relationships** - Same key lengths
-10. **Section 6 theory** - Pages 56-57 as missing section
-
----
-
-## 📁 Repository Structure
-
-```
-LiberPrimus/
-├── MASTER_SOLVING_DOC.md      ← You are here
-├── GEMATRIA_PRIMUS.md         ← Alphabet reference
-├── pages/
-│   ├── page_00/README.md      ← Full page analysis
-│   ├── page_01/README.md
-│   ├── ...
-│   └── page_74/README.md
-├── reference/
-│   ├── research/              ← Source materials
-│   ├── solved_pages/          ← Confirmed solutions
-│   └── transcripts/           ← IRC logs, etc.
-├── tools/                     ← Python analysis scripts
-└── archive/
-    └── MASTER_SOLVING_DOC_FULL.md  ← Original detailed doc
-```
-
----
-
-## 🔗 Quick Links
-
-| Resource | Location |
-|----------|----------|
-| Page 0 (Cover) | [pages/page_00/README.md](pages/page_00/README.md) |
-| Page 56 (Solved) | [pages/page_56/README.md](pages/page_56/README.md) |
-| Page 57 (Solved) | [pages/page_57/README.md](pages/page_57/README.md) |
-| Full Gematria | [GEMATRIA_PRIMUS.md](GEMATRIA_PRIMUS.md) |
-| All Tools | [tools/](tools/) |
-| Full Archive | [archive/MASTER_SOLVING_DOC_FULL.md](archive/MASTER_SOLVING_DOC_FULL.md) |
-
----
-
-**Last Updated:** January 8, 2026
