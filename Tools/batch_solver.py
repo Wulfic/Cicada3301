@@ -52,7 +52,7 @@ BIGRAM_SCORES = {
 def load_page(page_num):
     paths = [
         f"LiberPrimus/pages/page_{page_num:02d}/runes.txt",
-        f"pages/page_{page_num:02d}/runes.txt"
+        f"LiberPrimus/pages/page_{page_num:02d}/runes.txt"
     ]
     for path in paths:
         if os.path.exists(path):

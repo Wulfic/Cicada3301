@@ -20,11 +20,16 @@ This repository contains comprehensive materials for researching and solving Cic
 
 | Section | Description |
 |---------|-------------|
+| [**Master_Tracking/**](Master_Tracking/) | 🧠 **Central Intelligence** - Master solving docs, status, and key hints |
 | [**LiberPrimus/**](LiberPrimus/) | 🔓 **The Liber Primus manuscript** - 75 pages organized individually with images, rune text, and analysis per page |
+| [**Analysis/**](Analysis/) | 🔬 **Analysis & References** - Deep dives, reference docs, and outputs |
+| [**Tools/**](Tools/) | 🛠️ **Tools & Scripts** - Python scripts for repo analysis |
+| [**Assets/**](Assets/) | 📦 **Assets** - Keys, PDFs, and other static files |
 | [**OtherCicadaPuzzles/**](OtherCicadaPuzzles/) | All other Cicada 3301 puzzles (2012-2017) |
 
-### Liber Primus Quick Links
-- [Master Solving Document](LiberPrimus/MASTER_SOLVING_DOCUMENT.md) - Proven methodology
+### Quick Links
+- [Master Solving Document](Master_Tracking/MASTER_SOLVING_DOC.md) - Proven methodology
+- [Project Status](Master_Tracking/MASTER_STATUS.md) - Current decryption state
 - [Gematria Primus Alphabet](LiberPrimus/GEMATRIA_PRIMUS.md) - 29-character cipher
 - [Page 57 - The Parable](LiberPrimus/pages/page_57/) - ✅ SOLVED (Plaintext)
 - [Page 56](LiberPrimus/pages/page_56/) - ✅ SOLVED (Prime shift)

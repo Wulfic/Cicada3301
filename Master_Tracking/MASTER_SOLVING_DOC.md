@@ -1,9 +1,9 @@
 # LIBER PRIMUS - MASTER SOLVING DOCUMENT
 ## Cicada 3301 (2014) Cryptographic Analysis
 
-> **Note:** Full decryption outputs and detailed page analysis have been moved to individual page README files. See [pages/page_XX/README.md](pages/) for complete details.
+> **Note:** Full decryption outputs and detailed page analysis have been moved to individual page README files. See [pages/page_XX/README.md](../LiberPrimus/pages/) for complete details.
 > 
-> Archived full document: [archive/MASTER_SOLVING_DOC_FULL.md](archive/MASTER_SOLVING_DOC_FULL.md)
+> Archived full document: [archive/MASTER_SOLVING_DOC_FULL.md](../LiberPrimus/archive/MASTER_SOLVING_DOC_FULL.md)
 
 ---
 
@@ -11,8 +11,8 @@
 
 | Category | Count | Pages |
 |----------|-------|-------|
-| ✅ **FULLY SOLVED (Modern English)** | 31 | [01](pages/page_01/README.md), [03](pages/page_03/README.md), [04](pages/page_04/README.md), [05](pages/page_05/README.md), [06](pages/page_06/README.md), [07](pages/page_07/README.md), [08](pages/page_08/README.md), [09](pages/page_09/README.md), [10](pages/page_10/README.md), [11](pages/page_11/README.md), [12](pages/page_12/README.md), [13](pages/page_13/README.md), [14](pages/page_14/README.md), [15](pages/page_15/README.md), [16](pages/page_16/README.md), [17](pages/page_17/README.md), [55](pages/page_55/README.md), [56](pages/page_56/README.md), [57](pages/page_57/README.md), [58](pages/page_58/README.md), [59](pages/page_59/SOLUTION.md), [60](pages/page_60/README.md), [61](pages/page_61/README.md), [62](pages/page_62/README.md), [63](pages/page_63/README.md), [64](pages/page_64/README.md), [67](pages/page_67/README.md), [68](pages/page_68/README.md), [72](pages/page_72/README.md), [73](pages/page_73/README.md), [74](pages/page_74/README.md) |
-| 🔄 **DECRYPTED (Old English/Runeglish)** | 1 | [00](pages/page_00/README.md) - Needs translation |
+| ✅ **FULLY SOLVED (Modern English)** | 31 | [01](../LiberPrimus/pages/page_01/README.md), [03](../LiberPrimus/pages/page_03/README.md), [04](../LiberPrimus/pages/page_04/README.md), [05](../LiberPrimus/pages/page_05/README.md), [06](../LiberPrimus/pages/page_06/README.md), [07](../LiberPrimus/pages/page_07/README.md), [08](../LiberPrimus/pages/page_08/README.md), [09](../LiberPrimus/pages/page_09/README.md), [10](../LiberPrimus/pages/page_10/README.md), [11](../LiberPrimus/pages/page_11/README.md), [12](../LiberPrimus/pages/page_12/README.md), [13](../LiberPrimus/pages/page_13/README.md), [14](../LiberPrimus/pages/page_14/README.md), [15](../LiberPrimus/pages/page_15/README.md), [16](../LiberPrimus/pages/page_16/README.md), [17](../LiberPrimus/pages/page_17/README.md), [55](../LiberPrimus/pages/page_55/README.md), [56](../LiberPrimus/pages/page_56/README.md), [57](../LiberPrimus/pages/page_57/README.md), [58](../LiberPrimus/pages/page_58/README.md), [59](../LiberPrimus/pages/page_59/SOLUTION.md), [60](../LiberPrimus/pages/page_60/README.md), [61](../LiberPrimus/pages/page_61/README.md), [62](../LiberPrimus/pages/page_62/README.md), [63](../LiberPrimus/pages/page_63/README.md), [64](../LiberPrimus/pages/page_64/README.md), [67](../LiberPrimus/pages/page_67/README.md), [68](../LiberPrimus/pages/page_68/README.md), [72](../LiberPrimus/pages/page_72/README.md), [73](../LiberPrimus/pages/page_73/README.md), [74](../LiberPrimus/pages/page_74/README.md) |
+| 🔄 **DECRYPTED (Old English/Runeglish)** | 1 | [00](../LiberPrimus/pages/page_00/README.md) - Needs translation |
 | ❌ **UNSOLVED** | 43 | 02, 18-54, 65-66, 69-71 |
 
 **⚠️ CRITICAL AUDIT (Jan 8, 2026):**

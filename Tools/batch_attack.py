@@ -393,8 +393,8 @@ def main():
         help="Pages to attack: 'all', 'priority', 'deepweb', or comma-separated (e.g., '17,18,19')"
     )
     parser.add_argument(
-        "--output", type=str, default="BATCH_RESULTS.md",
-        help="Output markdown file (default: BATCH_RESULTS.md)"
+        "--output", type=str, default="Analysis/Outputs/BATCH_RESULTS.md",
+        help="Output markdown file (default: Analysis/Outputs/BATCH_RESULTS.md)"
     )
     parser.add_argument(
         "--json", type=str, default=None,

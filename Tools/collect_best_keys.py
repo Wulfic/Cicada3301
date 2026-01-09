@@ -11,7 +11,7 @@ def scan_keys():
     verified_keys = {}
     
     # Iterate through page_00 to page_74 (limit 0 to 60 for now based on solved status)
-    # Actually, iterate all directories in pages/
+    # Actually, iterate all directories in LiberPrimus/pages/
     
     if not os.path.exists(PAGES_DIR):
         print(f"Pages directory not found: {PAGES_DIR}")

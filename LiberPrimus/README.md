@@ -61,7 +61,7 @@ The Liber Primus was released in **two parts**:
 
 ## 🛠️ GPU-Accelerated Solving Tools
 
-### New Brute Force Suite (Jan 2026)
+All analysis scripts and solvers have been centralized in the **[`Tools/`](../Tools/)** directory.
 
 | Tool | Description |
 |------|-------------|
@@ -71,13 +71,13 @@ The Liber Primus was released in **two parts**:
 | `running_key_solver.py` | Self-Reliance + chained plaintext attacks |
 | `batch_attack.py` | Process all unsolved pages in parallel |
 
-**Quick Start:**
+**Quick Start (Run from Repo Root):**
 ```bash
 # Quick attack
-python brute_force_solver.py --page 17 --quick --top 20
+python Tools/brute_force_solver.py --page 17 --quick --top 20
 
 # Full batch attack on all unsolved pages
-python batch_attack.py --output BATCH_RESULTS.md
+python Tools/batch_attack.py --output Analysis/Outputs/BATCH_RESULTS.md
 ```
 
 ### Legacy Tools

@@ -344,7 +344,7 @@ class AggressiveSolver:
         paths = [
             Path("c:/Users/tyler/Repos/Cicada3301/LiberPrimus/reference/research/Self-Reliance.txt"),
             Path("c:/Users/tyler/Repos/Cicada3301/LiberPrimus/reference/Self-Reliance.txt"),
-            Path("c:/Users/tyler/Repos/Cicada3301/reference/Self-Reliance.txt"),
+            Path("c:/Users/tyler/Repos/Cicada3301/LiberPrimus/reference/Self-Reliance.txt"),
         ]
         for path in paths:
             if path.exists():

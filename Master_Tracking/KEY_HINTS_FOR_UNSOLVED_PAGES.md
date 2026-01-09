@@ -26,7 +26,7 @@ After analyzing all solved pages (01-17, 55-74) and reference materials, the fol
 
 ### 1. Page 63 Contains Direct "18" Reference
 
-**Source:** [Page 63 README](pages/page_63/README.md)  
+**Source:** [Page 63 README](../LiberPrimus/pages/page_63/README.md)  
 **Original Decoded Text (CAESAR_0 / Direct Gematria):**
 ```
 SOME WISDOM
@@ -124,7 +124,7 @@ for i in range(len(cipher)):
 
 ### 5. The Epilogue Connection (Page 17 → Page 18)
 
-**Source:** [Page 17 README](pages/page_17/README.md)  
+**Source:** [Page 17 README](../LiberPrimus/pages/page_17/README.md)  
 **Page 17 Key:** `YAHEOOPYJ`  
 **Page 17 Content:**
 ```
@@ -287,12 +287,12 @@ POTENTIAL_KEYS = {
 
 | Source Page | Key Content | Link |
 |-------------|-------------|------|
-| Page 63 | Grid with "18", mysterious terms | [README](pages/page_63/README.md) |
-| Page 55/73 | φ(prime) cipher method | [Page 55](pages/page_55/README.md), [Page 73](pages/page_73/README.md) |
-| Page 17 | YAHEOOPYJ key, Epilogue | [README](pages/page_17/README.md) |
-| Page 05 | "PRIMES ARE SACRED" statement | [README](pages/page_05/README.md) |
-| Page 56-57 | Self-Reliance reference, Parable | [README](pages/page_56/README.md) |
-| Page 68 | CIRCUMFERENCE, CONSUMPTION theme | [README](pages/page_68/README.md) |
+| Page 63 | Grid with "18", mysterious terms | [README](../LiberPrimus/pages/page_63/README.md) |
+| Page 55/73 | φ(prime) cipher method | [Page 55](../LiberPrimus/pages/page_55/README.md), [Page 73](../LiberPrimus/pages/page_73/README.md) |
+| Page 17 | YAHEOOPYJ key, Epilogue | [README](../LiberPrimus/pages/page_17/README.md) |
+| Page 05 | "PRIMES ARE SACRED" statement | [README](../LiberPrimus/pages/page_05/README.md) |
+| Page 56-57 | Self-Reliance reference, Parable | [README](../LiberPrimus/pages/page_56/README.md) |
+| Page 68 | CIRCUMFERENCE, CONSUMPTION theme | [README](../LiberPrimus/pages/page_68/README.md) |
 
 ---
 

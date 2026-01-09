@@ -58,7 +58,7 @@ def analyze_file(filepath):
 
     return solved_pages
 
-results = analyze_file('people_liber_primus.md')
+results = analyze_file('Analysis/Reference_Docs/people_liber_primus.md')
 for res in results:
     print(f"Page {res['number']}: Key='{res['key']}'")
     print(f"Excerpt: {res['excerpt']}")

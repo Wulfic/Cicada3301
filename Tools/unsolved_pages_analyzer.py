@@ -18,7 +18,7 @@ IDX_TO_LETTER = ['F','U','TH','O','R','C','G','W','H','N','I','J','EO','P','X','
 
 def load_runes(page_num):
     """Load runes from a page file."""
-    path = f"../pages/page_{page_num:02d}/runes.txt"
+    path = f"../LiberPrimus/pages/page_{page_num:02d}/runes.txt"
     if not os.path.exists(path):
         return None
     
@@ -84,7 +84,7 @@ def analyze_page(page_num):
     best_kls = find_best_key_lengths(indices)
     
     # Find word count (hyphen-separated)
-    path = f"../pages/page_{page_num:02d}/runes.txt"
+    path = f"../LiberPrimus/pages/page_{page_num:02d}/runes.txt"
     with open(path, 'r', encoding='utf-8') as f:
         content = f.read()
     words = [w for w in content.replace('\n', ' ').split('-') if any(c in RUNE_TO_IDX for c in w)]

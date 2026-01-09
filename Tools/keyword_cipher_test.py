@@ -122,7 +122,7 @@ def score_text(text):
 
 def load_page_runes(page_num):
     """Load runes from a page."""
-    page_dir = f"../pages/page_{page_num:02d}"
+    page_dir = f"../LiberPrimus/pages/page_{page_num:02d}"
     rune_file = os.path.join(page_dir, "runes.txt")
     
     if os.path.exists(rune_file):

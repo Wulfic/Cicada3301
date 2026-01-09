@@ -21,7 +21,7 @@ ENGLISH_FREQ_ORDER = [18, 16, 24, 3, 10, 9, 15, 8, 4, 20, 23, 5, 1, 19, 13, 26, 
 
 def load_page(page_num):
     """Load runes from a page."""
-    path = f"../pages/page_{page_num:02d}/runes.txt"
+    path = f"../LiberPrimus/pages/page_{page_num:02d}/runes.txt"
     if not os.path.exists(path):
         return None, None
     

@@ -51,4 +51,4 @@ def extract_solutions(filepath):
                 print("\n")
                 break
 
-extract_solutions('people_liber_primus.md')
+extract_solutions('Analysis/Reference_Docs/people_liber_primus.md')

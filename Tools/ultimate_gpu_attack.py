@@ -827,8 +827,8 @@ class UltimateGPUAttack:
         """Load runes from a page."""
         paths = [
             Path(f"c:/Users/tyler/Repos/Cicada3301/LiberPrimus/pages/page_{page_num:02d}/runes.txt"),
-            Path(f"../pages/page_{page_num:02d}/runes.txt"),
-            Path(f"pages/page_{page_num:02d}/runes.txt"),
+            Path(f"../LiberPrimus/pages/page_{page_num:02d}/runes.txt"),
+            Path(f"LiberPrimus/pages/page_{page_num:02d}/runes.txt"),
         ]
         
         for rune_path in paths:

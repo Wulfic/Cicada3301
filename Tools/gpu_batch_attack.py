@@ -476,7 +476,7 @@ def load_self_reliance() -> str:
     """Load Self-Reliance essay."""
     paths = [
         Path("c:/Users/tyler/Repos/Cicada3301/LiberPrimus/reference/Self-Reliance.txt"),
-        Path("c:/Users/tyler/Repos/Cicada3301/reference/Self-Reliance.txt"),
+        Path("c:/Users/tyler/Repos/Cicada3301/LiberPrimus/reference/Self-Reliance.txt"),
     ]
     
     for path in paths:
