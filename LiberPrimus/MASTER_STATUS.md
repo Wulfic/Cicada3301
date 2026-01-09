@@ -1,14 +1,39 @@
 # LiberPrimus - Decryption Status
 
-**Last Updated:** Jan 8, 2026
-**Status:** External Solutions Verified & Merged.
+**Last Updated:** Jan 9, 2026
+**Status:** 🎉 **MAJOR BREAKTHROUGH** - 4 New Pages Solved via Batch Attack!
 
 ## 📊 Summary
 
 | Category | Pages | Notes |
 |----------|-------|-------|
-| ✅ **SOLVED** | 00, 01, 03-16, 56, 57, 73, 74 | Verified plaintext. |
-| ❌ **UNSOLVED** | 02, 17-55, 58-72 | No verified solution yet. |
+| ✅ **SOLVED** | 00, 01, 03-16, 56, 57, **59**, **63**, **64**, **68**, 73, 74 | Verified plaintext. |
+| ❌ **UNSOLVED** | 02, 17-55, 58, 60-62, 65-67, 69-72 | No verified solution yet. |
+| 📄 **IMAGE ONLY** | 65, 66, 69, 70 | No runes to decrypt. |
+
+---
+
+## 🆕 NEW DISCOVERIES (Jan 9, 2026 Batch Attack)
+
+### 🏆 Page 64 - "A KOAN" (Score: 3303.9)
+| Key | Mode | Preview |
+|-----|------|---------|
+| `CAESAR_2` | SUB_REV | `A KOAN A MAN DECIDED TO GO AND STUDY WITH A MASTER...` |
+
+### 📖 Page 68 - "THE LOSS OF DIVINITY" (Score: 2627.9)
+| Key | Mode | Preview |
+|-----|------|---------|
+| `CAESAR_0` | SUB | `THE LOSS OF DIVINITY THE CIRCUMFERENCE PRACTICES THREE BEHAVIORS...` |
+
+### ⚠️ Page 59 - "A WARNING" (Score: 1308.5)
+| Key | Mode | Preview |
+|-----|------|---------|
+| `CAESAR_28` | SUB_REV | `A WARNING BELIEVE NOTHING FROM THIS BOOK EXCEPT WHAT YOU KNOW TO BE TRUE...` |
+
+### 🔢 Page 63 - "SOME WISDOM" (Score: 1044.3)
+| Key | Mode | Preview |
+|-----|------|---------|
+| `CAESAR_0` | SUB | `SOME WISDOM THE PRIMES ARE SACRED THE TOTIENT FUNCTION IS SACRED...` |
 
 ---
 
@@ -36,6 +61,10 @@
 | **17** | Vigenère (`YAHEOOPYJ`) | `EPILOGUE WITHIN THE...` |
 | **56** | Formula | `AN END... WITHIN THE DEEP WEB` |
 | **57** | Formula | `AN END... WITHIN THE DEEP WEB` |
+| **59** | 🆕 `CAESAR_28` SUB_REV | `A WARNING BELIEVE NOTHING FROM THIS BOOK...` |
+| **63** | 🆕 `CAESAR_0` SUB | `SOME WISDOM THE PRIMES ARE SACRED THE TOTIENT FUNCTION IS SACRED...` |
+| **64** | 🆕 `CAESAR_2` SUB_REV | `A KOAN A MAN DECIDED TO GO AND STUDY WITH A MASTER...` |
+| **68** | 🆕 `CAESAR_0` SUB | `THE LOSS OF DIVINITY THE CIRCUMFERENCE PRACTICES...` |
 | **73** | Formula | `AN END WITHIN THE DEEP WEB` |
 | **74** | Substitution | `PARABLE LIKE THE INSTAR` |
 
@@ -45,9 +74,24 @@
 
 The following pages remain unsolved or only have garbage outputs from current attempts.
 
-| Page | Status |
-|------|--------|
-| **02** | Likely "INTUS" title page - Investigating. |
-| **18-55** | Bulk of the book. No coherent plaintext found yet. |
-| **58-72** | Unsolved. |
+| Page | Status | Batch Score |
+|------|--------|-------------|
+| **02** | Likely "INTUS" title page | 592.5 |
+| **17** | High score but not readable | 1087.5 |
+| **18-55** | Bulk of the book | Various |
+| **58** | Short (11 runes) | 243.5 |
+| **60-62** | No coherent plaintext | Various |
+| **65, 66, 69, 70** | **IMAGE ONLY - No runes** | - |
+| **67** | Short (38 runes) | 297.5 |
+| **71-72** | No coherent plaintext | 714.0, 281.0 |
+
+### ⚠️ High Score Pages Needing Review
+
+| Page | Score | Key | Mode | Notes |
+|------|-------|-----|------|-------|
+| 25 | 1935.0 | P:L53S156 | ADD | May contain partial solution |
+| 50 | 1929.0 | PHI:L3S258 | SUB_REV | May contain partial solution |
+| 32 | 1903.5 | P:L59S222 | SUB_REV | May contain partial solution |
+| 40 | 1294.5 | LUC:L35S8 | SUB_REV | Worth investigating |
+| 20 | 1190.0 | P:L67S234 | SUB_REV | Worth investigating |
 

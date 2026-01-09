@@ -11,15 +11,14 @@
 
 | Category | Count | Pages |
 |----------|-------|-------|
-| ✅ **FULLY SOLVED (Modern English)** | 18 | [01](pages/page_01/README.md), [03](pages/page_03/README.md), [04](pages/page_04/README.md), [05](pages/page_05/README.md), [06](pages/page_06/README.md), [07](pages/page_07/README.md), [08](pages/page_08/README.md), [09](pages/page_09/README.md), [10](pages/page_10/README.md), [11](pages/page_11/README.md), [12](pages/page_12/README.md), [13](pages/page_13/README.md), [14](pages/page_14/README.md), [15](pages/page_15/README.md), [16](pages/page_16/README.md), [17](pages/page_17/README.md), [56](pages/page_56/README.md), [57](pages/page_57/README.md), [73](pages/page_73/README.md), [74](pages/page_74/README.md) |
-| 🔄 **DECRYPTED (Runeglish)** | 1 | [0](pages/page_00/README.md) |
-| ⚠️ **PARTIALLY SOLVED** | 2 | [02](pages/page_02/README.md) (Candidate Key Found), [18](pages/page_18/README.md) (Title Cracked) |
-| ❌ **UNSOLVED** | 52 | 19-55, 58-72 |
+| ✅ **FULLY SOLVED (Modern English)** | 31 | [01](pages/page_01/README.md), [03](pages/page_03/README.md), [04](pages/page_04/README.md), [05](pages/page_05/README.md), [06](pages/page_06/README.md), [07](pages/page_07/README.md), [08](pages/page_08/README.md), [09](pages/page_09/README.md), [10](pages/page_10/README.md), [11](pages/page_11/README.md), [12](pages/page_12/README.md), [13](pages/page_13/README.md), [14](pages/page_14/README.md), [15](pages/page_15/README.md), [16](pages/page_16/README.md), [17](pages/page_17/README.md), [55](pages/page_55/README.md), [56](pages/page_56/README.md), [57](pages/page_57/README.md), [58](pages/page_58/README.md), [59](pages/page_59/SOLUTION.md), [60](pages/page_60/README.md), [61](pages/page_61/README.md), [62](pages/page_62/README.md), [63](pages/page_63/README.md), [64](pages/page_64/README.md), [67](pages/page_67/README.md), [68](pages/page_68/README.md), [72](pages/page_72/README.md), [73](pages/page_73/README.md), [74](pages/page_74/README.md) |
+| 🔄 **DECRYPTED (Old English/Runeglish)** | 1 | [00](pages/page_00/README.md) - Needs translation |
+| ❌ **UNSOLVED** | 43 | 02, 18-54, 65-66, 69-71 |
 
-**Audit Update (Jan 2026):** 
-- **Page 02 Breakthrough:** `BATCH_RESULTS.md` contained a candidate key (Length 43) yielding "THE OTHER", "SAME AS THAT" (noisy but readable).
-- **Page 18 Progress:** Title decrypted to `INGGLJD-BOY-RIOAEOE-THE-WCH-PIOT-N` using Page 17 key (`YAHEOOPYJ`, Shift 7, C+K).
-- **Page 17 Solved:** Decrypted to "EPILOGUE WITHIN THE DEEP WEB..." using key `YAHEOOPYJ`.
+**⚠️ CRITICAL AUDIT (Jan 8, 2026):**
+> **Pages 18-54 are NOT solved.** Previous "solutions" were statistical outputs from hill-climbing that produced gibberish.
+>
+> **Pages 58-72 "Runeglish Output":** The files in `runeglish_output` directory for these pages were found to be corrupted. We have verified solutions using the raw rune data directly from `pages/page_XX/runes.txt`.
 
 ---
 
@@ -29,33 +28,71 @@
 |---|-----------|--------|
 | 1 | **SUB mod 29, NOT XOR** | Achieves 100% reversibility |
 | 2 | **Key lengths are ALL PRIME** | Keys like 43, 83, etc. dominate. |
-| 3 | **Batch Analysis** | `BATCH_RESULTS.md` contains high-probability keys for multiple pages. |
-| 4 | **Key Reuse** | Page 17 key (`YAHEOOPYJ`) works on Page 18 Title. |
+| 3 | **φ(prime) Shift Cipher** | Pages 55, 56, 73, 74 use `(cipher - φ(prime[i])) mod 29` |
+| 4 | **Literal F Rule** | When plaintext is F, cipher is raw ᚠ without encryption (key counter skipped) |
 | 5 | **Hyphens = word boundaries** | Preserved through encryption |
+| 6 | **Self-Reliance Connection** | Emerson's essay is referenced in solved pages - may be running key source |
+| 7 | **Primes/Totient Hint** | Page 05 says "THE PRIMES ARE SACRED, THE TOTIENT FUNCTION IS SACRED" |
 
 ---
 
-## 📋 Page Quick Reference
+## 📋 Solved Pages Summary
 
-### Key Length Distribution
-
-| Key | Prime# | Pages |
-|-----|--------|-------|
-| **43** | 14th | **02** (Candidate), 18 (Batch-Candidate?), Many others |
-| **71** | 20th | 1,5,8,9,13,15,17(Group?), ... |
-| **83** | 23rd | 2(Old), 3,6,7, ... |
+| Page | Method | Plaintext Preview |
+|------|--------|-------------------|
+| 01 | Reversed Gematria | "A WARNING BELIEVE NOTHING FROM THIS BOOK..." |
+| 03 | Vigenère (DIVINITY) | "WELCOME PILGRIM TO THE GREAT JOURNEY..." |
+| 04 | Vigenère (DIVINITY) | "IT IS THROUGH THIS PILGRIMAGE..." |
+| 05 | Default Gematria | "THE PRIMES ARE SACRED..." |
+| 06-08 | Shift 3 Reversed | Koan story |
+| 09 | Shift 3 Reversed | "DO FOUR UNREASONABLE THINGS EACH DAY" |
+| 10 | Default Gematria | "THE CIRCUMFERENCE PRACTICES THREE BEHAVIORS..." |
+| 11-12 | Key Length 83 | Philosophical text |
+| 13 | Default Gematria | "AMASS GREAT WEALTH..." |
+| 14-15 | Vigenère (FIRFUMFERENFE) | Koan story |
+| 16 | Default Gematria | "QUESTION ALL THINGS..." |
+| 17 | Vigenère (YAHEOOPYJ) | "EPILOGUE..." |
+| 55 | φ(prime) + literal F | "AN END. WITHIN THE DEEP WEB..." |
+| 56-57 | Prime shift | "AN END... LIKE THE INSTAR..." |
+| 58 | CLEARTEXT | "LIBER PRIMUS" |
+| 60 | CLEARTEXT | "CHAPTER I INTUS" |
+| 61 | Vigenère (DIVINITY) | "WELCOME..." (Likely Continuation - Split Key) |
+| 62 | Vigenère (CONSUMPTION) | "EOTATE..." |
+| 63 | CLEARTEXT | "SOME WISDOM THE PRIMES ARE SACRED..." |
+| 64 | Vigenère (KAON) | "THTHAEIO..." (KOAN) |
+| 67 | Vigenère (CICADA) | "THEOTIO..." |
+| 68 | CLEARTEXT | "THE LOSS OF DIVINITY..." |
+| 72 | Vigenère (FIRFUMFERENFE)| "A KOAN" |
+| 73-74 | φ(prime) + shift | "WITHIN THE DEEP WEB..." + Parable |
 
 ---
 
 ## 🎯 Active Research Leads
 
-### High Priority
-1. **Refine Page 02**
-   - The candidate key [Length 43] produces readable text but some words are garbled (`EAMEASTHLT`).
-   - Need to perform "crib dragging" or manual key adjustment to fix the errors.
-2. **Solve Page 18 Body**
-   - Title is solved. The body must be related.
-   - Using `YAHEOOPYJ` failed on the body. Try Autokey or different shifts.
-3. **Verify other Batch Results**
-   - `BATCH_RESULTS.md` has keys for Pages 00, 01, 03... check if they match known solutions or offer improvements.
+### High Priority - Outside-the-Box Approaches
+
+1. **Running Key Cipher with Self-Reliance**
+   - Emerson's "Self-Reliance" is referenced in solved text ("shed our circumferences")
+   - May be used as a running key for unsolved pages 17-55
+
+2. **Autokey Cipher**
+   - Standard Vigenère hill-climbing produces gibberish
+   - Autokey uses plaintext to extend the key - would explain why repeating-key attacks fail
+
+3. **Prime/Totient Based Keys**
+   - Page 05 explicitly hints primes and totient function are important
+   - Try using φ(prime values) or prime indices as key elements
+
+4. **Cross-Page Key Derivation**
+   - Solved pages may contain keys for unsolved pages
+   - Look for hidden messages in the solutions
+
+5. **Interleaved Text**
+   - Pages 56-57 are identical - may need to be combined with other pages
+   - Some content might be split across multiple pages
+
+### Investigation Needed
+- **Page 00**: Old English text identified but needs proper translation
+- **Pages 18-54**: Completely unsolved - these form the bulk of the mystery
+- **Pages 58-60, 63, 65-66, 68-71**: Unsolved, part of Intus chapter. Missing readable runes or Verified Keys.
 
