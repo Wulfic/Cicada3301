@@ -1,15 +1,25 @@
 # LiberPrimus - Decryption Status
 
-**Last Updated:** Jan 9, 2026
-**Status:** 🎉 **MAJOR BREAKTHROUGH** - 4 New Pages Solved via Batch Attack!
+**Last Updated:** Jan 2026
+**Status:** 🔍 **AUDIT COMPLETE** - False positives identified and corrected
+
+## ⚠️ CRITICAL AUDIT FINDING (Jan 2026)
+
+> **Page 54 "theatheatheatheath" was a FALSE POSITIVE!**
+> 
+> The hill-climbing solution produced gibberish and has been reverted to UNSOLVED status.
+> 
+> **Data Integrity Note:** RuneSolver.py has incorrect content for Page 54 (contains Page 0 duplicate). The `runes.txt` files in page folders are the authoritative source.
 
 ## 📊 Summary
 
 | Category | Pages | Notes |
 |----------|-------|-------|
-| ✅ **SOLVED** | 00, 01, 03-16, 56, 57, **59**, **63**, **64**, **68**, 73, 74 | Verified plaintext. |
-| ❌ **UNSOLVED** | 02, 17-55, 58, 60-62, 65-67, 69-72 | No verified solution yet. |
+| ✅ **SOLVED** | 00, 01, 03-17, 55, 56, 57, **59**, **63**, **64**, **68**, 73, 74 | Verified plaintext. |
+| ❌ **UNSOLVED** | 02, 18-54, 58, 60-62, 65-67, 69-72 | No verified solution yet. |
 | 📄 **IMAGE ONLY** | 65, 66, 69, 70 | No runes to decrypt. |
+
+> **Note:** Pages 18-54 (37 pages) form the main unsolved block with IoC ≈ 0.034, suggesting running key cipher.
 
 ---
 
