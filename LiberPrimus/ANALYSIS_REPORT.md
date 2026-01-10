@@ -131,3 +131,26 @@
 ---
 
 *Generated: Session Analysis*
+
+## Page 20 Investigation (Jan 2026)
+
+**Status:** Unsolved
+**Hint:** "REARRANGING THE PRIMES NUMBERS WILL SHOW A PATH TO THE DEOR K" (from Page 19)
+
+**Hypothesis Testing & Results:**
+1.  **Deor Poem Extraction**:
+    *   Attempted to use Sorted Primes as indices into the Old English poem *Deor*.
+    *   **Result**: IoC ~1.00 (Failure).
+    *   **Variant**: Using Prime indices to extract *Words* instead of characters also failed.
+    *   **Variant**: Using *Prime Lines* of the poem also failed.
+2.  **Grid Transposition (29x28)**:
+    *   Page 20 consists of 812 runes, which forms a perfect 29x28 grid.
+    *   Attempted reordering columns based on Primes (Column 2, 3, 5, 7...).
+    *   **Result**: IoC of columns remains Random (~0.96-1.00). No hidden payload found in Prime Columns.
+    *   **Variant**: Extracting Prime Columns and decrypting with the *Deor Refrain* ("Þæs ofereode...") failed.
+3.  **Split-Stream Attack**:
+    *   Separated Runes into Primes and Non-Primes to test if one stream acts as a key for the other.
+    *   **Result**: Failed.
+
+**Conclusion:** The "Rearrangement" likely refers to a more complex mathematical transformation of the Prime sequence (possibly involving the Totient function or a specific path/spiral within the grid) rather than simple sorting or extraction. The connection to "Deor K" (Key?) remains the strongest lead, potentially linking Page 20 to the unsolved **Page 18** (Title "Hengalla" -> King in Deor?).
+

@@ -307,3 +307,16 @@ POTENTIAL_KEYS = {
 ---
 
 *Document generated from comprehensive analysis of solved Liber Primus pages.*
+
+## 🔍 RECENT DISCOVERY: Page 19 Hint
+
+**Source:** Solved Page 19 (Implied/Recent)
+**Hint:** "REARRANGING THE PRIMES NUMBERS WILL SHOW A PATH TO THE DEOR K"
+
+**Analysis:**
+- **Page 20 Target:** This hint likely points to the solution for Page 20 (which follows P19).
+- **"Deor K":** Refers to the Old English poem *Deor*. "K" likely stands for "Key".
+- **"Rearranging Primes":** Suggests the method to construct the key from the Deor poem.
+- **Failures:** Simple sorting of primes or using prime lines directly has failed.
+- **Hypothesis:** The rearrangement might be arithmetic (Totient) or the "Primes Numbers" refers to the prime-valued Runes within the ciphertext itself.
+

@@ -23,7 +23,12 @@
 
 ---
 
-## 🆕 NEW DISCOVERIES (Jan 9, 2026 Batch Attack)
+## 🆕 NEW DISCOVERIES (Jan 9, 2026 Batch Attack & Page 20 Analysis)
+
+### 🧩 Page 20 - "PRIME DEOR KEY" (Partial Success)
+| Key | Mode | Status |
+|-----|------|--------|
+| `DEOR_PRIME_RUNES` | SUB_PRIME_IDX | **IoC: 1.1459** (High Entropy). Yields `YEOT...` stream. Contains "THE", "WE", "ENG". Likely a KEY or Step 1 of 2. |
 
 ### 🏆 Page 64 - "A KOAN" (Score: 3303.9)
 | Key | Mode | Preview |

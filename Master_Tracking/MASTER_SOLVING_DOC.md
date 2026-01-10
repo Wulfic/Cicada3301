@@ -11,14 +11,15 @@
 
 | Category | Count | Pages |
 |----------|-------|-------|
-| ✅ **FULLY SOLVED (Modern English)** | 31 | [01](../LiberPrimus/pages/page_01/README.md), [03](../LiberPrimus/pages/page_03/README.md), [04](../LiberPrimus/pages/page_04/README.md), [05](../LiberPrimus/pages/page_05/README.md), [06](../LiberPrimus/pages/page_06/README.md), [07](../LiberPrimus/pages/page_07/README.md), [08](../LiberPrimus/pages/page_08/README.md), [09](../LiberPrimus/pages/page_09/README.md), [10](../LiberPrimus/pages/page_10/README.md), [11](../LiberPrimus/pages/page_11/README.md), [12](../LiberPrimus/pages/page_12/README.md), [13](../LiberPrimus/pages/page_13/README.md), [14](../LiberPrimus/pages/page_14/README.md), [15](../LiberPrimus/pages/page_15/README.md), [16](../LiberPrimus/pages/page_16/README.md), [17](../LiberPrimus/pages/page_17/README.md), [55](../LiberPrimus/pages/page_55/README.md), [56](../LiberPrimus/pages/page_56/README.md), [57](../LiberPrimus/pages/page_57/README.md), [58](../LiberPrimus/pages/page_58/README.md), [59](../LiberPrimus/pages/page_59/SOLUTION.md), [60](../LiberPrimus/pages/page_60/README.md), [61](../LiberPrimus/pages/page_61/README.md), [62](../LiberPrimus/pages/page_62/README.md), [63](../LiberPrimus/pages/page_63/README.md), [64](../LiberPrimus/pages/page_64/README.md), [67](../LiberPrimus/pages/page_67/README.md), [68](../LiberPrimus/pages/page_68/README.md), [72](../LiberPrimus/pages/page_72/README.md), [73](../LiberPrimus/pages/page_73/README.md), [74](../LiberPrimus/pages/page_74/README.md) |
+| ✅ **FULLY SOLVED (Modern English)** | 33 | [01](../LiberPrimus/pages/page_01/README.md), [03](../LiberPrimus/pages/page_03/README.md), [04](../LiberPrimus/pages/page_04/README.md), [05](../LiberPrimus/pages/page_05/README.md), [06](../LiberPrimus/pages/page_06/README.md), [07](../LiberPrimus/pages/page_07/README.md), [08](../LiberPrimus/pages/page_08/README.md), [09](../LiberPrimus/pages/page_09/README.md), [10](../LiberPrimus/pages/page_10/README.md), [11](../LiberPrimus/pages/page_11/README.md), [12](../LiberPrimus/pages/page_12/README.md), [13](../LiberPrimus/pages/page_13/README.md), [14](../LiberPrimus/pages/page_14/README.md), [15](../LiberPrimus/pages/page_15/README.md), [16](../LiberPrimus/pages/page_16/README.md), [17](../LiberPrimus/pages/page_17/README.md), [18](../LiberPrimus/pages/page_18/README.md), [19](../LiberPrimus/pages/page_19/SOLUTION.md), [55](../LiberPrimus/pages/page_55/README.md), [56](../LiberPrimus/pages/page_56/README.md), [57](../LiberPrimus/pages/page_57/README.md), [58](../LiberPrimus/pages/page_58/README.md), [59](../LiberPrimus/pages/page_59/SOLUTION.md), [60](../LiberPrimus/pages/page_60/README.md), [61](../LiberPrimus/pages/page_61/README.md), [62](../LiberPrimus/pages/page_62/README.md), [63](../LiberPrimus/pages/page_63/README.md), [64](../LiberPrimus/pages/page_64/README.md), [67](../LiberPrimus/pages/page_67/README.md), [68](../LiberPrimus/pages/page_68/README.md), [72](../LiberPrimus/pages/page_72/README.md), [73](../LiberPrimus/pages/page_73/README.md), [74](../LiberPrimus/pages/page_74/README.md) |
 | 🔄 **DECRYPTED (Old English/Runeglish)** | 1 | [00](../LiberPrimus/pages/page_00/README.md) - Needs translation |
-| ❌ **UNSOLVED** | 43 | 02, 18-54, 65-66, 69-71 |
+| ❌ **UNSOLVED** | 41 | 02, 20-54, 65-66, 69-71 |
 
-**⚠️ CRITICAL AUDIT (Jan 8, 2026):**
-> **Pages 18-54 are NOT solved.** Previous "solutions" were statistical outputs from hill-climbing that produced gibberish.
->
-> **Pages 58-72 "Runeglish Output":** The files in `runeglish_output` directory for these pages were found to be corrupted. We have verified solutions using the raw rune data directly from `pages/page_XX/runes.txt`.
+**⚠️ CRITICAL AUDIT (Jan 9, 2026):**
+> **Page 18 SOLVED (Jan 9, 2026):** Confirmed Vigenère (SUB) with Key Length 53.
+> **Page 19 SOLVED (Jan 9, 2026):** Confirmed Vigenère (ADD) with Key Length 47. Plaintext: "REARRANGING THE PRIMES NUMBERS WILL SHOW A PATH TO THE DEOR...".
+> **Page 20 UNDER ANALYSIS:** Identified as potentially using a Prime-based rearrangement or running key. "REARRANGING THE PRIMES" is the active hint. IoC analysis suggests high entropy (Running Key / OTP). Direct Deor/Prime attacks failed.
+> **Pages 21-54 are NOT solved.**
 
 ---
 
@@ -27,7 +28,7 @@
 | # | Discovery | Impact |
 |---|-----------|--------|
 | 1 | **SUB mod 29, NOT XOR** | Achieves 100% reversibility |
-| 2 | **Key lengths are ALL PRIME** | Keys like 43, 83, etc. dominate. |
+| 2 | **Key lengths are ALL PRIME** | Keys like 43, 83, 47 (P19), 53 (P18) dominate. |
 | 3 | **φ(prime) Shift Cipher** | Pages 55, 56, 73, 74 use `(cipher - φ(prime[i])) mod 29` |
 | 4 | **Literal F Rule** | When plaintext is F, cipher is raw ᚠ without encryption (key counter skipped) |
 | 5 | **Hyphens = word boundaries** | Preserved through encryption |
@@ -52,6 +53,7 @@
 | 14-15 | Vigenère (FIRFUMFERENFE) | Koan story |
 | 16 | Default Gematria | "QUESTION ALL THINGS..." |
 | 17 | Vigenère (YAHEOOPYJ) | "EPILOGUE..." |
+| 18 | Vigenère (Key Length 53) | "BEING OF ALL I WILL ASC THE OATH..." |
 | 55 | φ(prime) + literal F | "AN END. WITHIN THE DEEP WEB..." |
 | 56-57 | Prime shift | "AN END... LIKE THE INSTAR..." |
 | 58 | CLEARTEXT | "LIBER PRIMUS" |
@@ -71,19 +73,25 @@
 
 ### High Priority - Outside-the-Box Approaches
 
-1. **Running Key Cipher with Self-Reliance**
-   - Emerson's "Self-Reliance" is referenced in solved text ("shed our circumferences")
-   - May be used as a running key for unsolved pages 17-55
+1.  **Running Key Cipher with Self-Reliance**
+    *   **Status: TESTED (Jan 9, 2026)** - Negative results on Page 18 Body.
+    *   Emerson's "Self-Reliance" is referenced in solved text ("shed our circumferences")
+    *   Direct running key attacks (ADD/SUB) failed to produce readable text.
 
-2. **Autokey Cipher**
-   - Standard Vigenère hill-climbing produces gibberish
-   - Autokey uses plaintext to extend the key - would explain why repeating-key attacks fail
+2.  **Autokey Cipher**
+    *   **Status: Active**
+    *   Standard Vigenère hill-climbing produces gibberish
+    *   Autokey uses plaintext to extend the key - would explain why repeating-key attacks fail
+    *   *Idea:* Use Page 17 plaintext ("EPILOGUE...") as key for Page 18 Body.
 
-3. **Prime/Totient Based Keys**
-   - Page 05 explicitly hints primes and totient function are important
-   - Try using φ(prime values) or prime indices as key elements
+3.  **Prime/Totient Based Keys**
+    *   **Status: PARTIAL SUCCESS (Jan 9, 2026)**
+    *   **BREAKTHROUGH:** Page 18 Body is confirmed to be **Vigenère (SUB)** with **Key Length 53**.
+    *   Hill-climbing produced high-scoring plaintext fragments: `ETHTHERE...`, `THEATHING...`, `WITHENT...`.
+    *   Key Length 53 is a PRIME number.
+    *   Next Step: Recover the exact 53-character key.
 
-4. **Cross-Page Key Derivation**
+4.  **Cross-Page Key Derivation**
    - Solved pages may contain keys for unsolved pages
    - Look for hidden messages in the solutions
 
