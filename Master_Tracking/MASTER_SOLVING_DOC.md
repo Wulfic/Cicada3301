@@ -34,6 +34,7 @@
 | 5 | **Hyphens = word boundaries** | Preserved through encryption |
 | 6 | **Self-Reliance Connection** | Emerson's essay is referenced in solved pages - may be running key source |
 | 7 | **Primes/Totient Hint** | Page 05 says "THE PRIMES ARE SACRED, THE TOTIENT FUNCTION IS SACRED" |
+| 8 | **Deor Key (Page 20 Artifact)** | Extracted 166-rune stream from P20 Primes (Deor - P20). Contains Scrambled Eng ("DEATH", "LENGTH RATIO"). Validates "REARRANGE PRIMES" hint. |
 
 ---
 
