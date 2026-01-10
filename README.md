@@ -8,9 +8,9 @@ Cicada 3301 is a nickname given to an organization that, on three occasions, has
 You can watch this [great overview by Lemino](https://www.youtube.com/watch?v=I2O7blSSzpI) and [nox populi's video](https://www.youtube.com/watch?v=l0z03ntMJio)
 
 
-# This cicada3301 Repository
+# This cicada3301 - Liber Primus Repository
 
-This repository contains comprehensive materials for researching and solving Cicada 3301 puzzles, including all important pages from the Uncovering Cicada wiki, images, tools, and analysis.
+This repository contains comprehensive materials for researching and solving Cicada 3301 Liber Primus.
 
 ---
 
@@ -25,7 +25,7 @@ This repository contains comprehensive materials for researching and solving Cic
 | [**Analysis/**](Analysis/) | 🔬 **Analysis & References** - Deep dives, reference docs, and outputs |
 | [**Tools/**](Tools/) | 🛠️ **Tools & Scripts** - Python scripts for repo analysis |
 | [**Assets/**](Assets/) | 📦 **Assets** - Keys, PDFs, and other static files |
-| [**OtherCicadaPuzzles/**](OtherCicadaPuzzles/) | All other Cicada 3301 puzzles (2012-2017) |
+
 
 ### Quick Links
 - [Master Solving Document](Master_Tracking/MASTER_SOLVING_DOC.md) - Proven methodology
@@ -34,13 +34,6 @@ This repository contains comprehensive materials for researching and solving Cic
 - [Page 57 - The Parable](LiberPrimus/pages/page_57/) - ✅ SOLVED (Plaintext)
 - [Page 56](LiberPrimus/pages/page_56/) - ✅ SOLVED (Prime shift)
 
-### Other Puzzles Quick Links
-- [2012 Puzzle](OtherCicadaPuzzles/2012/) - ✅ SOLVED
-- [2013 Puzzle](OtherCicadaPuzzles/2013/) - ✅ SOLVED
-- [2014 Other](OtherCicadaPuzzles/2014_other/) - Onion sites
-- [2015-2017](OtherCicadaPuzzles/) - Messages & announcements
-
----
 
 ## 🔐 Liber Primus Status
 
@@ -49,19 +42,6 @@ This repository contains comprehensive materials for researching and solving Cic
 | ✅ Solved | 2 | 56, 57 |
 | 🔄 Work in Progress | 5 | 1-5 (decryption found, interpretation ongoing) |
 | ❌ Unsolved | 68 | 0, 6-55, 58-74 |
-
----
-
-## 📚 Legacy Links (Original Structure)
-
-[2012 puzzle](/2012) &nbsp;&nbsp;&nbsp;&nbsp; [[assets]](/assets/2012)</br>
-[2013 puzzle](/2013) &nbsp;&nbsp;&nbsp;&nbsp; [[assets]](/assets/2013)</br>
-[2014 puzzle](/2014) &nbsp;&nbsp;&nbsp;&nbsp; [[assets]](/assets/2014)</br>
-[2015 puzzle](/2015) &nbsp;&nbsp;&nbsp;&nbsp; [[assets]](/2015/extra%20docs)</br>
-[2016 puzzle](/2016) &nbsp;&nbsp;&nbsp;&nbsp; [[assets]](/assets/2016)</br>
-[2017 puzzle](/2017) &nbsp;&nbsp;&nbsp;&nbsp; [[assets]](2017/additional%20docs)</br>
-
-[More Wiki Pages](/EXTRA%20WIKI%20PAGES)
 
 ---
 
