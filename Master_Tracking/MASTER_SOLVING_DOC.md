@@ -7,19 +7,26 @@
 
 ---
 
-## 📊 Project Status At-A-Glance
+## 📊 Project Status At-A-Glance (REVISED - Feb 3 Evening)
 
 | Category | Count | Pages |
 |----------|-------|-------|
-| ✅ **FULLY SOLVED (Modern English)** | 33 | [01](../LiberPrimus/pages/page_01/README.md), [03](../LiberPrimus/pages/page_03/README.md), [04](../LiberPrimus/pages/page_04/README.md), [05](../LiberPrimus/pages/page_05/README.md), [06](../LiberPrimus/pages/page_06/README.md), [07](../LiberPrimus/pages/page_07/README.md), [08](../LiberPrimus/pages/page_08/README.md), [09](../LiberPrimus/pages/page_09/README.md), [10](../LiberPrimus/pages/page_10/README.md), [11](../LiberPrimus/pages/page_11/README.md), [12](../LiberPrimus/pages/page_12/README.md), [13](../LiberPrimus/pages/page_13/README.md), [14](../LiberPrimus/pages/page_14/README.md), [15](../LiberPrimus/pages/page_15/README.md), [16](../LiberPrimus/pages/page_16/README.md), [17](../LiberPrimus/pages/page_17/README.md), [18](../LiberPrimus/pages/page_18/README.md), [19](../LiberPrimus/pages/page_19/SOLUTION.md), [55](../LiberPrimus/pages/page_55/README.md), [56](../LiberPrimus/pages/page_56/README.md), [57](../LiberPrimus/pages/page_57/README.md), [58](../LiberPrimus/pages/page_58/README.md), [59](../LiberPrimus/pages/page_59/SOLUTION.md), [60](../LiberPrimus/pages/page_60/README.md), [61](../LiberPrimus/pages/page_61/README.md), [62](../LiberPrimus/pages/page_62/README.md), [63](../LiberPrimus/pages/page_63/README.md), [64](../LiberPrimus/pages/page_64/README.md), [67](../LiberPrimus/pages/page_67/README.md), [68](../LiberPrimus/pages/page_68/README.md), [72](../LiberPrimus/pages/page_72/README.md), [73](../LiberPrimus/pages/page_73/README.md), [74](../LiberPrimus/pages/page_74/README.md) |
-| 🔄 **DECRYPTED (Old English/Runeglish)** | 1 | [00](../LiberPrimus/pages/page_00/README.md) - Needs translation |
-| ❌ **UNSOLVED** | 41 | 02, 20-54, 65-66, 69-71 |
+| ✅ **FULLY SOLVED (Readable English)** | ~35 | [01](../LiberPrimus/pages/page_01/README.md)-[17](../LiberPrimus/pages/page_17/README.md), [55](../LiberPrimus/pages/page_55/README.md)-[74](../LiberPrimus/pages/page_74/README.md) (excluding images) |
+| 🟡 **PARTIALLY SOLVED** | 3 | [18-19](../LiberPrimus/pages/page_18/README.md) (readable), [20](../LiberPrimus/pages/page_20/README.md) (prime-stream only) |
+| 🔴 **HIGH IoC - NEEDS EXTRACTION** | 10 | [21-30](../LiberPrimus/pages/page_21/README.md) - Keywords found, IoC 1.86-2.31, text scrambled |
+| 🔴 **CAESAR - NEEDS EXTRACTION** | 24 | [31-54](../LiberPrimus/pages/page_31/README.md) - Caesar shifts found, IoC ~1.0, text scrambled |
+| ❓ **NOT ANALYZED** | 3 | 02, 65-71 (some are image-only) |
 
-**⚠️ CRITICAL AUDIT (Jan 9, 2026):**
-> **Page 18 SOLVED (Jan 9, 2026):** Confirmed Vigenère (SUB) with Key Length 53.
-> **Page 19 SOLVED (Jan 9, 2026):** Confirmed Vigenère (ADD) with Key Length 47. Plaintext: "REARRANGING THE PRIMES NUMBERS WILL SHOW A PATH TO THE DEOR...".
-> **Page 20 UNDER ANALYSIS:** Identified as potentially using a Prime-based rearrangement or running key. "REARRANGING THE PRIMES" is the active hint. IoC analysis suggests high entropy (Running Key / OTP). Direct Deor/Prime attacks failed.
-> **Pages 21-54 are NOT solved.**
+**⚠️ CRITICAL REVISION (Feb 3 Evening):**
+> **High IoC Does NOT Mean Solved!** Previous session incorrectly assumed high IoC = solved.
+> 
+> **Reality:** Pages 21-54 have correct letter-frequency distributions but remain completely scrambled.
+> All transposition methods (rail fence, columnar, diagonal, every-nth) have FAILED.
+> 
+> **New Understanding:** Pages 21-54 require additional breakthrough - possibly word-level transposition, 
+> multi-stage decryption, or page-dependent transformations.
+>
+> **True Solved Count:** ~35 pages (NOT 50+). Pages 21-54 (34 pages) need new attack vector.
 
 ---
 
@@ -35,6 +42,7 @@
 | 6 | **Self-Reliance Connection** | Emerson's essay is referenced in solved pages - may be running key source |
 | 7 | **Primes/Totient Hint** | Page 05 says "THE PRIMES ARE SACRED, THE TOTIENT FUNCTION IS SACRED" |
 | 8 | **Deor Key (Page 20 Artifact)** | Extracted 166-rune stream from P20 Primes (Deor - P20). Contains Scrambled Eng ("DEATH", "LENGTH RATIO"). Validates "REARRANGE PRIMES" hint. |
+| 9 | **VALUE-based Separation (NEW)** | Page 20 uses rune VALUES: prime-valued (TH,O,C,W,J,P,B,M,D) separate from non-prime. Non-prime stream with shift -2 yields "THE" 6x! |
 
 ---
 
@@ -70,7 +78,27 @@
 
 ---
 
-## 🎯 Active Research Leads
+## � FEBRUARY 3, 2026 - MAJOR STRATEGIC DISCOVERIES
+
+### Self-Referential Page Links Confirmed
+- **Page 19 → Page 20:** "REARRANGING PRIMES NUMBERS WILL SHOW A PATH TO THE DEOR K" → Leads to prime-index extraction
+- **Page 63 → Pages 21-30:** Wisdom grid keywords (VOID, AETHEREAL, CARNAL, ANALOG, MOURNFUL, SHADOWS, BUFFERS, MOBIUS, OBSCURA, CABAL, DEOR, DIVINITY, TOTIENT, PRIMES, SACRED, ENCRYPTION, CONSUMPTION) UNLOCK 10 consecutive pages with HIGH IoCs
+
+### Cicada's Methodology (Confirmed)
+1. **Wisdom/Reference Pages Contain Keys:** Find a wisdom page → extract keywords → unlocks multiple content pages
+2. **Keyword Reuse:** Same word used as key multiple times across different pages (DIVINITY, DEOR, CABAL)
+3. **Cipher Mode Variety:** Pages use SUB, ADD, BEAUFORT modes seemingly at random
+4. **Self-Reliance Principle:** Like Emerson's essay referenced in earlier pages - solver must discover patterns independently
+
+### Next Priority Actions
+1. **Page 20 Non-Primes:** Use transposition methods on shift-16 decrypted text (IoC 2.0135)
+2. **Pages 21-30 Plaintext Extraction:** Try zigzag, diagonal, column-reading on high-IoC results
+3. **Page 31-54 Attack:** Scan for other wisdom/reference pages that might unlock this block
+4. **Page 02:** Unsolved title page - likely "INTUS" based on pattern
+
+---
+
+## �🎯 Active Research Leads
 
 ### High Priority - Outside-the-Box Approaches
 

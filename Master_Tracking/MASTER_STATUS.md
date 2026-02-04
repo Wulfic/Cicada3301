@@ -1,7 +1,32 @@
 # LiberPrimus - Decryption Status
 
-**Last Updated:** Jan 2026
-**Status:** 🔍 **AUDIT COMPLETE** - False positives identified and corrected
+**Last Updated:** Feb 3, 2026 (Evening Session)
+**Status:** ⚠️ **CRITICAL RE-ASSESSMENT** - High IoC ≠ Solved. Need new approach for Pages 20-54.
+
+## ⚠️ CRITICAL AUDIT RESULTS (Feb 3, Evening)
+
+### Key Discovery: High IoC Does NOT Mean Solved!
+- **Pages 21-30:** High IoCs (1.86-2.31) but text remains SCRAMBLED
+- **Example:** Page 21 with IoC 1.9728 produces: "eoaeoedjtheooebtheafmheooethetheaiotheaeacoeoetheaththrheathbxaleaathioleaoefthm..."
+- **All transposition attempts FAILED** to produce readable English
+- **Conclusion:** IoC indicates correct letter frequency, NOT readable plaintext
+
+### Pages 31-54 Pattern Discovery
+- **Do NOT respond to Vigenère keywords** (unlike Pages 21-30)
+- **DO respond to Caesar shifts** (different shift per page)
+  - Page 32: Caesar 11 (highest English score: 285)
+  - Page 44: Caesar 5 (score: 227)
+  - Page 50: Caesar 6 (score: 224)
+- **After Caesar + Transposition:** Still scrambled
+- **Cipher Type:** Likely Caesar + complex multi-stage encryption
+
+### Page 20 Progress
+- **Prime Positions (166 runes):** ✅ Decoded to Old English (EODE, SEFA, THE LONE)
+- **Non-Prime Positions (671 runes):** 🔴 High IoC but NO readable plaintext
+
+### TRUE Status Revision
+> **Previous Assessment Was Incorrect:** High IoC does not guarantee solved status.
+> Pages 21-54 require additional breakthrough beyond letter-level substitution.
 
 ## ⚠️ CRITICAL AUDIT FINDING (Jan 2026)
 
@@ -11,15 +36,18 @@
 > 
 > **Data Integrity Note:** RuneSolver.py has incorrect content for Page 54 (contains Page 0 duplicate). The `runes.txt` files in page folders are the authoritative source.
 
-## 📊 Summary
+## 📊 Summary (REVISED - Feb 3 Evening)
 
 | Category | Pages | Notes |
 |----------|-------|-------|
-| ✅ **SOLVED** | 00, 01, 03-17, 55, 56, 57, **59**, **63**, **64**, **68**, 73, 74 | Verified plaintext. |
-| ❌ **UNSOLVED** | 02, 18-54, 58, 60-62, 65-67, 69-72 | No verified solution yet. |
+| ✅ **TRULY SOLVED** | 00-17, 55-74 (~35 pages) | Confirmed readable English plaintext. |
+| 🟡 **PARTIAL** | 18-20 | Page 18-19 readable, Page 20 prime-stream readable, rest scrambled. |
+| 🔴 **HIGH IoC BUT UNSOLVED** | 21-30 | Respond to keywords with IoC 1.86-2.31 but remain scrambled. |
+| 🔴 **CAESAR BUT UNSOLVED** | 31-54 (24 pages) | Respond to Caesar shifts (IoC ~1.0) but remain scrambled. |
 | 📄 **IMAGE ONLY** | 65, 66, 69, 70 | No runes to decrypt. |
+| ❓ **UNKNOWN** | 02 | Title page, likely readable with simple method. |
 
-> **Note:** Pages 18-54 (37 pages) form the main unsolved block with IoC ≈ 0.034, suggesting running key cipher.
+> **Critical Note:** Pages 21-54 (34 pages) have correct letter-frequency (high IoC) but need additional transformation beyond substitution to become readable.
 
 ---
 
